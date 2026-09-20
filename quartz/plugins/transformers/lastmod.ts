@@ -79,7 +79,8 @@ export const CreatedModifiedDate: QuartzTransformerPlugin<Partial<Options>> = (u
                 published ||= file.data.frontmatter.published as MaybeDate
               } else if (source === "git" && repo) {
                 try {
-                  const relativePath = path.relative(repositoryWorkdir, fullFp)
+                  const resolvedFp = fs.existsSync(fullFp) ? fs.realpathSync(fullFp) : fullFp
+                  const relativePath = path.relative(repositoryWorkdir, resolvedFp)
                   modified ||= await repo.getFileLatestModifiedDateAsync(relativePath)
                 } catch {
                   console.log(

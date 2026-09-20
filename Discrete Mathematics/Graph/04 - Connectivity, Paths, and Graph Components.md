@@ -118,14 +118,7 @@ A remarkable link between linear algebra and graph theory allows us to count pat
 
 >[!example] Example 3: Finding Paths of Length 2
 >Consider the graph on vertices $\{a, b, c, d, e\}$ with adjacency matrix:
->
->$$\mathbf{A} = \begin{pmatrix}
->0 & 1 & 1 & 0 & 1 \\
->1 & 0 & 0 & 0 & 0 \\
->1 & 0 & 0 & 1 & 1 \\
->0 & 0 & 1 & 0 & 1 \\
->1 & 0 & 1 & 1 & 0
->\end{pmatrix}$$
+> $$\mathbf{A} = \begin{pmatrix} 0 & 1 & 1 & 0 & 1 \\ 1 & 0 & 0 & 0 & 0 \\ 1 & 0 & 0 & 1 & 1 \\ 0 & 0 & 1 & 0 & 1 \\ 1 & 0 & 1 & 1 & 0 \end{pmatrix}$$
 >
 >To find how many paths of length $2$ exist from vertex $a$ to vertex $d$, compute row $a$ of $\mathbf{A}$ dotted with column $d$ of $\mathbf{A}$:
 >

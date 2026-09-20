@@ -10,16 +10,13 @@ const emitThemeChangeEvent = (theme: "light" | "dark") => {
 }
 
 document.addEventListener("nav", () => {
-  const switchTheme = () => {
-    const newTheme =
-      document.documentElement.getAttribute("saved-theme") === "dark" ? "light" : "dark"
-    document.documentElement.setAttribute("saved-theme", newTheme)
-    localStorage.setItem("theme", newTheme)
-    emitThemeChangeEvent(newTheme)
-  }
+  // Enforce saved theme state on every SPA navigation
+  const activeTheme = localStorage.getItem("theme") ?? userPref
+  document.documentElement.setAttribute("saved-theme", activeTheme)
 
-  const themeChange = (e: MediaQueryListEvent) => {
-    const newTheme = e.matches ? "dark" : "light"
+  const switchTheme = () => {
+    const current = document.documentElement.getAttribute("saved-theme")
+    const newTheme = current === "dark" ? "light" : "dark"
     document.documentElement.setAttribute("saved-theme", newTheme)
     localStorage.setItem("theme", newTheme)
     emitThemeChangeEvent(newTheme)
@@ -30,8 +27,14 @@ document.addEventListener("nav", () => {
     window.addCleanup(() => darkmodeButton.removeEventListener("click", switchTheme))
   }
 
-  // Listen for changes in prefers-color-scheme
+  // Listen for OS scheme change only if user hasn't explicitly set a preference
   const colorSchemeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)")
+  const themeChange = (e: MediaQueryListEvent) => {
+    if (localStorage.getItem("theme")) return
+    const newTheme = e.matches ? "dark" : "light"
+    document.documentElement.setAttribute("saved-theme", newTheme)
+    emitThemeChangeEvent(newTheme)
+  }
   colorSchemeMediaQuery.addEventListener("change", themeChange)
   window.addCleanup(() => colorSchemeMediaQuery.removeEventListener("change", themeChange))
 })

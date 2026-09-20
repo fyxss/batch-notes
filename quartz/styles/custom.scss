@@ -31,7 +31,7 @@
 }
 
 // -------------------------------------------------------------
-// Global Typography: Bookerly Serif Elegance
+// Global Typography: Bookerly Serif
 // -------------------------------------------------------------
 body,
 article,
@@ -55,37 +55,79 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 700;
 }
 
-// -------------------------------------------------------------
-// Light Theme: Shimmering Focus Aesthetics
-// -------------------------------------------------------------
-:root {
-  --shimmer-accent: #1396a0;
+// =============================================================
+// LIGHT THEME: Shimmering Focus (by Chris Grieser)
+// =============================================================
+:root,
+:root[saved-theme="light"] {
+  --shimmer-teal: #1396a0;
   --shimmer-indigo: #5460ab;
   --shimmer-amber: #c67e3f;
   --shimmer-hover: #dc388f;
+  --shimmer-bg: #fcfdfe;
+  --shimmer-card: #f7f9fd;
+  --shimmer-border: #e2e8f4;
 
+  body {
+    background-color: var(--shimmer-bg);
+    color: #364257;
+  }
+
+  // Shimmering Focus alternating Periwinkle / Teal headings
+  h1, .article-title {
+    color: var(--shimmer-indigo) !important;
+  }
+
+  h2 {
+    color: var(--shimmer-teal) !important;
+  }
+
+  h3 {
+    color: var(--shimmer-indigo) !important;
+  }
+
+  h4, h5, h6 {
+    color: var(--shimmer-teal) !important;
+  }
+
+  // Shimmering Focus links with signature magenta hover shimmer
   article a {
-    color: var(--secondary);
+    color: var(--shimmer-teal);
+    text-decoration: underline;
     text-decoration-color: rgba(19, 150, 160, 0.35);
     text-underline-offset: 3px;
     transition: color 0.15s ease, text-decoration-color 0.15s ease;
 
     &:hover {
-      color: var(--shimmer-hover);
-      text-decoration-color: var(--shimmer-hover);
+      color: var(--shimmer-hover) !important;
+      text-decoration-color: var(--shimmer-hover) !important;
     }
   }
 
-  // Smooth academic card borders
+  // Shimmering Focus callout styling
   .callout {
+    background-color: var(--shimmer-card);
+    border: 1.5px solid var(--shimmer-border);
     border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  }
+
+  // Shimmering Focus soft code blocks
+  pre {
+    background-color: #f3f6fb !important;
+    border: 1px solid var(--shimmer-border);
+    border-radius: 6px;
+  }
+
+  // Sidebar & Search borders
+  .sidebar, .explorer, .search {
+    border-color: var(--shimmer-border);
   }
 }
 
-// -------------------------------------------------------------
-// Dark Theme: Obsidianite Neon-Obsidian Aesthetics
-// -------------------------------------------------------------
+// =============================================================
+// DARK THEME: Obsidianite (by Benny Guo)
+// =============================================================
 :root[saved-theme="dark"] {
   --obsidianite-cyan: #0fb6d6;
   --obsidianite-magenta: #f4569d;
@@ -93,16 +135,23 @@ h1, h2, h3, h4, h5, h6,
   --obsidianite-purple-bg: #100e17;
   --obsidianite-surface: #191621;
 
-  // Luminous headings
+  body {
+    background-color: var(--obsidianite-purple-bg);
+    color: #c5c5d2;
+  }
+
+  // Luminous cyan headings with atmospheric glow
   h1, .article-title {
-    color: var(--obsidianite-cyan);
+    color: var(--obsidianite-cyan) !important;
     text-shadow: 0 0 16px rgba(15, 182, 214, 0.25);
   }
 
   h2, h3, h4 {
-    color: #e2e8f0;
+    color: #e2e8f0 !important;
+    text-shadow: none;
   }
 
+  // Obsidianite sky-blue links with neon-magenta hover glow
   article a {
     color: var(--obsidianite-sky);
     text-decoration-color: rgba(107, 202, 251, 0.3);
@@ -110,16 +159,17 @@ h1, h2, h3, h4, h5, h6,
     transition: color 0.15s ease, text-shadow 0.15s ease;
 
     &:hover {
-      color: var(--obsidianite-magenta);
-      text-decoration-color: var(--obsidianite-magenta);
+      color: var(--obsidianite-magenta) !important;
+      text-decoration-color: var(--obsidianite-magenta) !important;
       text-shadow: 0 0 10px rgba(244, 86, 157, 0.35);
     }
   }
 
-  // Obsidianite callout borders and accents
+  // Obsidianite dark panel callouts
   .callout {
     background-color: #15131f;
     border-color: rgba(15, 182, 214, 0.25);
+    border-radius: 8px;
   }
 
   // Search and explorer panel borders
@@ -127,7 +177,7 @@ h1, h2, h3, h4, h5, h6,
     border-color: rgba(15, 182, 214, 0.12);
   }
 
-  // Code block styling in Obsidianite
+  // Obsidianite code blocks
   pre {
     background-color: #15131f !important;
     border: 1px solid rgba(15, 182, 214, 0.15);

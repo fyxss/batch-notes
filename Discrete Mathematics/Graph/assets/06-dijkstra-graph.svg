@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 280" width="100%" height="100%">
+
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="grad-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <linearGradient id="grad-emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="grad-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="grad-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="grad-rose" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb7185" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+    <linearGradient id="grad-card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Markers -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#38bdf8" />
+    </marker>
+    <marker id="arrow-emerald" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#34d399" />
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#c084fc" />
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#fbbf24" />
+    </marker>
+
+    <!-- Drop Shadow -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <rect width="740" height="280" rx="14" fill="url(#grad-card)" stroke="#334155" stroke-width="1.5" />
+  <text x="370" y="28" fill="#f8fafc" font-size="17" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Dijkstra's Algorithm: Shortest Path from Source a to Target z</text>
+  <text x="370" y="46" fill="#94a3b8" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle">Weighted graph showing vertices a, b, c, d, e, z. Non-negative weights guarantee greedy optimal sub-structure.</text>
+
+  <g transform="translate(100, 65)">
+    <!-- Layout coordinates: -->
+    <!-- a: (40, 75) -->
+    <!-- b: (160, 25), c: (160, 125) -->
+    <!-- d: (320, 25), e: (320, 125) -->
+    <!-- z: (440, 75) -->
+    
+    <!-- Edges -->
+    <!-- a-b: 4 -->
+    <line x1="40" y1="75" x2="160" y2="25" stroke="#64748b" stroke-width="2" />
+    <rect x="90" y="38" width="20" height="18" rx="4" fill="#0f172a" /><text x="100" y="51" fill="#38bdf8" font-size="11" font-weight="bold" text-anchor="middle">4</text>
+    
+    <!-- a-c: 2 -->
+    <line x1="40" y1="75" x2="160" y2="125" stroke="#34d399" stroke-width="3" />
+    <rect x="90" y="92" width="20" height="18" rx="4" fill="#0f172a" /><text x="100" y="105" fill="#34d399" font-size="11" font-weight="bold" text-anchor="middle">2</text>
+
+    <!-- b-c: 1 -->
+    <line x1="160" y1="25" x2="160" y2="125" stroke="#34d399" stroke-width="3" />
+    <rect x="165" y="68" width="20" height="18" rx="4" fill="#0f172a" /><text x="175" y="81" fill="#34d399" font-size="11" font-weight="bold" text-anchor="middle">1</text>
+
+    <!-- b-d: 5 -->
+    <line x1="160" y1="25" x2="320" y2="25" stroke="#34d399" stroke-width="3" />
+    <rect x="230" y="14" width="20" height="18" rx="4" fill="#0f172a" /><text x="240" y="27" fill="#34d399" font-size="11" font-weight="bold" text-anchor="middle">5</text>
+
+    <!-- c-d: 8 -->
+    <line x1="160" y1="125" x2="320" y2="25" stroke="#64748b" stroke-width="1.8" />
+    <rect x="235" y="65" width="20" height="18" rx="4" fill="#0f172a" /><text x="245" y="78" fill="#94a3b8" font-size="11" font-weight="bold" text-anchor="middle">8</text>
+
+    <!-- c-e: 10 -->
+    <line x1="160" y1="125" x2="320" y2="125" stroke="#64748b" stroke-width="1.8" />
+    <rect x="230" y="128" width="22" height="18" rx="4" fill="#0f172a" /><text x="241" y="141" fill="#94a3b8" font-size="11" font-weight="bold" text-anchor="middle">10</text>
+
+    <!-- d-e: 2 -->
+    <line x1="320" y1="25" x2="320" y2="125" stroke="#34d399" stroke-width="3" />
+    <rect x="325" y="68" width="20" height="18" rx="4" fill="#0f172a" /><text x="335" y="81" fill="#34d399" font-size="11" font-weight="bold" text-anchor="middle">2</text>
+
+    <!-- d-z: 6 -->
+    <line x1="320" y1="25" x2="440" y2="75" stroke="#64748b" stroke-width="2" />
+    <rect x="375" y="38" width="20" height="18" rx="4" fill="#0f172a" /><text x="385" y="51" fill="#94a3b8" font-size="11" font-weight="bold" text-anchor="middle">6</text>
+
+    <!-- e-z: 3 -->
+    <line x1="320" y1="125" x2="440" y2="75" stroke="#34d399" stroke-width="3" />
+    <rect x="375" y="92" width="20" height="18" rx="4" fill="#0f172a" /><text x="385" y="105" fill="#34d399" font-size="11" font-weight="bold" text-anchor="middle">3</text>
+
+    <!-- Vertices -->
+    <circle cx="40" cy="75" r="17" fill="url(#grad-blue)" stroke="#fff" stroke-width="2" filter="url(#shadow)" /><text x="40" y="80" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">a</text>
+    <circle cx="160" cy="25" r="17" fill="url(#grad-emerald)" stroke="#fff" stroke-width="2" filter="url(#shadow)" /><text x="160" y="30" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">b</text>
+    <circle cx="160" cy="125" r="17" fill="url(#grad-emerald)" stroke="#fff" stroke-width="2" filter="url(#shadow)" /><text x="160" y="130" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">c</text>
+    <circle cx="320" cy="25" r="17" fill="url(#grad-emerald)" stroke="#fff" stroke-width="2" filter="url(#shadow)" /><text x="320" y="30" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">d</text>
+    <circle cx="320" cy="125" r="17" fill="url(#grad-emerald)" stroke="#fff" stroke-width="2" filter="url(#shadow)" /><text x="320" y="130" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">e</text>
+    <circle cx="440" cy="75" r="17" fill="url(#grad-amber)" stroke="#fff" stroke-width="2" filter="url(#shadow)" /><text x="440" y="80" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">z</text>
+  </g>
+
+  <!-- Solution Banner -->
+  <rect x="80" y="235" width="580" height="28" rx="6" fill="#182234" stroke="#059669" stroke-width="1.2" />
+  <text x="370" y="253" fill="#34d399" font-size="12" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Optimal Shortest Path: a → c → b → d → e → z (Total Weight = 2 + 1 + 5 + 2 + 3 = 13)</text>
+</svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad-card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="grad-server" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="grad-client-a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="grad-client-b" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <rect width="740" height="240" rx="14" fill="url(#grad-card)" stroke="#334155" stroke-width="1.5" />
+  <text x="370" y="28" fill="#f8fafc" font-size="17" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Network Model: Two Interconnected Computer Labs</text>
+  <text x="370" y="46" fill="#94a3b8" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle">Bridge cable between Server 1 and Server 2; Servers are Cut Vertices (Single Points of Failure).</text>
+
+  <!-- Lab A Cluster -->
+  <g transform="translate(40, 65)">
+    <!-- Links from Server 1 to A1, A2, A3 -->
+    <line x1="170" y1="75" x2="60" y2="25" stroke="#38bdf8" stroke-width="2" />
+    <line x1="170" y1="75" x2="60" y2="75" stroke="#38bdf8" stroke-width="2" />
+    <line x1="170" y1="75" x2="60" y2="125" stroke="#38bdf8" stroke-width="2" />
+
+    <circle cx="60" cy="25" r="13" fill="url(#grad-client-a)" stroke="#fff" /><text x="60" y="29" fill="#fff" font-size="10" font-weight="bold" text-anchor="middle">A₁</text>
+    <circle cx="60" cy="75" r="13" fill="url(#grad-client-a)" stroke="#fff" /><text x="60" y="79" fill="#fff" font-size="10" font-weight="bold" text-anchor="middle">A₂</text>
+    <circle cx="60" cy="125" r="13" fill="url(#grad-client-a)" stroke="#fff" /><text x="60" y="129" fill="#fff" font-size="10" font-weight="bold" text-anchor="middle">A₃</text>
+
+    <!-- Server 1 Node -->
+    <rect x="125" y="55" width="90" height="40" rx="8" fill="url(#grad-server)" stroke="#fff" stroke-width="1.5" filter="url(#shadow)" />
+    <text x="170" y="80" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">Server 1</text>
+    <text x="170" y="115" fill="#c084fc" font-size="10" font-weight="bold" text-anchor="middle">Cut Vertex</text>
+  </g>
+
+  <!-- Backbone Bridge Cable -->
+  <line x1="255" y1="140" x2="485" y2="140" stroke="#f43f5e" stroke-width="4" stroke-dasharray="6 3" />
+  <rect x="320" y="115" width="100" height="22" rx="4" fill="#0f172a" stroke="#f43f5e" />
+  <text x="370" y="130" fill="#fb7185" font-size="10" font-weight="bold" text-anchor="middle">Bridge Cable</text>
+
+  <!-- Lab B Cluster -->
+  <g transform="translate(450, 65)">
+    <!-- Links from Server 2 to B1, B2, B3 -->
+    <line x1="80" y1="75" x2="190" y2="25" stroke="#34d399" stroke-width="2" />
+    <line x1="80" y1="75" x2="190" y2="75" stroke="#34d399" stroke-width="2" />
+    <line x1="80" y1="75" x2="190" y2="125" stroke="#34d399" stroke-width="2" />
+
+    <!-- Server 2 Node -->
+    <rect x="35" y="55" width="90" height="40" rx="8" fill="url(#grad-server)" stroke="#fff" stroke-width="1.5" filter="url(#shadow)" />
+    <text x="80" y="80" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle">Server 2</text>
+    <text x="80" y="115" fill="#c084fc" font-size="10" font-weight="bold" text-anchor="middle">Cut Vertex</text>
+
+    <circle cx="190" cy="25" r="13" fill="url(#grad-client-b)" stroke="#fff" /><text x="190" y="29" fill="#fff" font-size="10" font-weight="bold" text-anchor="middle">B₁</text>
+    <circle cx="190" cy="75" r="13" fill="url(#grad-client-b)" stroke="#fff" /><text x="190" y="79" fill="#fff" font-size="10" font-weight="bold" text-anchor="middle">B₂</text>
+    <circle cx="190" cy="125" r="13" fill="url(#grad-client-b)" stroke="#fff" /><text x="190" y="129" fill="#fff" font-size="10" font-weight="bold" text-anchor="middle">B₃</text>
+  </g>
+
+  <rect x="120" y="210" width="500" height="22" rx="4" fill="#0f172a" />
+  <text x="370" y="225" fill="#94a3b8" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">Failure of Server 1, Server 2, or the Bridge cable disconnects Lab A from Lab B.</text>
+</svg>

@@ -1,0 +1,42 @@
+# Quartz build artifacts & cache
+public/
+.quartz-cache/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Obsidian internal workspace, cache, and sensitive session state
+.obsidian/workspace*
+.obsidian/cache*
+.obsidian/graph.json
+.obsidian/hotkeys.json
+.obsidian/plugins/better-export-pdf/
+
+# Credentials, secrets, and environment variables
+.env
+.env.*
+*.env
+credentials.json
+secrets.json
+*.key
+*.pem
+
+# OS-specific junk
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Other vault courses & scratch files (only publishing Graph notes)
+/EEE Lab Quiz/
+/Electrical Circuits/
+/English/
+/Linear Algebra & Coordinate Geometry/
+/Structured Programming Language/
+/Next 4 week.md
+/temporary
+/Electrical

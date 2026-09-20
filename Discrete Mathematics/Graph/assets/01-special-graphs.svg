@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 250" width="100%" height="100%">
+
+  <defs>
+    <!-- Linear Gradients -->
+    <linearGradient id="grad-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <linearGradient id="grad-emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="grad-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="grad-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="grad-rose" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb7185" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+    <linearGradient id="grad-card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Arrow Markers -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#38bdf8" />
+    </marker>
+    <marker id="arrow-emerald" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#34d399" />
+    </marker>
+    <marker id="arrow-rose" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#fb7185" />
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#c084fc" />
+    </marker>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="820" height="250" rx="14" fill="url(#grad-card)" stroke="#334155" stroke-width="1.5" />
+  
+  <text x="410" y="28" fill="#f8fafc" font-size="17" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Complete Graphs Family (Kₙ)</text>
+  <text x="410" y="46" fill="#94a3b8" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle">Every pair of distinct vertices is connected by an edge. Total edges: e = n(n - 1) / 2</text>
+
+  <!-- K2 -->
+  <g transform="translate(30, 60)">
+    <rect width="160" height="170" rx="10" fill="#182234" stroke="#334155" stroke-width="1" />
+    <text x="80" y="25" fill="#38bdf8" font-size="15" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">K₂</text>
+    <text x="80" y="42" fill="#94a3b8" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">v = 2, e = 1</text>
+    
+    <line x1="45" y1="100" x2="115" y2="100" stroke="#38bdf8" stroke-width="2.5" />
+    <circle cx="45" cy="100" r="12" fill="url(#grad-blue)" stroke="#ffffff" stroke-width="1.5" filter="url(#shadow)" />
+    <circle cx="115" cy="100" r="12" fill="url(#grad-blue)" stroke="#ffffff" stroke-width="1.5" filter="url(#shadow)" />
+    <text x="80" y="152" fill="#64748b" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">1-regular</text>
+  </g>
+
+  <!-- K3 -->
+  <g transform="translate(225, 60)">
+    <rect width="160" height="170" rx="10" fill="#182234" stroke="#334155" stroke-width="1" />
+    <text x="80" y="25" fill="#34d399" font-size="15" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">K₃ (Triangle)</text>
+    <text x="80" y="42" fill="#94a3b8" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">v = 3, e = 3</text>
+    
+    <!-- Triangle edges -->
+    <polygon points="80,68 40,130 120,130" stroke="#34d399" stroke-width="2.5" fill="none" />
+    <circle cx="80" cy="68" r="11" fill="url(#grad-emerald)" stroke="#ffffff" stroke-width="1.5" filter="url(#shadow)" />
+    <circle cx="40" cy="130" r="11" fill="url(#grad-emerald)" stroke="#ffffff" stroke-width="1.5" filter="url(#shadow)" />
+    <circle cx="120" cy="130" r="11" fill="url(#grad-emerald)" stroke="#ffffff" stroke-width="1.5" filter="url(#shadow)" />
+    <text x="80" y="152" fill="#64748b" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">2-regular</text>
+  </g>
+
+  <!-- K4 -->
+  <g transform="translate(420, 60)">
+    <rect width="160" height="170" rx="10" fill="#182234" stroke="#334155" stroke-width="1" />
+    <text x="80" y="25" fill="#fbbf24" font-size="15" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">K₄ (Tetrahedron)</text>
+    <text x="80" y="42" fill="#94a3b8" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">v = 4, e = 6</text>
+    
+    <!-- Square edges + diagonals -->
+    <rect x="45" y="70" width="70" height="60" stroke="#fbbf24" stroke-width="2.5" fill="none" />
+    <line x1="45" y1="70" x2="115" y2="130" stroke="#fbbf24" stroke-width="2.5" />
+    <line x1="115" y1="70" x2="45" y2="130" stroke="#fbbf24" stroke-width="2.5" />
+    
+    <circle cx="45" cy="70" r="11" fill="url(#grad-amber)" stroke="#ffffff" stroke-width="1.5" filter="url(#shadow)" />
+    <circle cx="115" cy="70" r="11" fill="url(#grad-amber)" stroke="#ffffff" stroke-width="1.5" filter="url(#shadow)" />
+    <circle cx="45" cy="130" r="11" fill="url(#grad-amber)" stroke="#ffffff" stroke-width="1.5" filter="url(#shadow)" />
+    <circle cx="115" cy="130" r="11" fill="url(#grad-amber)" stroke="#ffffff" stroke-width="1.5" filter="url(#shadow)" />
+    <text x="80" y="152" fill="#64748b" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">3-regular (Planar)</text>
+  </g>
+
+  <!-- K5 -->
+  <g transform="translate(615, 60)">
+    <rect width="175" height="170" rx="10" fill="#182234" stroke="#334155" stroke-width="1" />
+    <text x="87" y="25" fill="#f43f5e" font-size="15" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">K₅ (Pentagram)</text>
+    <text x="87" y="42" fill="#94a3b8" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">v = 5, e = 10</text>
+    
+    <!-- Pentagon vertices: (cx, cy) = (87, 100), r = 36 -->
+    <!-- 0: 87, 64; 1: 121, 89; 2: 108, 129; 3: 66, 129; 4: 53, 89 -->
+    <!-- All 10 edges -->
+    <!-- Outer cycle -->
+    <polygon points="87,64 121,89 108,129 66,129 53,89" stroke="#f43f5e" stroke-width="2" fill="none" />
+    <!-- Inner star -->
+    <polygon points="87,64 108,129 53,89 121,89 66,129" stroke="#f43f5e" stroke-width="1.5" fill="none" />
+    
+    <circle cx="87" cy="64" r="9" fill="url(#grad-rose)" stroke="#ffffff" stroke-width="1.2" filter="url(#shadow)" />
+    <circle cx="121" cy="89" r="9" fill="url(#grad-rose)" stroke="#ffffff" stroke-width="1.2" filter="url(#shadow)" />
+    <circle cx="108" cy="129" r="9" fill="url(#grad-rose)" stroke="#ffffff" stroke-width="1.2" filter="url(#shadow)" />
+    <circle cx="66" cy="129" r="9" fill="url(#grad-rose)" stroke="#ffffff" stroke-width="1.2" filter="url(#shadow)" />
+    <circle cx="53" cy="89" r="9" fill="url(#grad-rose)" stroke="#ffffff" stroke-width="1.2" filter="url(#shadow)" />
+    
+    <text x="87" y="152" fill="#fb7185" font-size="10" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">4-regular (Non-Planar!)</text>
+  </g>
+</svg>

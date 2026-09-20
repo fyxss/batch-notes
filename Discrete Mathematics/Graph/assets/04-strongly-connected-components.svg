@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 260" width="100%" height="100%">
+
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="grad-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <linearGradient id="grad-emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="grad-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="grad-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="grad-rose" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb7185" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+    <linearGradient id="grad-card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="grad-darknode" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+
+    <!-- Markers -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#38bdf8" />
+    </marker>
+    <marker id="arrow-emerald" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#34d399" />
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#c084fc" />
+    </marker>
+    <marker id="arrow-rose" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#fb7185" />
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#fbbf24" />
+    </marker>
+
+    <!-- Drop Shadow -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <rect width="720" height="260" rx="14" fill="url(#grad-card)" stroke="#334155" stroke-width="1.5" />
+  <text x="360" y="28" fill="#f8fafc" font-size="17" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Strongly Connected Components (SCCs) &amp; Condensation DAG</text>
+  <text x="360" y="46" fill="#94a3b8" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle">An SCC is a maximal subgraph where every vertex is mutually reachable from every other vertex.</text>
+
+  <g transform="translate(60, 65)">
+    <!-- SCC 1 Cluster (a, b, c, d) in a cycle -->
+    <rect x="0" y="0" width="280" height="160" rx="12" fill="#182234" stroke="#c084fc" stroke-dasharray="4 4" stroke-width="1.8" />
+    <text x="140" y="24" fill="#c084fc" font-size="13" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">SCC₁ = {a, b, c, d} (Mutually Reachable)</text>
+    
+    <!-- Cycle edges -->
+    <line x1="60" y1="60" x2="200" y2="60" stroke="#a78bfa" stroke-width="2" marker-end="url(#arrow-purple)" />
+    <line x1="220" y1="75" x2="220" y2="115" stroke="#a78bfa" stroke-width="2" marker-end="url(#arrow-purple)" />
+    <line x1="200" y1="130" x2="60" y2="130" stroke="#a78bfa" stroke-width="2" marker-end="url(#arrow-purple)" />
+    <line x1="40" y1="115" x2="40" y2="75" stroke="#a78bfa" stroke-width="2" marker-end="url(#arrow-purple)" />
+    
+    <circle cx="40" cy="60" r="14" fill="url(#grad-purple)" stroke="#fff" stroke-width="1.5" /><text x="40" y="64" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle">a</text>
+    <circle cx="220" cy="60" r="14" fill="url(#grad-purple)" stroke="#fff" stroke-width="1.5" /><text x="220" y="64" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle">b</text>
+    <circle cx="220" cy="130" r="14" fill="url(#grad-purple)" stroke="#fff" stroke-width="1.5" /><text x="220" y="134" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle">c</text>
+    <circle cx="40" cy="130" r="14" fill="url(#grad-purple)" stroke="#fff" stroke-width="1.5" /><text x="40" y="134" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle">d</text>
+  </g>
+
+  <!-- One-Way Bridge Arc from SCC1 to SCC2 -->
+  <g transform="translate(340, 145)">
+    <line x1="0" y1="0" x2="80" y2="0" stroke="#fbbf24" stroke-width="3" marker-end="url(#arrow-amber)" />
+    <text x="40" y="-10" fill="#fbbf24" font-size="10" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">One-way (DAG Arc)</text>
+  </g>
+
+  <!-- SCC 2 (Singleton e) -->
+  <g transform="translate(430, 65)">
+    <rect width="180" height="160" rx="12" fill="#182234" stroke="#64748b" stroke-dasharray="4 4" stroke-width="1.5" />
+    <text x="90" y="24" fill="#94a3b8" font-size="13" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">SCC₂ = {e} (Sink)</text>
+    
+    <circle cx="90" cy="95" r="18" fill="url(#grad-blue)" stroke="#fff" stroke-width="2" filter="url(#shadow)" />
+    <text x="90" y="100" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">e</text>
+    
+    <text x="90" y="145" fill="#64748b" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">Dead end (No return arc)</text>
+  </g>
+</svg>

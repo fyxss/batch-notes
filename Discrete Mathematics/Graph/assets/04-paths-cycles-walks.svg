@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 270" width="100%" height="100%">
+
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="grad-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <linearGradient id="grad-emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="grad-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="grad-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="grad-rose" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb7185" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+    <linearGradient id="grad-card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="grad-darknode" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+
+    <!-- Markers -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#38bdf8" />
+    </marker>
+    <marker id="arrow-emerald" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#34d399" />
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#c084fc" />
+    </marker>
+    <marker id="arrow-rose" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#fb7185" />
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#fbbf24" />
+    </marker>
+
+    <!-- Drop Shadow -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <rect width="740" height="270" rx="14" fill="url(#grad-card)" stroke="#334155" stroke-width="1.5" />
+  <text x="370" y="28" fill="#f8fafc" font-size="17" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Paths, Simple Cycles, and General Walks</text>
+  <text x="370" y="46" fill="#94a3b8" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle">Distinction between path (no repeated vertices/edges), cycle (closed path), and walk (repeats allowed).</text>
+
+  <!-- Left: Reference Graph with overlay -->
+  <g transform="translate(50, 65)">
+    <rect width="280" height="180" rx="10" fill="#182234" stroke="#334155" stroke-width="1" />
+    
+    <!-- Edges -->
+    <line x1="50" y1="45" x2="140" y2="45" stroke="#64748b" stroke-width="2" />
+    <line x1="140" y1="45" x2="230" y2="45" stroke="#64748b" stroke-width="2" />
+    <line x1="50" y1="125" x2="140" y2="125" stroke="#64748b" stroke-width="2" />
+    <line x1="140" y1="125" x2="230" y2="125" stroke="#64748b" stroke-width="2" />
+    <line x1="50" y1="45" x2="50" y2="125" stroke="#64748b" stroke-width="2" />
+    <line x1="140" y1="45" x2="140" y2="125" stroke="#64748b" stroke-width="2" />
+    <line x1="230" y1="45" x2="230" y2="125" stroke="#64748b" stroke-width="2" />
+
+    <!-- Nodes a, b, c (top), d, e, f (bottom) -->
+    <circle cx="50" cy="45" r="14" fill="url(#grad-blue)" stroke="#fff" stroke-width="1.5" /><text x="50" y="49" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle">a</text>
+    <circle cx="140" cy="45" r="14" fill="url(#grad-blue)" stroke="#fff" stroke-width="1.5" /><text x="140" y="49" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle">b</text>
+    <circle cx="230" cy="45" r="14" fill="url(#grad-blue)" stroke="#fff" stroke-width="1.5" /><text x="230" y="49" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle">c</text>
+    
+    <circle cx="50" cy="125" r="14" fill="url(#grad-blue)" stroke="#fff" stroke-width="1.5" /><text x="50" y="129" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle">d</text>
+    <circle cx="140" cy="125" r="14" fill="url(#grad-blue)" stroke="#fff" stroke-width="1.5" /><text x="140" y="129" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle">e</text>
+    <circle cx="230" cy="125" r="14" fill="url(#grad-blue)" stroke="#fff" stroke-width="1.5" /><text x="230" y="129" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle">f</text>
+
+    <text x="140" y="162" fill="#94a3b8" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">Grid Graph 2 × 3</text>
+  </g>
+
+  <!-- Right: Definitions and Traces -->
+  <g transform="translate(360, 65)">
+    <!-- Path 1 -->
+    <rect x="0" y="0" width="330" height="52" rx="8" fill="#182234" stroke="#38bdf8" stroke-width="1.2" />
+    <text x="15" y="20" fill="#38bdf8" font-size="12" font-weight="bold" font-family="system-ui, sans-serif">Simple Path: a → b → e → d</text>
+    <text x="15" y="38" fill="#94a3b8" font-size="11" font-family="system-ui, sans-serif">Length = 3 edges • No repeated vertices</text>
+
+    <!-- Path 2 -->
+    <rect x="0" y="62" width="330" height="52" rx="8" fill="#182234" stroke="#34d399" stroke-width="1.2" />
+    <text x="15" y="82" fill="#34d399" font-size="12" font-weight="bold" font-family="system-ui, sans-serif">Simple Circuit (Cycle): b → c → f → e → b</text>
+    <text x="15" y="100" fill="#94a3b8" font-size="11" font-family="system-ui, sans-serif">Length = 4 edges • Starts and terminates at b</text>
+
+    <!-- Path 3 -->
+    <rect x="0" y="124" width="330" height="52" rx="8" fill="#182234" stroke="#fbbf24" stroke-width="1.2" />
+    <text x="15" y="144" fill="#fbbf24" font-size="12" font-weight="bold" font-family="system-ui, sans-serif">General Walk: a → b → e → b → c</text>
+    <text x="15" y="162" fill="#fde047" font-size="11" font-family="system-ui, sans-serif">Repeats edge {b, e} • Valid walk, but NOT simple!</text>
+  </g>
+</svg>

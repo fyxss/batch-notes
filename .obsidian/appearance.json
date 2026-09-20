@@ -1,0 +1,10 @@
+{
+  "cssTheme": "Kakano",
+  "theme": "moonstone",
+  "enabledCssSnippets": [
+    "mrm"
+  ],
+  "textFontFamily": "Bookerly",
+  "accentColor": "#2f3f7f",
+  "baseFontSize": 16
+}

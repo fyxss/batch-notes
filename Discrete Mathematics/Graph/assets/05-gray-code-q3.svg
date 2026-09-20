@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 250" width="100%" height="100%">
+
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="grad-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <linearGradient id="grad-emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="grad-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="grad-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="grad-rose" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb7185" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+    <linearGradient id="grad-card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Markers -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#38bdf8" />
+    </marker>
+    <marker id="arrow-emerald" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#34d399" />
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#c084fc" />
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#fbbf24" />
+    </marker>
+
+    <!-- Drop Shadow -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <rect width="760" height="250" rx="14" fill="url(#grad-card)" stroke="#334155" stroke-width="1.5" />
+  <text x="380" y="28" fill="#f8fafc" font-size="17" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Hamiltonian Circuit on Hypercube Q₃ Generates 3-Bit Gray Code</text>
+  <text x="380" y="46" fill="#94a3b8" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle">Visiting every vertex of Q₃ exactly once and returning produces a cycle where adjacent codewords differ by 1 bit.</text>
+
+  <!-- Circular or Sequence Layout -->
+  <g transform="translate(30, 75)">
+    <!-- 8 codeword badges arranged horizontally with arrows -->
+    <!-- 000, 001, 011, 010, 110, 111, 101, 100 -->
+    <!-- x step: 85 -->
+    <!-- Items -->
+    <g transform="translate(0, 20)">
+      <!-- 000 -->
+      <rect x="0" y="0" width="62" height="36" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+      <text x="31" y="22" fill="#38bdf8" font-size="13" font-weight="bold" font-family="monospace" text-anchor="middle">000</text>
+      <line x1="62" y1="18" x2="84" y2="18" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" />
+
+      <!-- 001 -->
+      <rect x="88" y="0" width="62" height="36" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+      <text x="119" y="22" fill="#38bdf8" font-size="13" font-weight="bold" font-family="monospace" text-anchor="middle">001</text>
+      <line x1="150" y1="18" x2="172" y2="18" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" />
+
+      <!-- 011 -->
+      <rect x="176" y="0" width="62" height="36" rx="6" fill="#1e293b" stroke="#34d399" stroke-width="1.5" />
+      <text x="207" y="22" fill="#34d399" font-size="13" font-weight="bold" font-family="monospace" text-anchor="middle">011</text>
+      <line x1="238" y1="18" x2="260" y2="18" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" />
+
+      <!-- 010 -->
+      <rect x="264" y="0" width="62" height="36" rx="6" fill="#1e293b" stroke="#34d399" stroke-width="1.5" />
+      <text x="295" y="22" fill="#34d399" font-size="13" font-weight="bold" font-family="monospace" text-anchor="middle">010</text>
+      <line x1="326" y1="18" x2="348" y2="18" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" />
+
+      <!-- 110 -->
+      <rect x="352" y="0" width="62" height="36" rx="6" fill="#1e293b" stroke="#fbbf24" stroke-width="1.5" />
+      <text x="383" y="22" fill="#fbbf24" font-size="13" font-weight="bold" font-family="monospace" text-anchor="middle">110</text>
+      <line x1="414" y1="18" x2="436" y2="18" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" />
+
+      <!-- 111 -->
+      <rect x="440" y="0" width="62" height="36" rx="6" fill="#1e293b" stroke="#fbbf24" stroke-width="1.5" />
+      <text x="471" y="22" fill="#fbbf24" font-size="13" font-weight="bold" font-family="monospace" text-anchor="middle">111</text>
+      <line x1="502" y1="18" x2="524" y2="18" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" />
+
+      <!-- 101 -->
+      <rect x="528" y="0" width="62" height="36" rx="6" fill="#1e293b" stroke="#c084fc" stroke-width="1.5" />
+      <text x="559" y="22" fill="#c084fc" font-size="13" font-weight="bold" font-family="monospace" text-anchor="middle">101</text>
+      <line x1="590" y1="18" x2="612" y2="18" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" />
+
+      <!-- 100 -->
+      <rect x="616" y="0" width="62" height="36" rx="6" fill="#1e293b" stroke="#c084fc" stroke-width="1.5" />
+      <text x="647" y="22" fill="#c084fc" font-size="13" font-weight="bold" font-family="monospace" text-anchor="middle">100</text>
+    </g>
+    
+    <!-- Return arc back to 000 -->
+    <path d="M 647 65 C 647 105 31 105 31 65" stroke="#f43f5e" stroke-width="2" fill="none" stroke-dasharray="4 4" marker-end="url(#arrow-rose)" />
+    <text x="340" y="98" fill="#fda4af" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Hamiltonian Loop: Differ by 1 bit (100 ⟶ 000)</text>
+  </g>
+
+  <rect x="140" y="210" width="480" height="26" rx="6" fill="#0f172a" stroke="#334155" />
+  <text x="380" y="227" fill="#94a3b8" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">Application: Rotary optical encoders, fault-tolerant state sequencing</text>
+</svg>

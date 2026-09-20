@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 270" width="100%" height="100%">
+
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="grad-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <linearGradient id="grad-emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="grad-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="grad-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="grad-rose" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb7185" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+    <linearGradient id="grad-card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="grad-darknode" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+
+    <!-- Markers -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#38bdf8" />
+    </marker>
+    <marker id="arrow-emerald" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#34d399" />
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#c084fc" />
+    </marker>
+    <marker id="arrow-rose" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#fb7185" />
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#fbbf24" />
+    </marker>
+
+    <!-- Drop Shadow -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <rect width="680" height="270" rx="14" fill="url(#grad-card)" stroke="#334155" stroke-width="1.5" />
+  <text x="340" y="28" fill="#f8fafc" font-size="17" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Non-Planarity Proof of K₅ (Kuratowski's First Obstruction)</text>
+  <text x="340" y="46" fill="#94a3b8" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle">Corollary bound for planar graphs: e ≤ 3v - 6. For K₅: v = 5, e = 10 ⟹ 10 ≤ 3(5) - 6 = 9 (CONTRADICTION!)</text>
+
+  <g transform="translate(260, 60)">
+    <!-- Pentagonal layout: center=(80, 75), r=65 -->
+    <!-- p0: (80, 10), p1: (142, 55), p2: (118, 127), p3: (42, 127), p4: (18, 55) -->
+    <!-- All 10 edges -->
+    <polygon points="80,10 142,55 118,127 42,127 18,55" stroke="#f43f5e" stroke-width="2" fill="none" />
+    <polygon points="80,10 118,127 18,55 142,55 42,127" stroke="#fb7185" stroke-width="1.8" stroke-dasharray="4 2" fill="none" />
+
+    <!-- 5 nodes -->
+    <circle cx="80" cy="10" r="13" fill="url(#grad-rose)" stroke="#fff" stroke-width="1.5" filter="url(#shadow)" /><text x="80" y="14" fill="#fff" font-size="10" font-weight="bold" text-anchor="middle">1</text>
+    <circle cx="142" cy="55" r="13" fill="url(#grad-rose)" stroke="#fff" stroke-width="1.5" filter="url(#shadow)" /><text x="142" y="59" fill="#fff" font-size="10" font-weight="bold" text-anchor="middle">2</text>
+    <circle cx="118" cy="127" r="13" fill="url(#grad-rose)" stroke="#fff" stroke-width="1.5" filter="url(#shadow)" /><text x="118" y="131" fill="#fff" font-size="10" font-weight="bold" text-anchor="middle">3</text>
+    <circle cx="42" cy="127" r="13" fill="url(#grad-rose)" stroke="#fff" stroke-width="1.5" filter="url(#shadow)" /><text x="42" y="131" fill="#fff" font-size="10" font-weight="bold" text-anchor="middle">4</text>
+    <circle cx="18" cy="55" r="13" fill="url(#grad-rose)" stroke="#fff" stroke-width="1.5" filter="url(#shadow)" /><text x="18" y="59" fill="#fff" font-size="10" font-weight="bold" text-anchor="middle">5</text>
+  </g>
+
+  <!-- Proof Summary Pill -->
+  <rect x="60" y="215" width="560" height="38" rx="8" fill="#182234" stroke="#e11d48" stroke-width="1.2" />
+  <text x="340" y="232" fill="#fda4af" font-size="12" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Mathematical Impossibility: e = 10 > 9 = 3v - 6</text>
+  <text x="340" y="247" fill="#94a3b8" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">No planar redrawing can eliminate all edge crossings for K₅.</text>
+</svg>

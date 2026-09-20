@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 270" width="100%" height="100%">
+
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="grad-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <linearGradient id="grad-emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="grad-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="grad-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="grad-rose" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb7185" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+    <linearGradient id="grad-card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Markers -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#38bdf8" />
+    </marker>
+    <marker id="arrow-emerald" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#34d399" />
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#c084fc" />
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#fbbf24" />
+    </marker>
+
+    <!-- Drop Shadow -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <rect width="740" height="270" rx="14" fill="url(#grad-card)" stroke="#334155" stroke-width="1.5" />
+  <text x="370" y="28" fill="#f8fafc" font-size="17" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">The Seven Bridges of Königsberg (Euler, 1736)</text>
+  <text x="370" y="46" fill="#94a3b8" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle">Multigraph model of Pregel River landmasses. All 4 vertices have ODD degree ⟹ Impossible to traverse all bridges once!</text>
+
+  <g transform="translate(170, 60)">
+    <!-- Landmass A (North): (200, 20) -->
+    <!-- Landmass B (Island): (200, 95) -->
+    <!-- Landmass C (West): (50, 95) -->
+    <!-- Landmass D (South): (200, 170) -->
+    
+    <!-- 2 Bridges between A and B -->
+    <path d="M 185 20 C 170 55 170 65 185 95" stroke="#fbbf24" stroke-width="3" fill="none" />
+    <path d="M 215 20 C 230 55 230 65 215 95" stroke="#fbbf24" stroke-width="3" fill="none" />
+    
+    <!-- 2 Bridges between B and D -->
+    <path d="M 185 95 C 170 125 170 135 185 170" stroke="#fbbf24" stroke-width="3" fill="none" />
+    <path d="M 215 95 C 230 125 230 135 215 170" stroke="#fbbf24" stroke-width="3" fill="none" />
+
+    <!-- 1 Bridge between A and C -->
+    <line x1="200" y1="20" x2="50" y2="95" stroke="#fbbf24" stroke-width="3" />
+    <!-- 1 Bridge between C and D -->
+    <line x1="50" y1="95" x2="200" y2="170" stroke="#fbbf24" stroke-width="3" />
+    <!-- 1 Bridge between C and B -->
+    <line x1="50" y1="95" x2="200" y2="95" stroke="#fbbf24" stroke-width="3" />
+
+    <!-- Landmass A -->
+    <circle cx="200" cy="20" r="18" fill="url(#grad-rose)" stroke="#fff" stroke-width="2" filter="url(#shadow)" />
+    <text x="200" y="25" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">A</text>
+    <rect x="230" y="10" width="70" height="20" rx="4" fill="#182234" stroke="#f43f5e" />
+    <text x="265" y="24" fill="#fda4af" font-size="10" font-weight="bold" text-anchor="middle">deg(A) = 3</text>
+
+    <!-- Landmass B (Island) -->
+    <circle cx="200" cy="95" r="20" fill="url(#grad-rose)" stroke="#fff" stroke-width="2" filter="url(#shadow)" />
+    <text x="200" y="100" fill="#fff" font-size="14" font-weight="bold" text-anchor="middle">B</text>
+    <rect x="235" y="85" width="70" height="20" rx="4" fill="#182234" stroke="#f43f5e" />
+    <text x="270" y="99" fill="#fda4af" font-size="10" font-weight="bold" text-anchor="middle">deg(B) = 5</text>
+
+    <!-- Landmass C (West) -->
+    <circle cx="50" cy="95" r="18" fill="url(#grad-rose)" stroke="#fff" stroke-width="2" filter="url(#shadow)" />
+    <text x="50" y="100" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">C</text>
+    <rect x="5" y="125" width="70" height="20" rx="4" fill="#182234" stroke="#f43f5e" />
+    <text x="40" y="139" fill="#fda4af" font-size="10" font-weight="bold" text-anchor="middle">deg(C) = 3</text>
+
+    <!-- Landmass D (South) -->
+    <circle cx="200" cy="170" r="18" fill="url(#grad-rose)" stroke="#fff" stroke-width="2" filter="url(#shadow)" />
+    <text x="200" y="175" fill="#fff" font-size="13" font-weight="bold" text-anchor="middle">D</text>
+    <rect x="230" y="160" width="70" height="20" rx="4" fill="#182234" stroke="#f43f5e" />
+    <text x="265" y="174" fill="#fda4af" font-size="10" font-weight="bold" text-anchor="middle">deg(D) = 3</text>
+  </g>
+
+  <!-- Bottom Proof Bar -->
+  <rect x="80" y="244" width="580" height="20" rx="4" fill="#0f172a" />
+  <text x="370" y="258" fill="#fb7185" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Euler Theorem: An Euler path exists ⇔ exactly 0 or 2 vertices have odd degree. Here, all 4 are odd!</text>
+</svg>

@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 250" width="100%" height="100%">
+
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="grad-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <linearGradient id="grad-emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="grad-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="grad-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="grad-rose" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb7185" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+    <linearGradient id="grad-card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="grad-darknode" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+
+    <!-- Markers -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#38bdf8" />
+    </marker>
+    <marker id="arrow-emerald" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#34d399" />
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#c084fc" />
+    </marker>
+    <marker id="arrow-rose" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#fb7185" />
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#fbbf24" />
+    </marker>
+
+    <!-- Drop Shadow -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <rect width="760" height="250" rx="14" fill="url(#grad-card)" stroke="#334155" stroke-width="1.5" />
+  <text x="380" y="28" fill="#f8fafc" font-size="17" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Maximal Matching vs. Maximum Matching</text>
+  <text x="380" y="46" fill="#94a3b8" font-size="12" font-family="system-ui, sans-serif" text-anchor="middle">Evaluated on Path Graph P₄: a — b — c — d</text>
+
+  <!-- Left Side: Maximal Matching (Suboptimal) -->
+  <g transform="translate(30, 65)">
+    <rect width="330" height="165" rx="10" fill="#182234" stroke="#e11d48" stroke-width="1.2" />
+    <text x="165" y="26" fill="#fb7185" font-size="14" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Maximal Matching M₁ = { {b, c} }</text>
+    <text x="165" y="44" fill="#94a3b8" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">Size = 1 Edge • Cannot add any more edges</text>
+    
+    <!-- Edges: a-b (gray), b-c (highlighted matched), c-d (gray) -->
+    <line x1="45" y1="90" x2="115" y2="90" stroke="#475569" stroke-width="2" />
+    <line x1="125" y1="90" x2="195" y2="90" stroke="#fb7185" stroke-width="6" stroke-linecap="round" />
+    <line x1="205" y1="90" x2="275" y2="90" stroke="#475569" stroke-width="2" />
+    
+    <!-- Nodes a, b, c, d -->
+    <circle cx="45" cy="90" r="14" fill="#334155" stroke="#94a3b8" stroke-width="1.5" />
+    <text x="45" y="95" fill="#ffffff" font-size="12" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">a</text>
+    
+    <circle cx="125" cy="90" r="15" fill="url(#grad-rose)" stroke="#ffffff" stroke-width="2" filter="url(#shadow)" />
+    <text x="125" y="95" fill="#ffffff" font-size="12" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">b</text>
+
+    <circle cx="195" cy="90" r="15" fill="url(#grad-rose)" stroke="#ffffff" stroke-width="2" filter="url(#shadow)" />
+    <text x="195" y="95" fill="#ffffff" font-size="12" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">c</text>
+
+    <circle cx="275" cy="90" r="14" fill="#334155" stroke="#94a3b8" stroke-width="1.5" />
+    <text x="275" y="95" fill="#ffffff" font-size="12" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">d</text>
+
+    <rect x="25" y="125" width="280" height="26" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <text x="165" y="142" fill="#fda4af" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">Greedy trap: {a,b} and {c,d} are both blocked!</text>
+  </g>
+
+  <!-- Right Side: Maximum Matching (Optimal) -->
+  <g transform="translate(400, 65)">
+    <rect width="330" height="165" rx="10" fill="#182234" stroke="#059669" stroke-width="1.2" />
+    <text x="165" y="26" fill="#34d399" font-size="14" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Maximum Matching M₂ = { {a, b}, {c, d} }</text>
+    <text x="165" y="44" fill="#94a3b8" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">Size = 2 Edges • Perfect matching (Covers all 4 nodes)</text>
+    
+    <!-- Edges: a-b (matched), b-c (gray), c-d (matched) -->
+    <line x1="45" y1="90" x2="115" y2="90" stroke="#34d399" stroke-width="6" stroke-linecap="round" />
+    <line x1="125" y1="90" x2="195" y2="90" stroke="#475569" stroke-width="2" />
+    <line x1="205" y1="90" x2="275" y2="90" stroke="#34d399" stroke-width="6" stroke-linecap="round" />
+    
+    <!-- Nodes a, b, c, d -->
+    <circle cx="45" cy="90" r="15" fill="url(#grad-emerald)" stroke="#ffffff" stroke-width="2" filter="url(#shadow)" />
+    <text x="45" y="95" fill="#ffffff" font-size="12" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">a</text>
+    
+    <circle cx="115" cy="90" r="15" fill="url(#grad-emerald)" stroke="#ffffff" stroke-width="2" filter="url(#shadow)" />
+    <text x="115" y="95" fill="#ffffff" font-size="12" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">b</text>
+
+    <circle cx="205" cy="90" r="15" fill="url(#grad-emerald)" stroke="#ffffff" stroke-width="2" filter="url(#shadow)" />
+    <text x="205" y="95" fill="#ffffff" font-size="12" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">c</text>
+
+    <circle cx="275" cy="90" r="15" fill="url(#grad-emerald)" stroke="#ffffff" stroke-width="2" filter="url(#shadow)" />
+    <text x="275" y="95" fill="#ffffff" font-size="12" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">d</text>
+
+    <rect x="25" y="125" width="280" height="26" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <text x="165" y="142" fill="#6ee7b7" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">Optimal Cardinality: |M| = ⌊n/2⌋ = 2 edges</text>
+  </g>
+</svg>

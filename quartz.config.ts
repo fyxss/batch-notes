@@ -8,8 +8,8 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Batch Notes & Archives — Graph Theory & Trees",
-    pageTitleSuffix: " | Academic Notes",
+    pageTitle: "Graph Theory & Trees",
+    pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: null,

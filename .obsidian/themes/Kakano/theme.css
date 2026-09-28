@@ -650,6 +650,7 @@ body {
 
   /* Using 0.625rem here as approximately 1ch. We can't use ch because we want line width to be constant across font sizes, so it's the same for headings and body text. */
   --file-line-width: calc(0.625rem * var(--theme-setting-lineWidth));
+  --file-line-width-preview: calc(0.625rem * var(--theme-setting-lineWidthReadingView));
 
   --file-margins: 0 2em;
   --flair-background: var(--theme-color-base);
@@ -761,6 +762,7 @@ body {
   --theme-color-cardHover: var(--nav-item-color-hover);
   --theme-color-cardBgHover: var(--theme-color-base);
   --theme-setting-lineWidth: 60;
+  --theme-setting-lineWidthReadingView: calc(var(--theme-setting-lineWidth) * 1.2);
   --theme-spacing-mobileHorizontalSpacing: calc(
     var(--theme-setting-mobileHorizontalPadding) * 1rem
   );
@@ -4637,11 +4639,16 @@ body.mod-windows {
     .view-content > .markdown-source-view.mod-cm6 > .cm-editor > .cm-scroller {
       padding: 0;
     }
-    .markdown-source-view.mod-cm6.is-readable-line-width .cm-sizer,
-    .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+    .markdown-source-view.mod-cm6.is-readable-line-width .cm-sizer {
       margin-inline-start: 0;
       margin-inline-end: 0;
       max-width: none;
+      width: 100%;
+    }
+    .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+      margin-inline-start: auto;
+      margin-inline-end: auto;
+      max-width: var(--file-line-width-preview);
       width: 100%;
     }
 
@@ -4665,8 +4672,6 @@ body.mod-windows {
     }
 
 
-    /* TODO: restore readable line width */
-
     /* #region Inline title (i.e. filename) */
     .inline-title {
       width: 100%;
@@ -4674,6 +4679,9 @@ body.mod-windows {
       max-width: var(--file-line-width);
       padding: 0 2rem;
       text-align: center;
+    }
+    .markdown-preview-view.is-readable-line-width .inline-title {
+      max-width: var(--file-line-width-preview);
     }
   .view-header-title-container {
     display: none;
@@ -4701,8 +4709,8 @@ body.mod-windows {
       }
     }
     body:not(.is-mobile) .mod-root .markdown-reading-view .metadata-container {
-      width: calc(100% + 4rem);
-      margin: 0;
+      width: 100%;
+      margin: 0 auto;
     }
   /* #endregion */
 /* #endregion */

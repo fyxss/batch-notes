@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="100%" height="100%">
+  <defs>
+    <!-- Linear Gradients -->
+    <linearGradient id="grad-card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="grad-emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="grad-rose" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb7185" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="800" height="320" rx="14" fill="url(#grad-card)" stroke="#334155" stroke-width="1.5" />
+
+  <!-- Header Title & Subtitle -->
+  <text x="400" y="32" fill="#f8fafc" font-size="18" font-weight="bold" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle">Bayes’ Theorem: Diagnostic Matrix &amp; Base-Rate Fallacy</text>
+  <text x="400" y="52" fill="#94a3b8" font-size="12" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle">Evaluating screening accuracy • Why a 99% accurate test yields only ~2% posterior on rare conditions</text>
+
+  <!-- Left Panel: 2x2 Matrix -->
+  <g transform="translate(35, 68)">
+    <rect width="350" height="232" rx="10" fill="#182234" stroke="#38bdf8" stroke-dasharray="3 3" stroke-width="1" />
+    <text x="175" y="24" fill="#93c5fd" font-size="14" font-weight="bold" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle">2×2 Diagnostic Confusion Matrix</text>
+
+    <!-- Matrix Layout -->
+    <g transform="translate(18, 36)">
+      <!-- Column Headers -->
+      <rect x="74" y="0" width="118" height="20" rx="3" fill="#0f172a" />
+      <text x="133" y="14" fill="#38bdf8" font-size="10" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Condition Present (D)</text>
+
+      <rect x="196" y="0" width="118" height="20" rx="3" fill="#0f172a" />
+      <text x="255" y="14" fill="#94a3b8" font-size="10" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Condition Absent (Dᶜ)</text>
+
+      <!-- Row 1: Test Positive (+) -->
+      <rect x="0" y="24" width="70" height="46" rx="3" fill="#0f172a" />
+      <text x="35" y="44" fill="#34d399" font-size="10" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Test (+)</text>
+      <text x="35" y="56" fill="#94a3b8" font-size="8" font-family="system-ui, sans-serif" text-anchor="middle">Positive</text>
+
+      <!-- Cell TP -->
+      <rect x="74" y="24" width="118" height="46" rx="4" fill="#065f46" stroke="#34d399" stroke-width="1" />
+      <text x="133" y="42" fill="#a7f3d0" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">True Positive (TP)</text>
+      <text x="133" y="58" fill="#ffffff" font-size="9" font-family="system-ui, sans-serif" text-anchor="middle">Sensitivity: P(+ | D)</text>
+
+      <!-- Cell FP -->
+      <rect x="196" y="24" width="118" height="46" rx="4" fill="#881337" stroke="#f43f5e" stroke-width="1" />
+      <text x="255" y="42" fill="#fecdd3" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">False Positive (FP)</text>
+      <text x="255" y="58" fill="#ffffff" font-size="9" font-family="system-ui, sans-serif" text-anchor="middle">FPR = 1 − Spec: P(+ | Dᶜ)</text>
+
+      <!-- Row 2: Test Negative (-) -->
+      <rect x="0" y="74" width="70" height="46" rx="3" fill="#0f172a" />
+      <text x="35" y="94" fill="#f87171" font-size="10" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Test (−)</text>
+      <text x="35" y="106" fill="#94a3b8" font-size="8" font-family="system-ui, sans-serif" text-anchor="middle">Negative</text>
+
+      <!-- Cell FN -->
+      <rect x="74" y="74" width="118" height="46" rx="4" fill="#450a0a" stroke="#ef4444" stroke-width="1" />
+      <text x="133" y="92" fill="#fca5a5" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">False Negative (FN)</text>
+      <text x="133" y="108" fill="#94a3b8" font-size="9" font-family="system-ui, sans-serif" text-anchor="middle">Missed: P(− | D)</text>
+
+      <!-- Cell TN -->
+      <rect x="196" y="74" width="118" height="46" rx="4" fill="#14532d" stroke="#22c55e" stroke-width="1" />
+      <text x="255" y="92" fill="#bbf7d0" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">True Negative (TN)</text>
+      <text x="255" y="108" fill="#ffffff" font-size="9" font-family="system-ui, sans-serif" text-anchor="middle">Specificity: P(− | Dᶜ)</text>
+    </g>
+
+    <!-- Bottom Badge -->
+    <rect x="20" y="180" width="310" height="38" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <text x="175" y="196" fill="#cbd5e1" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">Posterior P(D | +) = TP / (TP + FP)</text>
+    <text x="175" y="210" fill="#38bdf8" font-size="11" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">Conditioning on (+) restricts attention only to the top row.</text>
+  </g>
+
+  <!-- Right Panel: Base-Rate Paradox Tree -->
+  <g transform="translate(415, 68)">
+    <rect width="350" height="232" rx="10" fill="#182234" stroke="#fbbf24" stroke-dasharray="3 3" stroke-width="1" />
+    <text x="175" y="24" fill="#fde68a" font-size="14" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">The False-Positive Paradox</text>
+    <text x="175" y="42" fill="#94a3b8" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">Hypothetical population of 1,000 people (Prevalence = 1/1,000)</text>
+
+    <!-- Population Tree -->
+    <g transform="translate(18, 48)">
+      <!-- Root Node -->
+      <rect x="95" y="0" width="120" height="22" rx="4" fill="#334155" />
+      <text x="155" y="15" fill="#ffffff" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">1,000 People</text>
+
+      <!-- Branch to Sick (1 person) -->
+      <line x1="120" y1="22" x2="60" y2="44" stroke="#f43f5e" stroke-width="2" />
+      <text x="70" y="32" fill="#f43f5e" font-size="9" font-family="system-ui, sans-serif">1 Sick</text>
+
+      <rect x="10" y="44" width="100" height="22" rx="4" fill="#1e293b" stroke="#f43f5e" />
+      <text x="60" y="59" fill="#fecdd3" font-size="10" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">1 Has Disease</text>
+
+      <!-- Branch to Healthy (999 people) -->
+      <line x1="190" y1="22" x2="250" y2="44" stroke="#34d399" stroke-width="2" />
+      <text x="240" y="32" fill="#34d399" font-size="9" font-family="system-ui, sans-serif">999 Well</text>
+
+      <rect x="200" y="44" width="100" height="22" rx="4" fill="#1e293b" stroke="#34d399" />
+      <text x="250" y="59" fill="#a7f3d0" font-size="10" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">999 Healthy</text>
+
+      <!-- Test on Sick -->
+      <line x1="60" y1="66" x2="60" y2="90" stroke="#38bdf8" stroke-width="1.5" />
+      <rect x="5" y="90" width="110" height="26" rx="4" fill="#065f46" stroke="#34d399" />
+      <text x="60" y="103" fill="#a7f3d0" font-size="10" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">≈ 1 True Positive</text>
+      <text x="60" y="113" fill="#cbd5e1" font-size="8" font-family="system-ui, sans-serif" text-anchor="middle">(Sick &amp; Tested +)</text>
+
+      <!-- Test on Healthy -->
+      <line x1="250" y1="66" x2="250" y2="90" stroke="#f43f5e" stroke-width="1.5" />
+      <rect x="195" y="90" width="110" height="26" rx="4" fill="#881337" stroke="#f43f5e" />
+      <text x="250" y="103" fill="#fecdd3" font-size="10" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">≈ 50 False Positives</text>
+      <text x="250" y="113" fill="#cbd5e1" font-size="8" font-family="system-ui, sans-serif" text-anchor="middle">(Healthy &amp; Tested +)</text>
+    </g>
+
+    <!-- Bottom Badge -->
+    <rect x="20" y="180" width="310" height="38" rx="6" fill="#0f172a" stroke="#fbbf24" stroke-width="1" />
+    <text x="175" y="196" fill="#fde68a" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Total Positive Tests = 1 (TP) + 50 (FP) = 51</text>
+    <text x="175" y="210" fill="#f87171" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">P(Disease | +) = 1 / 51 ≈ 1.96%! (98% are false alarms)</text>
+  </g>
+</svg>

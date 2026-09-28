@@ -241,13 +241,27 @@ export function transformLink(src: FullSlug, target: string, opts: TransformOpti
       const matchingFileNames = opts.allSlugs.filter((slug) => {
         const parts = slug.split("/")
         const fileName = parts.at(-1)
-        return targetCanonical === fileName
+        return (
+          targetCanonical === fileName ||
+          slug.endsWith(targetCanonical) ||
+          targetCanonical.endsWith(slug)
+        )
       })
 
       // only match, just use it
       if (matchingFileNames.length === 1) {
         const targetSlug = matchingFileNames[0]
         return (resolveRelative(src, targetSlug) + targetAnchor) as RelativeURL
+      }
+
+      // if multiple matches, prefer the one sharing directory with src
+      if (matchingFileNames.length > 1) {
+        const srcParts = src.split("/")
+        const srcDir = srcParts.slice(0, -1).join("/")
+        const inSameFolder = matchingFileNames.filter((s) => s.startsWith(srcDir))
+        if (inSameFolder.length === 1) {
+          return (resolveRelative(src, inSameFolder[0]) + targetAnchor) as RelativeURL
+        }
       }
     }
 

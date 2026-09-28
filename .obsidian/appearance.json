@@ -2,9 +2,11 @@
   "cssTheme": "Kakano",
   "theme": "moonstone",
   "enabledCssSnippets": [
-    "mrm"
+    "mrm",
+    "kakano-reading-width",
+    "callout-unified-bg"
   ],
   "textFontFamily": "Bookerly",
   "accentColor": "#2f3f7f",
-  "baseFontSize": 16
+  "baseFontSize": 18
 }

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="100%" height="100%">
+  <defs>
+    <!-- Linear Gradients -->
+    <linearGradient id="grad-card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="grad-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <linearGradient id="grad-emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="800" height="320" rx="14" fill="url(#grad-card)" stroke="#334155" stroke-width="1.5" />
+
+  <!-- Header Title & Subtitle -->
+  <text x="400" y="32" fill="#f8fafc" font-size="18" font-weight="bold" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle">Conditional Probability &amp; Independence vs. Disjointness</text>
+  <text x="400" y="52" fill="#94a3b8" font-size="12" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle">Conditioning restricts the sample space • Disjoint events with positive chance are always dependent</text>
+
+  <!-- Left Panel: Contingency Table -->
+  <g transform="translate(35, 68)">
+    <rect width="350" height="232" rx="10" fill="#182234" stroke="#38bdf8" stroke-dasharray="3 3" stroke-width="1" />
+    <text x="175" y="24" fill="#93c5fd" font-size="14" font-weight="bold" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle">Contingency Table &amp; Conditioning</text>
+    <text x="175" y="42" fill="#38bdf8" font-size="11" font-weight="600" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle">P(E | F) = P(E ∩ F) / P(F) = |E ∩ F| / |F|</text>
+
+    <!-- Table Grid -->
+    <g transform="translate(20, 50)">
+      <!-- Header row -->
+      <rect x="0" y="0" width="310" height="22" rx="4" fill="#0f172a" />
+      <text x="65" y="15" fill="#94a3b8" font-size="10" font-family="system-ui, sans-serif">Category</text>
+      <text x="155" y="15" fill="#38bdf8" font-size="10" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Given F</text>
+      <text x="220" y="15" fill="#94a3b8" font-size="10" font-family="system-ui, sans-serif" text-anchor="middle">Not F</text>
+      <text x="280" y="15" fill="#cbd5e1" font-size="10" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Total</text>
+
+      <!-- Row 1: Event E -->
+      <rect x="0" y="26" width="310" height="26" fill="#1e293b" />
+      <text x="65" y="43" fill="#34d399" font-size="10" font-weight="bold" font-family="system-ui, sans-serif">Event E</text>
+      <!-- Intersection Cell (Numerator) -->
+      <rect x="130" y="27" width="50" height="24" rx="4" fill="#0284c7" />
+      <text x="155" y="43" fill="#ffffff" font-size="10" font-weight="bold" font-family="monospace" text-anchor="middle">E ∩ F</text>
+      <text x="220" y="43" fill="#94a3b8" font-size="10" font-family="monospace" text-anchor="middle">E ∩ Fᶜ</text>
+      <text x="280" y="43" fill="#cbd5e1" font-size="10" font-family="monospace" text-anchor="middle">|E|</text>
+
+      <!-- Row 2: Not E -->
+      <rect x="0" y="55" width="310" height="26" fill="#182234" />
+      <text x="65" y="72" fill="#94a3b8" font-size="10" font-family="system-ui, sans-serif">Not E</text>
+      <text x="155" y="72" fill="#94a3b8" font-size="10" font-family="monospace" text-anchor="middle">Eᶜ ∩ F</text>
+      <text x="220" y="72" fill="#94a3b8" font-size="10" font-family="monospace" text-anchor="middle">Eᶜ ∩ Fᶜ</text>
+      <text x="280" y="72" fill="#cbd5e1" font-size="10" font-family="monospace" text-anchor="middle">|Eᶜ|</text>
+
+      <!-- Total Row -->
+      <rect x="0" y="84" width="310" height="26" fill="#0f172a" />
+      <text x="65" y="101" fill="#cbd5e1" font-size="10" font-weight="bold" font-family="system-ui, sans-serif">Total</text>
+      <!-- Given F Total (Denominator) -->
+      <rect x="130" y="85" width="50" height="24" rx="4" fill="#0369a1" />
+      <text x="155" y="101" fill="#ffffff" font-size="10" font-weight="bold" font-family="monospace" text-anchor="middle">|F|</text>
+      <text x="220" y="101" fill="#cbd5e1" font-size="10" font-family="monospace" text-anchor="middle">|Fᶜ|</text>
+      <text x="280" y="101" fill="#38bdf8" font-size="10" font-weight="bold" font-family="monospace" text-anchor="middle">|S|</text>
+    </g>
+
+    <!-- Bottom Badge -->
+    <rect x="20" y="180" width="310" height="38" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <text x="175" y="196" fill="#cbd5e1" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">Numerator is |E ∩ F|; Denominator is restricted to |F|.</text>
+    <text x="175" y="210" fill="#38bdf8" font-size="11" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">Reversing condition changes denominator: P(F|E) uses |E|.</text>
+  </g>
+
+  <!-- Right Panel: Disjoint vs Independent -->
+  <g transform="translate(415, 68)">
+    <rect width="350" height="232" rx="10" fill="#182234" stroke="#fb7185" stroke-dasharray="3 3" stroke-width="1" />
+    <text x="175" y="24" fill="#fecdd3" font-size="14" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Disjoint ≠ Independent!</text>
+    <text x="175" y="42" fill="#fb7185" font-size="11" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">Physical Mutual Exclusion vs. Information Invariance</text>
+
+    <!-- Visual Comparison Boxes -->
+    <g transform="translate(18, 52)">
+      <!-- Top Box: Disjoint -->
+      <rect x="0" y="0" width="150" height="110" rx="8" fill="#0f172a" stroke="#f43f5e" stroke-width="1" />
+      <text x="75" y="18" fill="#f43f5e" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Disjoint (Mutually Exclusive)</text>
+      <!-- Two separate circles -->
+      <circle cx="45" cy="52" r="20" fill="#f43f5e" fill-opacity="0.2" stroke="#f43f5e" stroke-width="1.5" />
+      <circle cx="105" cy="52" r="20" fill="#38bdf8" fill-opacity="0.2" stroke="#38bdf8" stroke-width="1.5" />
+      <text x="45" y="56" fill="#fff" font-size="10" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">E</text>
+      <text x="105" y="56" fill="#fff" font-size="10" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">F</text>
+      <text x="75" y="88" fill="#fca5a5" font-size="10" font-family="monospace" text-anchor="middle">E ∩ F = ∅</text>
+      <text x="75" y="102" fill="#f87171" font-size="9" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">P(E ∩ F) = 0 (DEPENDENT)</text>
+
+      <!-- Bottom Box: Independent -->
+      <rect x="164" y="0" width="150" height="110" rx="8" fill="#0f172a" stroke="#059669" stroke-width="1" />
+      <text x="239" y="18" fill="#34d399" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Independent Events</text>
+      <!-- Overlapping circles -->
+      <circle cx="222" cy="52" r="20" fill="#34d399" fill-opacity="0.2" stroke="#34d399" stroke-width="1.5" />
+      <circle cx="256" cy="52" r="20" fill="#38bdf8" fill-opacity="0.2" stroke="#38bdf8" stroke-width="1.5" />
+      <text x="214" y="56" fill="#fff" font-size="10" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">E</text>
+      <text x="264" y="56" fill="#fff" font-size="10" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">F</text>
+      <text x="239" y="88" fill="#a7f3d0" font-size="10" font-family="monospace" text-anchor="middle">P(E∩F) = P(E)P(F)</text>
+      <text x="239" y="102" fill="#34d399" font-size="9" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">P(E | F) = P(E) (NO CHANGE)</text>
+    </g>
+
+    <!-- Bottom Badge -->
+    <rect x="20" y="180" width="310" height="38" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <text x="175" y="196" fill="#f87171" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">If P(E) &gt; 0 and P(F) &gt; 0:</text>
+    <text x="175" y="210" fill="#fecdd3" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">Disjoint ⇒ Strongly Dependent! (F eliminates E completely).</text>
+  </g>
+</svg>

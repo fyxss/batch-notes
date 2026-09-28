@@ -26111,12 +26111,12 @@ body.border-callout-style .callout .callout-content p{
   margin: 16px 0px; /*Fix the top margin is omitted, causing reading mode and live-preview is different. by LeCheena*/
 }
 .callout-title {
-  background-color: color-mix(in srgb, var(--callout-color) 15%, transparent);
+  background-color: transparent;
 }
 .callout {
   padding: 0;
-  border-left: 4px solid color-mix(in srgb, var(--callout-color) 15%, transparent);
-  background-color:var(--admonition-bg-color);
+  border-left: 4px solid var(--callout-color);
+  background-color: color-mix(in srgb, var(--callout-color) 12%, transparent);
 }
 
 .callout-content {
@@ -26131,7 +26131,7 @@ body.admonition-bg-color-same .callout-title {
 }
 .callout-title {
   padding: 8px 0 8px 12px;
-  color: unset;
+  color: var(--callout-color);
 }
 .admonition-title .admonition-title-icon {
   color: var(--callout-color);

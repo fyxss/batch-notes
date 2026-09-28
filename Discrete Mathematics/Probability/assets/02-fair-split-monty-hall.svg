@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="100%" height="100%">
+  <defs>
+    <!-- Linear Gradients -->
+    <linearGradient id="grad-card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="grad-emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="grad-rose" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb7185" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+    <linearGradient id="grad-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="800" height="320" rx="14" fill="url(#grad-card)" stroke="#334155" stroke-width="1.5" />
+
+  <!-- Header Title & Subtitle -->
+  <text x="400" y="32" fill="#f8fafc" font-size="18" font-weight="bold" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle">Classic Probability Paradoxes: Fair Split &amp; Monty Hall</text>
+  <text x="400" y="52" fill="#94a3b8" font-size="12" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle">Fictitious future rounds for interrupted games • Information asymmetry in game shows</text>
+
+  <!-- Left Panel: Fair Split -->
+  <g transform="translate(35, 68)">
+    <rect width="350" height="232" rx="10" fill="#182234" stroke="#fbbf24" stroke-dasharray="3 3" stroke-width="1" />
+    <text x="175" y="24" fill="#fde68a" font-size="14" font-weight="bold" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle">The Fair Split (Problem of Points)</text>
+    <text x="175" y="42" fill="#fbbf24" font-size="11" font-weight="600" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle">Target: 10 wins • Interrupted at A: 9 wins, B: 8 wins</text>
+
+    <!-- Tree Diagram -->
+    <g transform="translate(25, 48)">
+      <!-- Root Node -->
+      <circle cx="20" cy="52" r="12" fill="#334155" stroke="#94a3b8" stroke-width="1.5" filter="url(#shadow)" />
+      <text x="20" y="56" fill="#f8fafc" font-size="10" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">9–8</text>
+
+      <!-- Branch 1: Round 1 A wins -->
+      <line x1="32" y1="46" x2="95" y2="22" stroke="#34d399" stroke-width="2.5" />
+      <text x="56" y="28" fill="#34d399" font-size="10" font-weight="bold" font-family="system-ui, sans-serif">A (½)</text>
+
+      <!-- Leaf 1: A wins overall -->
+      <rect x="95" y="10" width="195" height="24" rx="4" fill="#065f46" stroke="#34d399" stroke-width="1" />
+      <text x="192" y="26" fill="#a7f3d0" font-size="10" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">A Wins Match: P = 1/2 = 50%</text>
+
+      <!-- Branch 2: Round 1 B wins -->
+      <line x1="32" y1="58" x2="95" y2="82" stroke="#38bdf8" stroke-width="2.5" />
+      <text x="56" y="80" fill="#38bdf8" font-size="10" font-weight="bold" font-family="system-ui, sans-serif">B (½)</text>
+
+      <!-- Node Round 2 (9-9 tie) -->
+      <circle cx="102" cy="82" r="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5" />
+      <text x="102" y="86" fill="#93c5fd" font-size="8" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">9–9</text>
+
+      <!-- Sub-branch 1: Round 2 A wins -->
+      <line x1="112" y1="77" x2="155" y2="60" stroke="#34d399" stroke-width="2" />
+      <rect x="155" y="48" width="135" height="22" rx="4" fill="#065f46" stroke="#34d399" stroke-width="1" />
+      <text x="222" y="63" fill="#a7f3d0" font-size="10" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">A Wins: P = 1/4 = 25%</text>
+
+      <!-- Sub-branch 2: Round 2 B wins -->
+      <line x1="112" y1="87" x2="155" y2="104" stroke="#f43f5e" stroke-width="2" />
+      <rect x="155" y="94" width="135" height="22" rx="4" fill="#881337" stroke="#f43f5e" stroke-width="1" />
+      <text x="222" y="109" fill="#fecdd3" font-size="10" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">B Wins: P = 1/4 = 25%</text>
+    </g>
+
+    <!-- Bottom Badge -->
+    <rect x="20" y="180" width="310" height="38" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <text x="175" y="196" fill="#cbd5e1" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">Total Chances: P(A wins) = <tspan fill="#34d399" font-weight="bold">75%</tspan>, P(B wins) = <tspan fill="#fb7185" font-weight="bold">25%</tspan></text>
+    <text x="175" y="210" fill="#fde68a" font-size="11" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">Fair split is 3 : 1 (75 coins to A, 25 to B), NOT 9 : 8!</text>
+  </g>
+
+  <!-- Right Panel: Monty Hall -->
+  <g transform="translate(415, 68)">
+    <rect width="350" height="232" rx="10" fill="#182234" stroke="#38bdf8" stroke-dasharray="3 3" stroke-width="1" />
+    <text x="175" y="24" fill="#93c5fd" font-size="14" font-weight="bold" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle">The Monty Hall Problem (Pick Door 1)</text>
+    <text x="175" y="42" fill="#38bdf8" font-size="11" font-weight="600" font-family="system-ui, -apple-system, sans-serif" text-anchor="middle">Informed Host Always Opens a Goat Door</text>
+
+    <!-- Strategy Table Box -->
+    <g transform="translate(18, 50)">
+      <!-- Table Header -->
+      <rect x="0" y="0" width="314" height="22" rx="4" fill="#0f172a" />
+      <text x="65" y="15" fill="#93c5fd" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Initial Pick</text>
+      <text x="145" y="15" fill="#cbd5e1" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Chance</text>
+      <text x="210" y="15" fill="#f87171" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Stay</text>
+      <text x="275" y="15" fill="#34d399" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Switch</text>
+
+      <!-- Row 1: Pick Car -->
+      <rect x="0" y="26" width="314" height="28" fill="#1e293b" />
+      <text x="65" y="44" fill="#f8fafc" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Car</text>
+      <text x="145" y="44" fill="#cbd5e1" font-size="11" font-family="monospace" text-anchor="middle">1/3</text>
+      <text x="210" y="44" fill="#34d399" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">WINS</text>
+      <text x="275" y="44" fill="#f43f5e" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Loses</text>
+
+      <!-- Row 2: Pick Goat 1 -->
+      <rect x="0" y="56" width="314" height="28" fill="#182234" />
+      <text x="65" y="74" fill="#f8fafc" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">Goat 1</text>
+      <text x="145" y="74" fill="#cbd5e1" font-size="11" font-family="monospace" text-anchor="middle">1/3</text>
+      <text x="210" y="74" fill="#f43f5e" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Loses</text>
+      <text x="275" y="74" fill="#34d399" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">WINS</text>
+
+      <!-- Row 3: Pick Goat 2 -->
+      <rect x="0" y="86" width="314" height="28" fill="#1e293b" />
+      <text x="65" y="104" fill="#f8fafc" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">Goat 2</text>
+      <text x="145" y="104" fill="#cbd5e1" font-size="11" font-family="monospace" text-anchor="middle">1/3</text>
+      <text x="210" y="104" fill="#f43f5e" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">Loses</text>
+      <text x="275" y="104" fill="#34d399" font-size="11" font-weight="bold" font-family="system-ui, sans-serif" text-anchor="middle">WINS</text>
+    </g>
+
+    <!-- Bottom Badge -->
+    <rect x="20" y="180" width="310" height="38" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <text x="175" y="196" fill="#cbd5e1" font-size="11" font-family="system-ui, sans-serif" text-anchor="middle">Host's informed action filters out the wrong door.</text>
+    <text x="175" y="210" fill="#34d399" font-size="11" font-weight="600" font-family="system-ui, sans-serif" text-anchor="middle">Switching wins 2/3 of the time (whenever pick was a goat)!</text>
+  </g>
+</svg>

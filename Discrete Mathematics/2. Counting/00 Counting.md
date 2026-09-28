@@ -1,7 +1,9 @@
 ---
+title: "00 Counting"
 aliases:
   - Counting
   - Counting Dashboard
+  - 2. Counting
 tags:
   - discrete-mathematics
   - counting

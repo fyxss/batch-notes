@@ -141,7 +141,7 @@ Therefore some length-10 string is absent from the list.
 
 The inequality allows repeated entries: 1,000 listed entries might contain fewer than 1,000 distinct strings.
 
-We proved existence without finding the missing string. This resembles [[Counting/04 Pigeonhole Principles|pigeonhole proofs]], although the tools differ.
+We proved existence without finding the missing string. This resembles [[2. Counting/04 Pigeonhole Principles|pigeonhole proofs]], although the tools differ.
 
 Why is positive probability enough? If no good object existed, the good event would be empty and would have probability zero. Finding $P(\text{good})>0$ rules that out. The method proves existence; it does not necessarily give an efficient way to construct the object.
 

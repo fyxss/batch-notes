@@ -1,7 +1,9 @@
 ---
+title: "00 Probability"
 aliases:
   - Probability
   - Probability Dashboard
+  - 3. Probability
 tags:
   - discrete-mathematics
   - probability
@@ -39,7 +41,7 @@ flowchart TD
 
 ## Before you start
 
-Refresh [[Counting/00 Counting|Counting]] if factorials, permutations, combinations, or inclusion–exclusion feel unfamiliar.
+Refresh [[2. Counting/00 Counting|Counting]] if factorials, permutations, combinations, or inclusion–exclusion feel unfamiliar.
 
 > [!tip] The five-question routine
 > 1. What is one outcome?

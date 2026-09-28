@@ -1,7 +1,11 @@
 ---
-title: "Graph Theory and Trees — Master Course Index"
+title: "00 - Graph Theory and Trees"
+aliases:
+  - "00 - Graph Theory & Trees Index"
+  - "Graph Theory and Trees"
+  - "1. Graph Theory and Trees"
 ---
-# Graph Theory and Trees — Master Course Index
+# Graph Theory and Trees
 
 > [!abstract] Course Knowledge Base & Navigation
 > **Course**: Discrete Mathematics (Chapters 10 & 11)  

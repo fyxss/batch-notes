@@ -2,7 +2,7 @@
 
 **Course**: Discrete Mathematics  
 **Textbook Reference**: Kenneth H. Rosen, *Discrete Mathematics and Its Applications*, Chapter 11, Section 11.5  
-**Navigation**: [[08 - Graph Traversals: DFS and BFS|← Prev: Graph Traversals (DFS & BFS)]] | [[00 - Graph Theory & Trees Index|Master Index]] | [[10 - Tree Applications: Backtracking, BSTs, and Expression Trees|Next: Tree Applications →]]
+**Navigation**: [[08 - Graph Traversals: DFS and BFS|← Prev: Graph Traversals (DFS & BFS)]] | [[Discrete Mathematics/index|Table of Contents]] | [[10 - Tree Applications: Backtracking, BSTs, and Expression Trees|Next: Tree Applications →]]
 
 >[!abstract] Module Objectives
 >- Define the **Minimum Spanning Tree (MST)** problem.
@@ -174,3 +174,7 @@ $\{a, b\} = 1, \quad \{c, d\} = 2, \quad \{b, c\} = 3, \quad \{a, c\} = 4, \quad
 > > - Kruskal takes $O(E \log E) \approx 500,000 \times \log_2(500,000) \approx 500,000 \times 19 \approx 9.5 \times 10^6$ operations.
 > > Prim's algorithm with an adjacency matrix is significantly faster on dense graphs.
 > > **Correct Answer: Prim's algorithm using an adjacency matrix ($O(V^2)$)**.
+
+---
+
+**Navigation**: [[08 - Graph Traversals: DFS and BFS|← Prev: Graph Traversals (DFS & BFS)]] | [[Discrete Mathematics/index|Table of Contents]] | [[10 - Tree Applications: Backtracking, BSTs, and Expression Trees|Next: Tree Applications →]]

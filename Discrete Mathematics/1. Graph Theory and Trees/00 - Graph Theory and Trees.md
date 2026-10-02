@@ -7,6 +7,8 @@ aliases:
 ---
 # Graph Theory and Trees
 
+**Navigation**: [[Discrete Mathematics/index|Table of Contents]] | [[01 - Graph Fundamentals & Terminology|Next: 01. Graph Fundamentals & Terminology →]]
+
 > [!abstract] Course Knowledge Base & Navigation
 > **Course**: Discrete Mathematics (Chapters 10 & 11)  
 > **Textbook Style**: Kenneth H. Rosen, *Discrete Mathematics and Its Applications* (8th Edition)  
@@ -75,3 +77,7 @@ flowchart TD
 > - **Interactive Live Preview**: Click on any diagram to expand vector details.
 > - **Self-Testing Mode**: Attempt the concept check questions before revealing the collapsible solutions.
 > - **Algorithmic Traces**: Follow the variable execution tables line-by-line while tracing through the SVG diagrams.
+
+---
+
+**Navigation**: [[Discrete Mathematics/index|Table of Contents]] | [[01 - Graph Fundamentals & Terminology|Next: 01. Graph Fundamentals & Terminology →]]

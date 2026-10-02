@@ -12,6 +12,8 @@ tags:
 
 # Probability
 
+**Navigation**: [[2. Counting/06 Counting Mixed Practice|← Prev: Counting Mixed Practice]] | [[Discrete Mathematics/index|Table of Contents]] | [[01 Probability Foundations|Next: 01. Probability Foundations →]]
+
 > [!quote] The central idea
 > **Describe what can happen, assign each outcome its chance, then add the chances of the outcomes you want.**
 
@@ -102,3 +104,7 @@ The explanations and additional exercises are written for this vault. The notes 
 
 > [!note] About random variables
 > Lecture 33 mentions random variables in its title but does not develop them in a dedicated section. Lesson 04 introduces the success-count variable when it is needed; [[06 Probability Models and Methods]] expands that idea to other numerical descriptions of outcomes. Expected value and variance are outside the supplied material.
+
+---
+
+**Navigation**: [[2. Counting/06 Counting Mixed Practice|← Prev: Counting Mixed Practice]] | [[Discrete Mathematics/index|Table of Contents]] | [[01 Probability Foundations|Next: 01. Probability Foundations →]]

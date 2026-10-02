@@ -2,7 +2,7 @@
 
 **Course**: Discrete Mathematics  
 **Textbook Reference**: Kenneth H. Rosen, *Discrete Mathematics and Its Applications*, Chapter 11, Sections 11.2 & 11.3  
-**Navigation**: [[09 - Minimum Spanning Trees (Prim's & Kruskal's)|← Prev: Minimum Spanning Trees]] | [[00 - Graph Theory & Trees Index|Master Index]]
+**Navigation**: [[09 - Minimum Spanning Trees (Prim's & Kruskal's)|← Prev: Minimum Spanning Trees]] | [[Discrete Mathematics/index|Table of Contents]] | [[2. Counting/00 Counting|Next Folder: 2. Counting →]]
 
 >[!abstract] Module Objectives
 >- Master **Backtracking** as Depth-First Search over a state-space decision tree with **pruning**.
@@ -203,3 +203,7 @@ Compilers and calculators evaluate Postfix (Reverse Polish) expressions using a 
 > > [!check]- Solution & Kenneth Rosen Explanation
 > > Postorder traversal visits $\text{Left} \to \text{Right} \to \text{Root}$. This visits the operands first, followed by their operator, which is the exact definition of Postfix / Reverse Polish Notation.
 > > **Correct Answer: Postorder traversal**.
+
+---
+
+**Navigation**: [[09 - Minimum Spanning Trees (Prim's & Kruskal's)|← Prev: Minimum Spanning Trees]] | [[Discrete Mathematics/index|Table of Contents]] | [[2. Counting/00 Counting|Next Folder: 2. Counting →]]

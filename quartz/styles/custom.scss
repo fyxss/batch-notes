@@ -70,7 +70,23 @@ h1, h2, h3, h4, h5, h6,
 
   body {
     background-color: var(--shimmer-bg);
-    color: #364257;
+    color: #000000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  p,
+  li,
+  td,
+  th,
+  blockquote,
+  .callout-content,
+  .popover,
+  table,
+  .katex,
+  .math {
+    color: #000000;
   }
 
   // Shimmering Focus alternating Periwinkle / Teal headings

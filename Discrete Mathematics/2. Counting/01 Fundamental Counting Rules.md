@@ -13,7 +13,7 @@ tags:
 > [!abstract] Goal
 > Learn to turn a problem into **stages**, **cases**, **overlaps**, or **equivalent descriptions**.
 
-Navigation: [[00 Counting|Counting dashboard]] · Next: [[02 Permutations and Combinations]]
+Navigation: [[00 Counting|← Prev: Counting Overview]] · [[Discrete Mathematics/index|Table of Contents]] · [[02 Permutations and Combinations|Next: 02. Permutations and Combinations →]]
 
 ## 1. Product rule — multiply stages
 
@@ -422,3 +422,7 @@ $$
 
 - [[Discrete Mathematics Lecture Notes - 27.pdf|Lecture 27]]
 - [[Discrete Mathematics Lecture Notes - 28.pdf|Lecture 28, pp. 2–4]]
+
+---
+
+Navigation: [[00 Counting|← Prev: Counting Overview]] · [[Discrete Mathematics/index|Table of Contents]] · [[02 Permutations and Combinations|Next: 02. Permutations and Combinations →]]

@@ -2,7 +2,7 @@
 
 **Course**: Discrete Mathematics  
 **Textbook Reference**: Kenneth H. Rosen, *Discrete Mathematics and Its Applications*, Chapter 11, Section 11.1  
-**Navigation**: [[06 - Shortest Paths and Directed Acyclic Graphs (DAGs)|← Prev: Shortest Paths & DAGs]] | [[00 - Graph Theory & Trees Index|Master Index]] | [[08 - Graph Traversals: DFS and BFS|Next: Graph Traversals (DFS & BFS) →]]
+**Navigation**: [[06 - Shortest Paths and Directed Acyclic Graphs (DAGs)|← Prev: Shortest Paths & DAGs]] | [[Discrete Mathematics/index|Table of Contents]] | [[08 - Graph Traversals: DFS and BFS|Next: Graph Traversals (DFS & BFS) →]]
 
 >[!abstract] Module Objectives
 >- Master the formal definition of **Trees** and the **5 Equivalent Characterizations**.
@@ -199,3 +199,7 @@ struct TreeNode {
 > > - $\text{Right}(i) = 2i + 2$
 > > For $i = 5$: $\text{Right}(5) = 2(5) + 2 = 12$.
 > > **Correct Answer: Index 12**.
+
+---
+
+**Navigation**: [[06 - Shortest Paths and Directed Acyclic Graphs (DAGs)|← Prev: Shortest Paths & DAGs]] | [[Discrete Mathematics/index|Table of Contents]] | [[08 - Graph Traversals: DFS and BFS|Next: Graph Traversals (DFS & BFS) →]]

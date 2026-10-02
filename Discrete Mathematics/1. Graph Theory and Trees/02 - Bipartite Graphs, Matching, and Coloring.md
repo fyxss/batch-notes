@@ -2,7 +2,7 @@
 
 **Course**: Discrete Mathematics  
 **Textbook Reference**: Kenneth H. Rosen, *Discrete Mathematics and Its Applications*, Chapter 10, Sections 10.2 & 10.8  
-**Navigation**: [[01 - Graph Fundamentals & Terminology|← Prev: Graph Fundamentals]] | [[00 - Graph Theory & Trees Index|Master Index]] | [[03 - Planar Graphs and Graph Redrawing|Next: Planar Graphs →]]
+**Navigation**: [[01 - Graph Fundamentals & Terminology|← Prev: Graph Fundamentals]] | [[Discrete Mathematics/index|Table of Contents]] | [[03 - Planar Graphs and Graph Redrawing|Next: Planar Graphs →]]
 
 >[!abstract] Module Objectives
 >- Master the definition and characterization of **Bipartite Graphs**.
@@ -250,3 +250,7 @@ procedure greedy_coloring(G: simple graph with vertices v1, v2, ..., vn)
 > > Any bipartite graph with at least one edge has $\chi(G) = 2$.
 > > Color all vertices in the first partition $V_1$ with Color 1, and all vertices in the second partition $V_2$ with Color 2. Since no edges exist within $V_1$ or within $V_2$, this 2-coloring is valid.
 > > **Correct Answer: 2**.
+
+---
+
+**Navigation**: [[01 - Graph Fundamentals & Terminology|← Prev: Graph Fundamentals]] | [[Discrete Mathematics/index|Table of Contents]] | [[03 - Planar Graphs and Graph Redrawing|Next: Planar Graphs →]]

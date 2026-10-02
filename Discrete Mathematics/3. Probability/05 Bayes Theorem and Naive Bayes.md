@@ -8,7 +8,7 @@ tags:
 
 # Bayes’ Theorem and Naive Bayes
 
-[[04 Bernoulli Trials and Binomial Distribution|Previous]] · [[00 Probability|Dashboard]] · [[06 Probability Models and Methods|Next]]
+Navigation: [[04 Bernoulli Trials and Binomial Distribution|← Prev: Bernoulli Trials & Binomial Distribution]] · [[Discrete Mathematics/index|Table of Contents]] · [[06 Probability Models and Methods|Next: 06. Probability Models & Methods →]]
 
 > [!abstract] Goal
 > Use observed evidence to update the probability of a possible explanation.
@@ -318,3 +318,7 @@ The 0.9 threshold is exceeded. In real language, related words can violate the i
 - [ ] I multiply features only under the conditional-independence assumption.
 
 Source: [[Discrete Mathematics Lecture Notes - 33.pdf#page=2|Lecture 33, pp. 2–9]].
+
+---
+
+Navigation: [[04 Bernoulli Trials and Binomial Distribution|← Prev: Bernoulli Trials & Binomial Distribution]] · [[Discrete Mathematics/index|Table of Contents]] · [[06 Probability Models and Methods|Next: 06. Probability Models & Methods →]]

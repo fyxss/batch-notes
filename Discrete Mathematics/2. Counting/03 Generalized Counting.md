@@ -15,7 +15,7 @@ tags:
 > [!abstract] Goal
 > Handle arrangements and selections when repetition is allowed or some objects are indistinguishable.
 
-Navigation: [[02 Permutations and Combinations|Previous]] · [[00 Counting|Dashboard]] · [[04 Pigeonhole Principles|Next]]
+Navigation: [[02 Permutations and Combinations|← Prev: Permutations and Combinations]] · [[Discrete Mathematics/index|Table of Contents]] · [[04 Pigeonhole Principles|Next: 04. Pigeonhole Principles →]]
 
 ## The four-case map
 
@@ -351,3 +351,7 @@ The words may look similar, but they describe three different outcome types.
 ## Source pages
 
 - [[Discrete Mathematics Lecture Notes - 29.pdf|Lecture 29, pp. 3–6]]
+
+---
+
+Navigation: [[02 Permutations and Combinations|← Prev: Permutations and Combinations]] · [[Discrete Mathematics/index|Table of Contents]] · [[04 Pigeonhole Principles|Next: 04. Pigeonhole Principles →]]

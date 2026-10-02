@@ -6,7 +6,7 @@ tags:
 
 # Probability Rules and Puzzles
 
-[[01 Probability Foundations|Previous]] · [[00 Probability|Dashboard]] · [[03 Conditional Probability and Independence|Next]]
+Navigation: [[01 Probability Foundations|← Prev: Probability Foundations]] · [[Discrete Mathematics/index|Table of Contents]] · [[03 Conditional Probability and Independence|Next: 03. Conditional Probability & Independence →]]
 
 > [!abstract] Goal
 > Break a complicated event into simpler events, then combine their probabilities correctly.
@@ -285,3 +285,7 @@ There is no die that beats both others more often than it loses. A pairwise adva
 - [ ] I can explain the assumptions behind each puzzle.
 
 Source: [[Discrete Mathematics Lecture Notes - 30, 31, 32.pdf#page=5|Lectures 30–32, pp. 5–9]].
+
+---
+
+Navigation: [[01 Probability Foundations|← Prev: Probability Foundations]] · [[Discrete Mathematics/index|Table of Contents]] · [[03 Conditional Probability and Independence|Next: 03. Conditional Probability & Independence →]]

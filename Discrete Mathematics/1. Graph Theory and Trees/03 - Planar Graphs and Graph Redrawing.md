@@ -2,7 +2,7 @@
 
 **Course**: Discrete Mathematics  
 **Textbook Reference**: Kenneth H. Rosen, *Discrete Mathematics and Its Applications*, Chapter 10, Section 10.7  
-**Navigation**: [[02 - Bipartite Graphs, Matching, and Coloring|← Prev: Bipartite Graphs & Coloring]] | [[00 - Graph Theory & Trees Index|Master Index]] | [[04 - Connectivity, Paths, and Graph Components|Next: Connectivity & Paths →]]
+**Navigation**: [[02 - Bipartite Graphs, Matching, and Coloring|← Prev: Bipartite Graphs & Coloring]] | [[Discrete Mathematics/index|Table of Contents]] | [[04 - Connectivity, Paths, and Graph Components|Next: Connectivity & Paths →]]
 
 >[!abstract] Module Objectives
 >- Define **Planar Graphs** and planar representations.
@@ -211,3 +211,7 @@ The 3-cube $Q_3$ drawn in standard isometric 3D perspective shows overlapping ed
 > > [!check]- Solution & Kenneth Rosen Explanation
 > > Kuratowski's Theorem states that a graph is planar if and only if it does NOT contain a subgraph that is homeomorphic to (or can be formed by edge subdivisions of) $K_5$ or $K_{3,3}$.
 > > **Correct Answer: $K_5$ and $K_{3,3}$**.
+
+---
+
+**Navigation**: [[02 - Bipartite Graphs, Matching, and Coloring|← Prev: Bipartite Graphs & Coloring]] | [[Discrete Mathematics/index|Table of Contents]] | [[04 - Connectivity, Paths, and Graph Components|Next: Connectivity & Paths →]]

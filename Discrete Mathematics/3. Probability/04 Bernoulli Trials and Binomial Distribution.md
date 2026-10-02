@@ -6,7 +6,7 @@ tags:
 
 # Bernoulli Trials and Binomial Distribution
 
-[[03 Conditional Probability and Independence|Previous]] · [[00 Probability|Dashboard]] · [[05 Bayes Theorem and Naive Bayes|Next]]
+Navigation: [[03 Conditional Probability and Independence|← Prev: Conditional Probability & Independence]] · [[Discrete Mathematics/index|Table of Contents]] · [[05 Bayes Theorem and Naive Bayes|Next: 05. Bayes Theorem & Naive Bayes →]]
 
 > [!abstract] Goal
 > Find the probability of a specified number of successes in repeated trials.
@@ -236,3 +236,7 @@ Exactly half heads is the most likely **single head count** in each experiment, 
 - [ ] I choose a complement only when it shortens the calculation.
 
 Source: [[Discrete Mathematics Lecture Notes - 30, 31, 32.pdf#page=12|Lectures 30–32, pp. 12–14]].
+
+---
+
+Navigation: [[03 Conditional Probability and Independence|← Prev: Conditional Probability & Independence]] · [[Discrete Mathematics/index|Table of Contents]] · [[05 Bayes Theorem and Naive Bayes|Next: 05. Bayes Theorem & Naive Bayes →]]

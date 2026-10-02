@@ -2,7 +2,7 @@
 
 **Course**: Discrete Mathematics  
 **Textbook Reference**: Kenneth H. Rosen, *Discrete Mathematics and Its Applications*, Chapter 10, Section 10.4  
-**Navigation**: [[03 - Planar Graphs and Graph Redrawing|← Prev: Planar Graphs]] | [[00 - Graph Theory & Trees Index|Master Index]] | [[05 - Euler and Hamiltonian Paths|Next: Euler & Hamiltonian Paths →]]
+**Navigation**: [[03 - Planar Graphs and Graph Redrawing|← Prev: Planar Graphs]] | [[Discrete Mathematics/index|Table of Contents]] | [[05 - Euler and Hamiltonian Paths|Next: Euler & Hamiltonian Paths →]]
 
 >[!abstract] Module Objectives
 >- Master the formal definitions of **Walks, Paths, Cycles, and Circuits**.
@@ -180,3 +180,7 @@ A remarkable link between linear algebra and graph theory allows us to count pat
 > > [!check]- Solution & Kenneth Rosen Explanation
 > > By Theorem 2, the $(i, j)$-entry of $\mathbf{A}^k$ counts the exact number of walks of length $k$ from vertex $i$ to vertex $j$.
 > > **Correct Answer: Calculate the entry $(\mathbf{A}^k)_{i,j}$**.
+
+---
+
+**Navigation**: [[03 - Planar Graphs and Graph Redrawing|← Prev: Planar Graphs]] | [[Discrete Mathematics/index|Table of Contents]] | [[05 - Euler and Hamiltonian Paths|Next: Euler & Hamiltonian Paths →]]

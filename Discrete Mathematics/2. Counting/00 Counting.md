@@ -12,6 +12,8 @@ tags:
 
 # Counting
 
+**Navigation**: [[1. Graph Theory and Trees/10 - Tree Applications: Backtracking, BSTs, and Expression Trees|← Prev: Graph Theory & Trees]] | [[Discrete Mathematics/index|Table of Contents]] | [[01 Fundamental Counting Rules|Next: 01. Fundamental Counting Rules →]]
+
 > [!quote] The central idea
 > **Do not list every outcome. Describe the decisions that create an outcome, then count those decisions.**
 
@@ -121,3 +123,7 @@ Treat the numbered lessons as one course: each builds on the earlier ones. The f
 - [[Study Roadmap - Discrete Mathematics]]
 
 The learning order follows this vault’s roadmap and the supplied lectures. Pascal’s identity, positive/lower-bounded integer solutions, the simple upper-bound example, and the five-person Ramsey counterexample are supporting extensions, rather than additional topics explicitly developed in the PDFs.
+
+---
+
+**Navigation**: [[1. Graph Theory and Trees/10 - Tree Applications: Backtracking, BSTs, and Expression Trees|← Prev: Graph Theory & Trees]] | [[Discrete Mathematics/index|Table of Contents]] | [[01 Fundamental Counting Rules|Next: 01. Fundamental Counting Rules →]]

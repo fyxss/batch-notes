@@ -7,7 +7,7 @@ tags:
 
 # Conditional Probability and Independence
 
-[[02 Probability Rules and Puzzles|Previous]] · [[00 Probability|Dashboard]] · [[04 Bernoulli Trials and Binomial Distribution|Next]]
+Navigation: [[02 Probability Rules and Puzzles|← Prev: Probability Rules & Puzzles]] · [[Discrete Mathematics/index|Table of Contents]] · [[04 Bernoulli Trials and Binomial Distribution|Next: 04. Bernoulli Trials & Binomial Distribution →]]
 
 > [!abstract] Goal
 > Understand what “given” changes, and recognize when learning one event tells you nothing about another.
@@ -268,3 +268,7 @@ For three events, joint (or **mutual**) independence requires all three pair equ
 - [ ] I distinguish independent events from disjoint events.
 
 Sources: [[Discrete Mathematics Lecture Notes - 30, 31, 32.pdf#page=10|Lectures 30–32, pp. 10–12]]; [[Discrete Mathematics Lecture Notes - 33.pdf#page=7|Lecture 33, p. 7]].
+
+---
+
+Navigation: [[02 Probability Rules and Puzzles|← Prev: Probability Rules & Puzzles]] · [[Discrete Mathematics/index|Table of Contents]] · [[04 Bernoulli Trials and Binomial Distribution|Next: 04. Bernoulli Trials & Binomial Distribution →]]

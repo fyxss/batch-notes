@@ -14,7 +14,7 @@ tags:
 > [!abstract] Goal
 > Prove that a repetition or concentration **must** exist, even when you cannot identify where it occurs.
 
-Navigation: [[03 Generalized Counting|Previous]] · [[00 Counting|Dashboard]] · [[05 Counting Formula and Decision Sheet|Next]]
+Navigation: [[03 Generalized Counting|← Prev: Generalized Counting]] · [[Discrete Mathematics/index|Table of Contents]] · [[05 Counting Formula and Decision Sheet|Next: 05. Counting Formula & Decision Sheet →]]
 
 ## 1. Basic pigeonhole principle
 
@@ -333,3 +333,7 @@ For people A, B, C, D, E, the friendship cycle is A–B–C–D–E–A. The ene
 ## Source pages
 
 - [[Discrete Mathematics Lecture Notes - 29.pdf|Lecture 29, pp. 6–9]]
+
+---
+
+Navigation: [[03 Generalized Counting|← Prev: Generalized Counting]] · [[Discrete Mathematics/index|Table of Contents]] · [[05 Counting Formula and Decision Sheet|Next: 05. Counting Formula & Decision Sheet →]]

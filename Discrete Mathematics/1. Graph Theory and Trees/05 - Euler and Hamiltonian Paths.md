@@ -2,7 +2,7 @@
 
 **Course**: Discrete Mathematics  
 **Textbook Reference**: Kenneth H. Rosen, *Discrete Mathematics and Its Applications*, Chapter 10, Section 10.5  
-**Navigation**: [[04 - Connectivity, Paths, and Graph Components|← Prev: Connectivity & Paths]] | [[00 - Graph Theory & Trees Index|Master Index]] | [[06 - Shortest Paths and Directed Acyclic Graphs (DAGs)|Next: Shortest Paths & DAGs →]]
+**Navigation**: [[04 - Connectivity, Paths, and Graph Components|← Prev: Connectivity & Paths]] | [[Discrete Mathematics/index|Table of Contents]] | [[06 - Shortest Paths and Directed Acyclic Graphs (DAGs)|Next: Shortest Paths & DAGs →]]
 
 >[!abstract] Module Objectives
 >- Understand the historical **Seven Bridges of Königsberg** problem.
@@ -184,3 +184,7 @@ Given a complete weighted graph of $n$ cities and the travel costs between them:
 > > [!check]- Solution & Kenneth Rosen Explanation
 > > Dirac's condition states $\deg(v) \ge n/2$ for all $v \in V$. (Ore's Theorem is the more general condition $\deg(u) + \deg(v) \ge n$ for non-adjacent pairs).
 > > **Correct Answer: $\deg(v) \ge \frac{n}{2}$ for every vertex $v$**.
+
+---
+
+**Navigation**: [[04 - Connectivity, Paths, and Graph Components|← Prev: Connectivity & Paths]] | [[Discrete Mathematics/index|Table of Contents]] | [[06 - Shortest Paths and Directed Acyclic Graphs (DAGs)|Next: Shortest Paths & DAGs →]]

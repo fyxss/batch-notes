@@ -11,7 +11,7 @@ tags:
 
 # Counting Formula and Decision Sheet
 
-Navigation: [[04 Pigeonhole Principles|Previous]] · [[00 Counting|Dashboard]] · [[06 Counting Mixed Practice|Practice]]
+Navigation: [[04 Pigeonhole Principles|← Prev: Pigeonhole Principles]] · [[Discrete Mathematics/index|Table of Contents]] · [[06 Counting Mixed Practice|Next: 06. Counting Mixed Practice →]]
 
 Use this sheet after the lessons. If a formula feels like a guess, revisit its explanation: [[01 Fundamental Counting Rules|stages, cases, and overcounting]], [[02 Permutations and Combinations|ordered versus unordered selections]], [[03 Generalized Counting|repetition and integer solutions]], or [[04 Pigeonhole Principles|guarantees]].
 
@@ -116,3 +116,7 @@ Here $\sum_i a_i=a_1+\cdots+a_n$: add all the required minimums. For an upper bo
 > - If you divided, does every outcome really have the same number of descriptions?
 > - If you added, are the cases disjoint?
 > - If you used stars and bars, are the objects identical and are upper bounds absent?
+
+---
+
+Navigation: [[04 Pigeonhole Principles|← Prev: Pigeonhole Principles]] · [[Discrete Mathematics/index|Table of Contents]] · [[06 Counting Mixed Practice|Next: 06. Counting Mixed Practice →]]

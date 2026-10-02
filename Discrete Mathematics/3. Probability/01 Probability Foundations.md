@@ -6,7 +6,7 @@ tags:
 
 # Probability Foundations
 
-[[00 Probability|Dashboard]] · Next: [[02 Probability Rules and Puzzles]]
+Navigation: [[00 Probability|← Prev: Probability Overview]] · [[Discrete Mathematics/index|Table of Contents]] · [[02 Probability Rules and Puzzles|Next: 02. Probability Rules & Puzzles →]]
 
 > [!abstract] Goal
 > Turn a word problem into a sample space and an event before calculating.
@@ -205,3 +205,7 @@ After a red ball is drawn without replacement, only two red balls remain among f
 - [ ] I update the pool after a draw without replacement.
 
 Source: [[Discrete Mathematics Lecture Notes - 30, 31, 32.pdf#page=3|Lectures 30–32, pp. 3–5]].
+
+---
+
+Navigation: [[00 Probability|← Prev: Probability Overview]] · [[Discrete Mathematics/index|Table of Contents]] · [[02 Probability Rules and Puzzles|Next: 02. Probability Rules & Puzzles →]]

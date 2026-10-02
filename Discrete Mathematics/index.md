@@ -1,101 +1,45 @@
 ---
-title: "Discrete Math"
+title: "Table of Contents"
 ---
 
-# Discrete Mathematics
+# Table of Contents
 
-> [!abstract] Course Knowledge Base & Learning Hub
-> **Course**: Discrete Mathematics  
-> **Textbook Reference**: Kenneth H. Rosen, *Discrete Mathematics and Its Applications* (8th Edition)  
-> **Scope**: Complete lecture and textbook notes covering Graph Theory, Trees, Combinatorial Counting, and Discrete Probability.  
-> **Features**: Rigorous definitions, step-by-step algorithms, 48 custom vector diagrams, worked examples, formula sheets, and practice problems.
+## 1. Graph Theory and Trees
 
----
-
-## 🏛️ Knowledge Base Pillars
-
-The course is organized into three major core modules:
-
-<div class="cards-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; margin: 1.5rem 0;">
-
-> [!summary] 🌐 [[1. Graph Theory and Trees/00 - Graph Theory and Trees|1. Graph Theory and Trees]]
-> **Chapters 10 & 11** — Foundations of topological structures, networks, connectivity, traversals, and trees.
-> - Handshaking theorem, graph families ($K_n, C_n, W_n, Q_n$), bipartite graphs & matchings.
-> - Planar graph embeddings, Euler's formula, and Kuratowski's theorem.
-> - Connectivity, cut vertices, bridges, Eulerian/Hamiltonian paths, and Dijkstra's algorithm.
-> - Tree characterizations, BFS/DFS traversals, Prim & Kruskal MST, and Expression/Search trees.
-> 
-> 👉 **[[1. Graph Theory and Trees/00 - Graph Theory and Trees|Open Graph Theory & Trees Notes →]]**
-
-> [!tip] 🔢 [[2. Counting/00 Counting|2. Counting]]
-> **Chapter 6** — Systematic enumeration, decision modeling, and combinatorial guarantees.
-> - Fundamental rules: Product, Sum, Subtraction (PIE for 2 & 3 sets), and Division rules.
-> - Permutations & Combinations (with/without repetition, circular & unoriented arrangements).
-> - Generalized counting: Stars and bars, multinomial coefficients, and lattice grid walks.
-> - Pigeonhole Principle: Basic, generalized, geometry, pair-sum guarantees, and Ramsey $R(3,3)=6$.
-> 
-> 👉 **[[2. Counting/00 Counting|Open Counting Notes →]]**
-
-> [!note] 🎲 [[3. Probability/00 Probability|3. Probability]]
-> **Chapter 7** — Sample spaces, conditioning, stochastic models, and randomized algorithms.
-> - Finite probability foundations, uniform spaces, events, and complementary counting.
-> - Conditional probability, multiplication rule, independence, and Monty Hall / Fair Split puzzles.
-> - Bernoulli trials, Binomial distribution $b(k;n,p)$, and independence tests.
-> - Bayes' Theorem, diagnostic 2×2 confusion matrices, base-rate fallacy, and Naive Bayes classification.
-> - Non-uniform probability distributions, the probabilistic method, and Monte Carlo min-cut.
-> 
-> 👉 **[[3. Probability/00 Probability|Open Probability Notes →]]**
-
-</div>
+1. [[1. Graph Theory and Trees/00 - Graph Theory and Trees|00 - Graph Theory and Trees]]
+2. [[1. Graph Theory and Trees/01 - Graph Fundamentals & Terminology|01 - Graph Fundamentals & Terminology]]
+3. [[1. Graph Theory and Trees/02 - Bipartite Graphs, Matching, and Coloring|02 - Bipartite Graphs, Matching, and Coloring]]
+4. [[1. Graph Theory and Trees/03 - Planar Graphs and Graph Redrawing|03 - Planar Graphs and Graph Redrawing]]
+5. [[1. Graph Theory and Trees/04 - Connectivity, Paths, and Graph Components|04 - Connectivity, Paths, and Graph Components]]
+6. [[1. Graph Theory and Trees/05 - Euler and Hamiltonian Paths|05 - Euler and Hamiltonian Paths]]
+7. [[1. Graph Theory and Trees/06 - Shortest Paths and Directed Acyclic Graphs (DAGs)|06 - Shortest Paths and Directed Acyclic Graphs (DAGs)]]
+8. [[1. Graph Theory and Trees/07 - Introduction to Trees and Tree Properties|07 - Introduction to Trees and Tree Properties]]
+9. [[1. Graph Theory and Trees/08 - Graph Traversals: DFS and BFS|08 - Graph Traversals: DFS and BFS]]
+10. [[1. Graph Theory and Trees/09 - Minimum Spanning Trees (Prim's & Kruskal's)|09 - Minimum Spanning Trees (Prim's & Kruskal's)]]
+11. [[1. Graph Theory and Trees/10 - Tree Applications: Backtracking, BSTs, and Expression Trees|10 - Tree Applications: Backtracking, BSTs, and Expression Trees]]
 
 ---
 
-## 🗺️ Master Curriculum Roadmap
+## 2. Counting
 
-```mermaid
-flowchart TD
-    DM["Discrete Mathematics"]
-
-    subgraph Branch1["Graph Theory & Trees (Ch 10 & 11)"]
-        G1["Graph Fundamentals<br/><i>Definitions • Degrees • Families</i>"]
-        G2["Planarity & Connectivity<br/><i>Euler Formula • Kuratowski • Bridges</i>"]
-        G3["Paths & Optimization<br/><i>Euler • Hamilton • Dijkstra • DAGs</i>"]
-        G4["Trees & Traversals<br/><i>BFS • DFS • Prim • Kruskal • BST</i>"]
-        G1 --> G2 --> G3 --> G4
-    end
-
-    subgraph Branch2["Counting & Combinatorics (Ch 6)"]
-        C1["Fundamental Rules<br/><i>Product • Sum • Subtraction • Division</i>"]
-        C2["Permutations & Combinations<br/><i>Ordered vs Unordered • Repetition</i>"]
-        C3["Generalized Counting<br/><i>Stars & Bars • Polynomial Coeffs • Grids</i>"]
-        C4["Pigeonhole Principles<br/><i>Pigeonhole • Generalized • Ramsey R(3,3)</i>"]
-        C1 --> C2 --> C3 --> C4
-    end
-
-    subgraph Branch3["Discrete Probability (Ch 7)"]
-        P1["Probability Foundations<br/><i>Sample Spaces • Uniform Events</i>"]
-        P2["Rules, Trees & Puzzles<br/><i>Complements • Inclusion-Exclusion • Monty Hall</i>"]
-        P3["Conditioning & Bayes<br/><i>P(A|B) • Independence • Bayes Theorem</i>"]
-        P4["Models & Distributions<br/><i>Bernoulli Trials • Binomial • Randomized Algos</i>"]
-        P1 --> P2 --> P3 --> P4
-    end
-
-    DM --> Branch1
-    DM --> Branch2
-    DM --> Branch3
-    Branch2 -.->|Counting Techniques| Branch3
-```
+1. [[2. Counting/00 Counting|00 - Counting Overview]]
+2. [[2. Counting/01 Fundamental Counting Rules|01 - Fundamental Counting Rules]]
+3. [[2. Counting/02 Permutations and Combinations|02 - Permutations and Combinations]]
+4. [[2. Counting/03 Generalized Counting|03 - Generalized Counting]]
+5. [[2. Counting/04 Pigeonhole Principles|04 - Pigeonhole Principles]]
+6. [[2. Counting/05 Counting Formula and Decision Sheet|05 - Counting Formula and Decision Sheet]]
+7. [[2. Counting/06 Counting Mixed Practice|06 - Counting Mixed Practice]]
 
 ---
 
-## 📚 Fast Reference & Decision Sheets
+## 3. Probability
 
-Quick-access summary cards and decision sheets for problem-solving:
-
-| Sheet | Module | Focus Areas |
-| :--- | :---: | :--- |
-| **[[2. Counting/05 Counting Formula and Decision Sheet\|Counting Decision Sheet]]** | 2. Counting | Compass flowchart, formula lookup (combinations, permutations, stars & bars), problem identifier |
-| **[[2. Counting/06 Counting Mixed Practice\|Counting Mixed Practice]]** | 2. Counting | Unlabeled multi-concept challenge problems with complete worked solutions |
-| **[[3. Probability/07 Probability Formula and Decision Sheet\|Probability Decision Sheet]]** | 3. Probability | Axioms, conditional formulas, tree decision models, Bayes confusion matrices |
-| **[[3. Probability/08 Probability Mixed Practice\|Probability Mixed Practice]]** | 3. Probability | Scenario classification, trick detection, and comprehensive problem sets |
-| **[[1. Graph Theory and Trees/00 - Graph Theory and Trees\|Graph Theory and Trees]]** | 1. Graph Theory and Trees | Module directory, 40 SVG diagrams, algorithm pseudocode, and self-check quizzes |
+1. [[3. Probability/00 Probability|00 - Probability Overview]]
+2. [[3. Probability/01 Probability Foundations|01 - Probability Foundations]]
+3. [[3. Probability/02 Probability Rules and Puzzles|02 - Probability Rules and Puzzles]]
+4. [[3. Probability/03 Conditional Probability and Independence|03 - Conditional Probability and Independence]]
+5. [[3. Probability/04 Bernoulli Trials and Binomial Distribution|04 - Bernoulli Trials and Binomial Distribution]]
+6. [[3. Probability/05 Bayes Theorem and Naive Bayes|05 - Bayes Theorem and Naive Bayes]]
+7. [[3. Probability/06 Probability Models and Methods|06 - Probability Models and Methods]]
+8. [[3. Probability/07 Probability Formula and Decision Sheet|07 - Probability Formula and Decision Sheet]]
+9. [[3. Probability/08 Probability Mixed Practice|08 - Probability Mixed Practice]]

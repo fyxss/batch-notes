@@ -2,7 +2,7 @@
 
 **Course**: Discrete Mathematics  
 **Textbook Reference**: Kenneth H. Rosen, *Discrete Mathematics and Its Applications*, Chapter 11, Section 11.4  
-**Navigation**: [[07 - Introduction to Trees and Tree Properties|← Prev: Trees & Properties]] | [[00 - Graph Theory & Trees Index|Master Index]] | [[09 - Minimum Spanning Trees (Prim's & Kruskal's)|Next: Minimum Spanning Trees →]]
+**Navigation**: [[07 - Introduction to Trees and Tree Properties|← Prev: Trees & Properties]] | [[Discrete Mathematics/index|Table of Contents]] | [[09 - Minimum Spanning Trees (Prim's & Kruskal's)|Next: Minimum Spanning Trees →]]
 
 >[!abstract] Module Objectives
 >- Understand the auxiliary data structures: **Stacks (LIFO)** and **Queues (FIFO)**.
@@ -166,3 +166,7 @@ In a BFS tree, vertices are grouped strictly by their **level** (distance from r
 > > [!check]- Solution & Kenneth Rosen Explanation
 > > Because BFS explores the frontier using a FIFO queue, all vertices at distance $k$ hops are processed and dequeued before any vertex at distance $k+1$ is examined.
 > > **Correct Answer: Vertices are discovered in non-decreasing hop distance order**.
+
+---
+
+**Navigation**: [[07 - Introduction to Trees and Tree Properties|← Prev: Trees & Properties]] | [[Discrete Mathematics/index|Table of Contents]] | [[09 - Minimum Spanning Trees (Prim's & Kruskal's)|Next: Minimum Spanning Trees →]]

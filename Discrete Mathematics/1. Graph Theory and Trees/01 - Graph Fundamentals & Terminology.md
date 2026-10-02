@@ -2,7 +2,7 @@
 
 **Course**: Discrete Mathematics  
 **Textbook Reference**: Kenneth H. Rosen, *Discrete Mathematics and Its Applications*, Chapter 10, Sections 10.1–10.3  
-**Navigation**: [[00 - Graph Theory & Trees Index|← Master Index]] | [[02 - Bipartite Graphs, Matching, and Coloring|Next: Bipartite Graphs, Matching & Coloring →]]
+**Navigation**: [[00 - Graph Theory and Trees|← Prev: Overview]] | [[Discrete Mathematics/index|Table of Contents]] | [[02 - Bipartite Graphs, Matching, and Coloring|Next: Bipartite Graphs, Matching & Coloring →]]
 
 >[!abstract] Module Objectives
 >- Master the formal set-theoretic definitions of undirected and directed graphs.
@@ -258,3 +258,7 @@ $$\mathbf{A} = \begin{pmatrix} 0 & 1 & 1 & 1 \\ 1 & 0 & 0 & 1 \\ 1 & 0 & 0 & 1 \
 > > 2. Each vertex differs by 1 bit in $n = 6$ positions $\implies$ degree of every vertex is **6**.
 > > 3. Total edges $= n \cdot 2^{n-1} = 6 \cdot 2^5 = 6 \times 32 = 192$ edges.
 > > **Correct Answer: Degree 6, 192 edges**.
+
+---
+
+**Navigation**: [[00 - Graph Theory and Trees|← Prev: Overview]] | [[Discrete Mathematics/index|Table of Contents]] | [[02 - Bipartite Graphs, Matching, and Coloring|Next: Bipartite Graphs, Matching & Coloring →]]

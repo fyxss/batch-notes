@@ -14,7 +14,7 @@ tags:
 > [!abstract] Goal
 > Learn to recognize whether a selection is an **ordered list** or an **unordered group**.
 
-Navigation: [[01 Fundamental Counting Rules|Previous]] · [[00 Counting|Dashboard]] · [[03 Generalized Counting|Next]]
+Navigation: [[01 Fundamental Counting Rules|← Prev: Fundamental Counting Rules]] · [[Discrete Mathematics/index|Table of Contents]] · [[03 Generalized Counting|Next: 03. Generalized Counting →]]
 
 ## 1. Factorials
 
@@ -327,3 +327,7 @@ The first answer is $3!=6$ times larger because every group has six orders.
 
 - [[Discrete Mathematics Lecture Notes - 28.pdf|Lecture 28, pp. 4–8]]
 - [[Discrete Mathematics Lecture Notes - 29.pdf|Lecture 29, pp. 2–3]]
+
+---
+
+Navigation: [[01 Fundamental Counting Rules|← Prev: Fundamental Counting Rules]] · [[Discrete Mathematics/index|Table of Contents]] · [[03 Generalized Counting|Next: 03. Generalized Counting →]]

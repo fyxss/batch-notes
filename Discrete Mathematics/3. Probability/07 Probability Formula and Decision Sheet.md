@@ -7,7 +7,7 @@ tags:
 
 # Probability Formula and Decision Sheet
 
-[[00 Probability|Dashboard]] · [[08 Probability Mixed Practice|Practice]]
+Navigation: [[06 Probability Models and Methods|← Prev: Probability Models & Methods]] · [[Discrete Mathematics/index|Table of Contents]] · [[08 Probability Mixed Practice|Next: 08. Probability Mixed Practice →]]
 
 Use this sheet for recall after the lessons. Explanations and worked examples are in [[01 Probability Foundations|sample spaces]], [[02 Probability Rules and Puzzles|rules and trees]], [[03 Conditional Probability and Independence|conditioning]], [[04 Bernoulli Trials and Binomial Distribution|binomial trials]], [[05 Bayes Theorem and Naive Bayes|Bayes]], and [[06 Probability Models and Methods|distributions and algorithms]].
 
@@ -126,3 +126,7 @@ For a fixed bad input, if independent rounds each falsely pass with probability 
 5. Check that the answer lies between 0 and 1.
 6. Convert decimals to percentages correctly: $0.002=0.2\%$, not $2\%$.
 7. Round at the end.
+
+---
+
+Navigation: [[06 Probability Models and Methods|← Prev: Probability Models & Methods]] · [[Discrete Mathematics/index|Table of Contents]] · [[08 Probability Mixed Practice|Next: 08. Probability Mixed Practice →]]

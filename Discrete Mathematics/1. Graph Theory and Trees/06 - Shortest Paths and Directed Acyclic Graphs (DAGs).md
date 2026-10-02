@@ -2,7 +2,7 @@
 
 **Course**: Discrete Mathematics  
 **Textbook Reference**: Kenneth H. Rosen, *Discrete Mathematics and Its Applications*, Chapter 10, Section 10.6  
-**Navigation**: [[05 - Euler and Hamiltonian Paths|← Prev: Euler & Hamiltonian Paths]] | [[00 - Graph Theory & Trees Index|Master Index]] | [[07 - Introduction to Trees and Tree Properties|Next: Trees & Properties →]]
+**Navigation**: [[05 - Euler and Hamiltonian Paths|← Prev: Euler & Hamiltonian Paths]] | [[Discrete Mathematics/index|Table of Contents]] | [[07 - Introduction to Trees and Tree Properties|Next: Trees & Properties →]]
 
 >[!abstract] Module Objectives
 >- Model optimization problems using **Weighted Graphs**.
@@ -199,3 +199,7 @@ Every single prerequisite is satisfied before the dependent item is worn!
 > > [!check]- Solution & Kenneth Rosen Explanation
 > > A directed cycle makes a topological ordering impossible because every vertex in the cycle would have to precede itself in the linear order.
 > > **Correct Answer: G is a Directed Acyclic Graph (DAG)**.
+
+---
+
+**Navigation**: [[05 - Euler and Hamiltonian Paths|← Prev: Euler & Hamiltonian Paths]] | [[Discrete Mathematics/index|Table of Contents]] | [[07 - Introduction to Trees and Tree Properties|Next: Trees & Properties →]]

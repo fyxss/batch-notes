@@ -200,3 +200,15 @@ h1, h2, h3, h4, h5, h6,
     border-radius: 6px;
   }
 }
+
+// Clean minimalist Table of Contents list on home page
+body[data-slug="index"] article ul {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    padding: 0.25rem 0;
+    line-height: 1.6;
+  }
+}
+

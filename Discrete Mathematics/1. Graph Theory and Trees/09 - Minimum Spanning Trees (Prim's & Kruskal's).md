@@ -1,8 +1,7 @@
 # 09. Minimum Spanning Trees (Prim's & Kruskal's)
 
-**Course**: Discrete Mathematics  
-**Textbook Reference**: Kenneth H. Rosen, *Discrete Mathematics and Its Applications*, Chapter 11, Section 11.5  
-**Navigation**: [[08 - Graph Traversals: DFS and BFS|← Prev: Graph Traversals (DFS & BFS)]] | [[Discrete Mathematics/index|Table of Contents]] | [[10 - Tree Applications: Backtracking, BSTs, and Expression Trees|Next: Tree Applications →]]
+[[08 - Graph Traversals: DFS and BFS|← Prev: Graph Traversals (DFS & BFS)]]
+
 
 >[!abstract] Module Objectives
 >- Define the **Minimum Spanning Tree (MST)** problem.
@@ -11,9 +10,6 @@
 >- Understand why MST algorithms succeed on **negative edge weights** while Dijkstra fails.
 >- Apply MSTs to **Maximum Bottleneck Capacity** problems.
 >- Compare **Prim's vs. Dijkstra** and **Prim's vs. Kruskal's** across algorithmic structure and time complexity.
-
----
-
 ## 1. The Minimum Spanning Tree (MST) Problem
 
 When designing infrastructure—such as laying fiber-optic cables between cities or connecting electrical power grids—every connection costs money. We need a network that connects every vertex while minimizing the total cost.
@@ -30,7 +26,7 @@ When designing infrastructure—such as laying fiber-optic cables between cities
 
 Prim's algorithm operates by growing a **single tree** from an arbitrary starting vertex, adding one cheapest connecting edge at a time until all vertices are included.
 
-### 2.1 Formal Algorithm in Rosen Pseudocode
+### 2.1 Formal Algorithm Pseudocode
 
 ```pascal
 procedure Prim(G: connected weighted undirected graph with n vertices)
@@ -56,7 +52,7 @@ procedure Prim(G: connected weighted undirected graph with n vertices)
 
 While Prim's grows one single tree from a fixed starting vertex, Kruskal's takes a global edge-centric approach: it starts with a **forest of $n$ disconnected vertices** and gradually merges them into a single tree.
 
-### 3.1 Formal Algorithm in Rosen Pseudocode
+### 3.1 Formal Algorithm Pseudocode
 
 ```pascal
 procedure Kruskal(G: connected weighted undirected graph with n vertices)
@@ -123,9 +119,6 @@ Both algorithms maintain a settled set $S$ and update neighbor labels greedily:
 | **Data Structure** | Min-Heap / Priority Queue | Edge Sorting + Disjoint Set (Union-Find) |
 | **Time Complexity** | $O(|V|^2)$ (Array) or $O(|E| \log |V|)$ (Heap) | $O(|E| \log |E|) = O(|E| \log |V|)$ |
 | **Best Suited For** | **Dense Graphs** ($|E| \approx |V|^2$) | **Sparse Graphs** ($|E| \ll |V|^2$) |
-
----
-
 ## 7. Worked Problem Examples
 
 ### Problem 9.1: Running Kruskal's Algorithm
@@ -145,9 +138,6 @@ $\{a, b\} = 1, \quad \{c, d\} = 2, \quad \{b, c\} = 3, \quad \{a, c\} = 4, \quad
 3. We have accepted $n - 1 = 4 - 1 = 3$ edges. The algorithm terminates!
 4. **MST Total Weight**:
    $$w(T) = 1 + 2 + 3 = \mathbf{6}$$
-
----
-
 ## 6. Self-Check & Concept Verification
 
 > [!question] Concept Check 1: Negative Edges in MST Algorithms
@@ -157,7 +147,7 @@ $\{a, b\} = 1, \quad \{c, d\} = 2, \quad \{b, c\} = 3, \quad \{a, c\} = 4, \quad
 > - [ ] Yes, both algorithms work correctly with negative weights.
 > - [ ] Only Prim works; Kruskal fails on negatives.
 >
-> > [!check]- Solution & Kenneth Rosen Explanation
+> > [!check]- Solution & Explanation
 > > The Cut Property and Cycle Property depend only on the relative order of edge weights, NOT on weights being non-negative. Adding a constant $C$ to all edge weights preserves the exact same MST structure. Therefore, both Prim and Kruskal find the correct MST even with negative weights.
 > > **Correct Answer: Yes, both algorithms work correctly with negative weights**.
 
@@ -168,7 +158,7 @@ $\{a, b\} = 1, \quad \{c, d\} = 2, \quad \{b, c\} = 3, \quad \{a, c\} = 4, \quad
 > - [ ] Fleury's algorithm ($O(E^2)$)
 > - [ ] Kahn's topological sort
 >
-> > [!check]- Solution & Kenneth Rosen Explanation
+> > [!check]- Solution & Explanation
 > > In dense graphs where $E \approx V^2$:
 > > - Prim with adjacency matrix takes $O(V^2) \approx 10^6$ operations.
 > > - Kruskal takes $O(E \log E) \approx 500,000 \times \log_2(500,000) \approx 500,000 \times 19 \approx 9.5 \times 10^6$ operations.
@@ -177,4 +167,4 @@ $\{a, b\} = 1, \quad \{c, d\} = 2, \quad \{b, c\} = 3, \quad \{a, c\} = 4, \quad
 
 ---
 
-**Navigation**: [[08 - Graph Traversals: DFS and BFS|← Prev: Graph Traversals (DFS & BFS)]] | [[Discrete Mathematics/index|Table of Contents]] | [[10 - Tree Applications: Backtracking, BSTs, and Expression Trees|Next: Tree Applications →]]
+[[10 - Tree Applications: Backtracking, BSTs, and Expression Trees|Next: Tree Applications →]]

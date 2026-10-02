@@ -1,8 +1,7 @@
 # 05. Euler and Hamiltonian Paths
 
-**Course**: Discrete Mathematics  
-**Textbook Reference**: Kenneth H. Rosen, *Discrete Mathematics and Its Applications*, Chapter 10, Section 10.5  
-**Navigation**: [[04 - Connectivity, Paths, and Graph Components|← Prev: Connectivity & Paths]] | [[Discrete Mathematics/index|Table of Contents]] | [[06 - Shortest Paths and Directed Acyclic Graphs (DAGs)|Next: Shortest Paths & DAGs →]]
+[[04 - Connectivity, Paths, and Graph Components|← Prev: Connectivity & Paths]]
+
 
 >[!abstract] Module Objectives
 >- Understand the historical **Seven Bridges of Königsberg** problem.
@@ -11,9 +10,6 @@
 >- Contrast Euler circuits (visiting every **edge**) with Hamiltonian circuits (visiting every **vertex**).
 >- Apply **Dirac's Theorem** and **Ore's Theorem** to establish the existence of Hamiltonian circuits.
 >- Connect Hamiltonian paths in hypercubes to **Gray Codes** and the **Traveling Salesperson Problem (TSP)**.
-
----
-
 ## 1. Euler Paths and Circuits
 
 The field of graph theory began in 1736 when Swiss mathematician Leonhard Euler solved the famous **Königsberg Bridge Problem**: Can a pedestrian cross all seven bridges over the Pregel River in Königsberg exactly once and return to the starting point?
@@ -134,9 +130,6 @@ An **$n$-bit Gray Code** is an ordered sequence of all $2^n$ bit strings of leng
 Given a complete weighted graph of $n$ cities and the travel costs between them:
 - **Goal**: Find a Hamiltonian circuit of **minimum total weight**.
 - **Brute Force Cost**: $(n - 1)! / 2$ possible circuits. For $n = 30$, this is over $10^{30}$ calculations, making efficient approximation algorithms essential.
-
----
-
 ## 5. Worked Problem Examples
 
 ### Problem 5.1: Identifying Euler Circuits vs. Paths
@@ -155,9 +148,6 @@ Given a complete weighted graph of $n$ cities and the travel costs between them:
    $$\deg(v) \ge \frac{n}{2} = \frac{7}{2} = 3.5$$
 2. Since vertex degrees must be integers, each vertex must have:
    $$\deg(v) \ge \lceil 3.5 \rceil = 4$$
-
----
-
 ## 6. Self-Check & Concept Verification
 
 > [!question] Concept Check 1: Euler Circuit vs. Path Degree Criteria
@@ -167,7 +157,7 @@ Given a complete weighted graph of $n$ cities and the travel costs between them:
 > - [ ] The graph contains neither an Euler path nor an Euler circuit.
 > - [ ] The graph is guaranteed to have a Hamiltonian circuit.
 >
-> > [!check]- Solution & Kenneth Rosen Explanation
+> > [!check]- Solution & Explanation
 > > By Euler's Theorem:
 > > - An Euler **circuit** exists $\iff$ all vertices have even degree.
 > > - An Euler **path** (open trail) exists $\iff$ exactly 2 vertices have odd degree.
@@ -181,10 +171,10 @@ Given a complete weighted graph of $n$ cities and the travel costs between them:
 > - [ ] The graph has no cut vertices
 > - [ ] The graph is bipartite
 >
-> > [!check]- Solution & Kenneth Rosen Explanation
+> > [!check]- Solution & Explanation
 > > Dirac's condition states $\deg(v) \ge n/2$ for all $v \in V$. (Ore's Theorem is the more general condition $\deg(u) + \deg(v) \ge n$ for non-adjacent pairs).
 > > **Correct Answer: $\deg(v) \ge \frac{n}{2}$ for every vertex $v$**.
 
 ---
 
-**Navigation**: [[04 - Connectivity, Paths, and Graph Components|← Prev: Connectivity & Paths]] | [[Discrete Mathematics/index|Table of Contents]] | [[06 - Shortest Paths and Directed Acyclic Graphs (DAGs)|Next: Shortest Paths & DAGs →]]
+[[06 - Shortest Paths and Directed Acyclic Graphs (DAGs)|Next: Shortest Paths & DAGs →]]

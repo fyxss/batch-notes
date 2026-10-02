@@ -1,8 +1,7 @@
 # 07. Introduction to Trees and Tree Properties
 
-**Course**: Discrete Mathematics  
-**Textbook Reference**: Kenneth H. Rosen, *Discrete Mathematics and Its Applications*, Chapter 11, Section 11.1  
-**Navigation**: [[06 - Shortest Paths and Directed Acyclic Graphs (DAGs)|← Prev: Shortest Paths & DAGs]] | [[Discrete Mathematics/index|Table of Contents]] | [[08 - Graph Traversals: DFS and BFS|Next: Graph Traversals (DFS & BFS) →]]
+[[06 - Shortest Paths and Directed Acyclic Graphs (DAGs)|← Prev: Shortest Paths & DAGs]]
+
 
 >[!abstract] Module Objectives
 >- Master the formal definition of **Trees** and the **5 Equivalent Characterizations**.
@@ -12,9 +11,6 @@
 >- Contrast **Full** vs. **Complete** binary trees.
 >- Implement tree data structures via **Sequential Array Storage** and **C Struct Pointers**.
 >- Define **Spanning Trees**.
-
----
-
 ## 1. What is a Tree?
 
 >[!note] Definition 1: Tree and Forest
@@ -143,9 +139,6 @@ struct TreeNode {
 >A simple graph $G$ has a spanning tree **if and only if $G$ is connected**.
 
 ![Connected Graph vs Spanning Tree](assets/07-graph-vs-spanning-tree.svg)
-
----
-
 ## 7. Worked Problem Examples
 
 ### Problem 7.1: Calculating Leaves in a Chain of Stores
@@ -166,9 +159,6 @@ struct TreeNode {
 2. Substitute $m = 2$ and $l = 64$:
    $$h \ge \lceil \log_2(64) \rceil = \lceil 6 \rceil = \mathbf{6}$$
 3. A balanced binary tree of height $6$ can accommodate all $64$ contestants.
-
----
-
 ## 6. Self-Check & Concept Verification
 
 > [!question] Concept Check 1: Leaves in a Full m-ary Tree
@@ -178,7 +168,7 @@ struct TreeNode {
 > - [ ] 30 leaves
 > - [ ] 31 leaves
 >
-> > [!check]- Solution & Kenneth Rosen Explanation
+> > [!check]- Solution & Explanation
 > > For any full $m$-ary tree with $i$ internal vertices:
 > > $$l = (m - 1)i + 1$$
 > > Here $m = 3$ and $i = 10$:
@@ -193,7 +183,7 @@ struct TreeNode {
 > - [ ] Index 12
 > - [ ] Index 13
 >
-> > [!check]- Solution & Kenneth Rosen Explanation
+> > [!check]- Solution & Explanation
 > > In 0-based indexing:
 > > - $\text{Left}(i) = 2i + 1$
 > > - $\text{Right}(i) = 2i + 2$
@@ -202,4 +192,4 @@ struct TreeNode {
 
 ---
 
-**Navigation**: [[06 - Shortest Paths and Directed Acyclic Graphs (DAGs)|← Prev: Shortest Paths & DAGs]] | [[Discrete Mathematics/index|Table of Contents]] | [[08 - Graph Traversals: DFS and BFS|Next: Graph Traversals (DFS & BFS) →]]
+[[08 - Graph Traversals: DFS and BFS|Next: Graph Traversals (DFS & BFS) →]]

@@ -1,8 +1,7 @@
 # 03. Planar Graphs and Graph Redrawing
 
-**Course**: Discrete Mathematics  
-**Textbook Reference**: Kenneth H. Rosen, *Discrete Mathematics and Its Applications*, Chapter 10, Section 10.7  
-**Navigation**: [[02 - Bipartite Graphs, Matching, and Coloring|← Prev: Bipartite Graphs & Coloring]] | [[Discrete Mathematics/index|Table of Contents]] | [[04 - Connectivity, Paths, and Graph Components|Next: Connectivity & Paths →]]
+[[02 - Bipartite Graphs, Matching, and Coloring|← Prev: Bipartite Graphs & Coloring]]
+
 
 >[!abstract] Module Objectives
 >- Define **Planar Graphs** and planar representations.
@@ -11,9 +10,6 @@
 >- Prove rigorously why $K_5$ and $K_{3,3}$ are non-planar.
 >- Understand **Kuratowski's Theorem** and graph subdivisions.
 >- Perform planar redrawing using **exterior routing** and **Schlegel diagrams**.
-
----
-
 ## 1. What is a Planar Graph?
 
 >[!note] Definition 1: Planar Graph
@@ -152,9 +148,6 @@ The 3-cube $Q_3$ drawn in standard isometric 3D perspective shows overlapping ed
 
 ![3D Cube Perspective vs Schlegel Planar Embedding](assets/03-cube-schlegel.svg)
 - A **Schlegel diagram** projects a 3D polyhedron onto a 2D plane by shrinking one face and nesting it inside the opposite face, connecting corresponding vertices with non-crossing straight lines.
-
----
-
 ## 8. Worked Problem Examples
 
 ### Problem 3.1: Finding Number of Regions
@@ -182,9 +175,6 @@ The 3-cube $Q_3$ drawn in standard isometric 3D perspective shows overlapping ed
    $$2v - 4 = 2(8) - 4 = 16 - 4 = 12$$
 3. Here $e = 13 > 12$, violating the inequality.
 4. Therefore, no such bipartite planar graph can exist.
-
----
-
 ## 6. Self-Check & Concept Verification
 
 > [!question] Concept Check 1: Euler's Formula Calculation
@@ -194,7 +184,7 @@ The 3-cube $Q_3$ drawn in standard isometric 3D perspective shows overlapping ed
 > - [ ] 8 regions, 14 edges
 > - [ ] 10 regions, 18 edges
 >
-> > [!check]- Solution & Kenneth Rosen Explanation
+> > [!check]- Solution & Explanation
 > > Each region has degree 3 $\implies 2e = \sum \deg(R) = 3r \implies r = \frac{2e}{3}$.
 > > Substitute into Euler's formula ($v - e + r = 2$):
 > > $$10 - e + \frac{2e}{3} = 2 \implies 10 - 2 = e - \frac{2e}{3} \implies 8 = \frac{e}{3} \implies e = 24$$
@@ -208,10 +198,10 @@ The 3-cube $Q_3$ drawn in standard isometric 3D perspective shows overlapping ed
 > - [ ] $K_5$ and $C_5$
 > - [ ] $Q_3$ and $W_5$
 >
-> > [!check]- Solution & Kenneth Rosen Explanation
+> > [!check]- Solution & Explanation
 > > Kuratowski's Theorem states that a graph is planar if and only if it does NOT contain a subgraph that is homeomorphic to (or can be formed by edge subdivisions of) $K_5$ or $K_{3,3}$.
 > > **Correct Answer: $K_5$ and $K_{3,3}$**.
 
 ---
 
-**Navigation**: [[02 - Bipartite Graphs, Matching, and Coloring|← Prev: Bipartite Graphs & Coloring]] | [[Discrete Mathematics/index|Table of Contents]] | [[04 - Connectivity, Paths, and Graph Components|Next: Connectivity & Paths →]]
+[[04 - Connectivity, Paths, and Graph Components|Next: Connectivity & Paths →]]

@@ -11,10 +11,11 @@ tags:
 
 # Permutations and Combinations
 
+[[01 Fundamental Counting Rules|← Prev: Fundamental Counting Rules]]
+
+
 > [!abstract] Goal
 > Learn to recognize whether a selection is an **ordered list** or an **unordered group**.
-
-Navigation: [[01 Fundamental Counting Rules|← Prev: Fundamental Counting Rules]] · [[Discrete Mathematics/index|Table of Contents]] · [[03 Generalized Counting|Next: 03. Generalized Counting →]]
 
 ## 1. Factorials
 
@@ -53,9 +54,6 @@ There is exactly one way to arrange zero objects: the empty arrangement. This de
 > [!success]- Solution
 > $$6!=720,$$
 > $$\frac{8!}{5!}=8\cdot7\cdot6=336.$$
-
----
-
 ## 2. Permutations — order matters
 
 A **permutation** is an ordered arrangement.
@@ -156,9 +154,6 @@ For example, 5 distinct keys on a keyring can be arranged in $\frac{(5-1)!}{2} =
 > [!success]- Solution
 > Treat A and B as one block. The block plus the other five people gives six objects, with $6!$ arrangements. Inside the block, A and B have $2!$ orders:
 > $$6!\cdot2=1440.$$
-
----
-
 ## 3. Combinations — order does not matter
 
 A **combination** is an unordered selection.
@@ -254,9 +249,6 @@ This combines combinations with the product rule.
 > [!success]- Solution
 > Count all teams and subtract teams containing none of the three particular students. Such a team must come entirely from the other nine:
 > $$\binom{12}{5}-\binom95=792-126=666.$$
-
----
-
 ## 4. Permutation or combination?
 
 Ask one question:
@@ -302,9 +294,6 @@ The first answer is $3!=6$ times larger because every group has six orders.
 > [!success]- Solution
 > Each subgroup is unordered, and both selections must occur:
 > $$\binom83\binom62=56\cdot15=840.$$
-
----
-
 ## Common mistakes
 
 > [!warning]
@@ -323,11 +312,6 @@ The first answer is $3!=6$ times larger because every group has six orders.
 - [ ] I can decide whether order matters.
 - [ ] I can combine selections from separate groups.
 
-## Source pages
-
-- [[Discrete Mathematics Lecture Notes - 28.pdf|Lecture 28, pp. 4–8]]
-- [[Discrete Mathematics Lecture Notes - 29.pdf|Lecture 29, pp. 2–3]]
-
 ---
 
-Navigation: [[01 Fundamental Counting Rules|← Prev: Fundamental Counting Rules]] · [[Discrete Mathematics/index|Table of Contents]] · [[03 Generalized Counting|Next: 03. Generalized Counting →]]
+[[03 Generalized Counting|Next: 03. Generalized Counting →]]

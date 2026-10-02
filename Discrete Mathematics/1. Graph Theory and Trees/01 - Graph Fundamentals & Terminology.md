@@ -1,8 +1,7 @@
 # 01. Graph Fundamentals & Terminology
 
-**Course**: Discrete Mathematics  
-**Textbook Reference**: Kenneth H. Rosen, *Discrete Mathematics and Its Applications*, Chapter 10, Sections 10.1–10.3  
-**Navigation**: [[00 - Graph Theory and Trees|← Prev: Overview]] | [[Discrete Mathematics/index|Table of Contents]] | [[02 - Bipartite Graphs, Matching, and Coloring|Next: Bipartite Graphs, Matching & Coloring →]]
+[[00 - Graph Theory and Trees|← Prev: Overview]]
+
 
 >[!abstract] Module Objectives
 >- Master the formal set-theoretic definitions of undirected and directed graphs.
@@ -10,9 +9,6 @@
 >- Apply the **Handshaking Theorem** and the **Even Odd-Degree Vertex Theorem**.
 >- Analyze standard graph families: complete graphs ($K_n$), cycles ($C_n$), wheels ($W_n$), and hypercubes ($Q_n$).
 >- Compare computer representations: **Adjacency Lists** vs. **Adjacency Matrices**.
-
----
-
 ## 1. Set-Theoretic Definition of a Graph
 
 A graph is not defined by its visual layout on paper; it is formally defined as a mathematical pair of sets.
@@ -86,7 +82,7 @@ Every edge has exactly two endpoints. When we sum the degrees of all vertices, e
 >[!important] Theorem 2
 >An undirected graph has an **even number** of vertices of odd degree.
 
-#### Rosen-Style Formal Proof:
+#### Formal Proof:
 Let $V_1$ be the set of vertices of even degree, and $V_2$ be the set of vertices of odd degree in graph $G = (V, E)$. Then:
 
 $$2m = \sum_{v \in V} \deg(v) = \sum_{v \in V_1} \deg(v) + \sum_{v \in V_2} \deg(v)$$
@@ -193,9 +189,6 @@ $$\mathbf{A} = \begin{pmatrix} 0 & 1 & 1 & 1 \\ 1 & 0 & 0 & 1 \\ 1 & 0 & 0 & 1 \
 | **Find All Neighbors of $u$** | $\Theta(\deg(u))$ (Optimal) | $\Theta(V)$ (Must scan entire row) |
 | **Add a Vertex** | $O(1)$ | $O(V^2)$ (Requires resizing matrix) |
 | **Recommended Regime** | **Sparse Graphs** ($E \ll V^2$) | **Dense Graphs** ($E \approx V^2$) |
-
----
-
 ## 7. Worked Problem Examples
 
 ### Problem 1.1: Applying Handshaking to Find Edge Count
@@ -226,9 +219,6 @@ $$\mathbf{A} = \begin{pmatrix} 0 & 1 & 1 & 1 \\ 1 & 0 & 0 & 1 \\ 1 & 0 & 0 & 1 \
 3. Number of edges:
    $$|E| = n \cdot 2^{n-1} = 4 \cdot 2^{4-1} = 4 \cdot 8 = 32 \text{ edges}$$
    *(Verification via Handshaking: $2m = 16 \times 4 = 64 \implies m = 32$.)*
-
----
-
 ## 6. Self-Check & Concept Verification
 
 > [!question] Concept Check 1: Handshaking Theorem Application
@@ -238,7 +228,7 @@ $$\mathbf{A} = \begin{pmatrix} 0 & 1 & 1 & 1 \\ 1 & 0 & 0 & 1 \\ 1 & 0 & 0 & 1 \
 > - [ ] 74 edges
 > - [ ] Cannot be determined
 >
-> > [!check]- Solution & Kenneth Rosen Explanation
+> > [!check]- Solution & Explanation
 > > Calculate the degree sum:
 > > $$\sum_{v \in V} \deg(v) = (10 \times 3) + (6 \times 4) + (4 \times 5) = 30 + 24 + 20 = 74$$
 > > By the Handshaking Theorem ($2m = \sum \deg(v)$):
@@ -252,7 +242,7 @@ $$\mathbf{A} = \begin{pmatrix} 0 & 1 & 1 & 1 \\ 1 & 0 & 0 & 1 \\ 1 & 0 & 0 & 1 \
 > - [ ] Degree 12, 192 edges
 > - [ ] Degree 64, 384 edges
 >
-> > [!check]- Solution & Kenneth Rosen Explanation
+> > [!check]- Solution & Explanation
 > > For $Q_n$:
 > > 1. Total vertices $= 2^n = 2^6 = 64$.
 > > 2. Each vertex differs by 1 bit in $n = 6$ positions $\implies$ degree of every vertex is **6**.
@@ -261,4 +251,4 @@ $$\mathbf{A} = \begin{pmatrix} 0 & 1 & 1 & 1 \\ 1 & 0 & 0 & 1 \\ 1 & 0 & 0 & 1 \
 
 ---
 
-**Navigation**: [[00 - Graph Theory and Trees|← Prev: Overview]] | [[Discrete Mathematics/index|Table of Contents]] | [[02 - Bipartite Graphs, Matching, and Coloring|Next: Bipartite Graphs, Matching & Coloring →]]
+[[02 - Bipartite Graphs, Matching, and Coloring|Next: Bipartite Graphs, Matching & Coloring →]]

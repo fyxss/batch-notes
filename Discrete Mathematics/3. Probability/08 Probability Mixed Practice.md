@@ -7,7 +7,8 @@ tags:
 
 # Probability Mixed Practice
 
-Navigation: [[07 Probability Formula and Decision Sheet|← Prev: Probability Formula Sheet]] · [[Discrete Mathematics/index|Table of Contents]]
+[[07 Probability Formula and Decision Sheet|← Prev: Probability Formula Sheet]]
+
 
 > [!tip] Try before revealing
 > For each question, name the event, choose a method, and write the expression. Then open the solution. All card questions use a standard 52-card deck; all stated fair dice and coins are rolled or tossed independently unless specified otherwise.
@@ -208,7 +209,3 @@ Use this return route after a mistake, then close the solution and retry:
 - [ ] Questions 17–20: models and reasoning.
 - [ ] Questions 21–24: puzzles, random variables, and total probability.
 - [ ] I have redone every missed question without viewing its solution.
-
----
-
-Navigation: [[07 Probability Formula and Decision Sheet|← Prev: Probability Formula Sheet]] · [[Discrete Mathematics/index|Table of Contents]]

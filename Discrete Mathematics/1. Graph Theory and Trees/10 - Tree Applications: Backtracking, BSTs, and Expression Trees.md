@@ -1,8 +1,7 @@
 # 10. Tree Applications: Backtracking, BSTs, and Expression Trees
 
-**Course**: Discrete Mathematics  
-**Textbook Reference**: Kenneth H. Rosen, *Discrete Mathematics and Its Applications*, Chapter 11, Sections 11.2 & 11.3  
-**Navigation**: [[09 - Minimum Spanning Trees (Prim's & Kruskal's)|← Prev: Minimum Spanning Trees]] | [[Discrete Mathematics/index|Table of Contents]] | [[2. Counting/00 Counting|Next Folder: 2. Counting →]]
+[[09 - Minimum Spanning Trees (Prim's & Kruskal's)|← Prev: Minimum Spanning Trees]]
+
 
 >[!abstract] Module Objectives
 >- Master **Backtracking** as Depth-First Search over a state-space decision tree with **pruning**.
@@ -10,9 +9,6 @@
 >- Understand how insertion order affects tree height, contrasting balanced trees ($O(\log n)$) with degenerate linked-list trees ($O(n)$).
 >- Master the three classical tree traversals: **Preorder**, **Inorder**, and **Postorder**.
 >- Model algebraic calculations with **Expression Trees** and convert among **Infix**, **Prefix (Polish)**, and **Postfix (Reverse Polish)** notations.
-
----
-
 ## 1. Backtracking (DFS Over a Decision Tree)
 
 Many combinatorial problems require finding a combination of elements that satisfies specific constraints. **Backtracking** systematically explores the space of partial solutions by performing a Depth-First Search over a **decision tree**.
@@ -149,9 +145,6 @@ Compilers and calculators evaluate Postfix (Reverse Polish) expressions using a 
 2. If an **operand** is read $\implies$ **Push** it onto the stack.
 3. If an **operator** is read $\implies$ **Pop** the top two operands, apply the operator, and **Push** the result back.
 4. When finished, the final answer is the sole value remaining on the stack.
-
----
-
 ## 5. Worked Problem Examples
 
 ### Problem 10.1: Traversals of an Expression Tree
@@ -177,9 +170,6 @@ Compilers and calculators evaluate Postfix (Reverse Polish) expressions using a 
 - Read `-` $\implies$ Pop 2, Pop 8 $\implies 8 - 2 = 6 \implies$ Stack: `[8, 6]`
 - Read `*` $\implies$ Pop 6, Pop 8 $\implies 8 \times 6 = 48 \implies$ Stack: `[48]`
 - **Final Result**: $\mathbf{48}$.
-
----
-
 ## 6. Self-Check & Concept Verification
 
 > [!question] Concept Check 1: BST Inorder Traversal Property
@@ -189,7 +179,7 @@ Compilers and calculators evaluate Postfix (Reverse Polish) expressions using a 
 > - [ ] The root of the tree is visited first.
 > - [ ] All leaves are visited before any internal nodes.
 >
-> > [!check]- Solution & Kenneth Rosen Explanation
+> > [!check]- Solution & Explanation
 > > By the BST ordering invariant, every key in the left subtree is $< \text{Root}$, and every key in the right subtree is $> \text{Root}$. Traversing $\text{Left} \to \text{Root} \to \text{Right}$ recursively yields the elements in strictly non-decreasing sorted order.
 > > **Correct Answer: The keys are visited in strictly ascending (sorted) order**.
 
@@ -200,10 +190,10 @@ Compilers and calculators evaluate Postfix (Reverse Polish) expressions using a 
 > - [ ] Postorder traversal
 > - [ ] Breadth-first traversal
 >
-> > [!check]- Solution & Kenneth Rosen Explanation
+> > [!check]- Solution & Explanation
 > > Postorder traversal visits $\text{Left} \to \text{Right} \to \text{Root}$. This visits the operands first, followed by their operator, which is the exact definition of Postfix / Reverse Polish Notation.
 > > **Correct Answer: Postorder traversal**.
 
 ---
 
-**Navigation**: [[09 - Minimum Spanning Trees (Prim's & Kruskal's)|← Prev: Minimum Spanning Trees]] | [[Discrete Mathematics/index|Table of Contents]] | [[2. Counting/00 Counting|Next Folder: 2. Counting →]]
+[[2. Counting/00 Counting|Next Folder: 2. Counting →]]

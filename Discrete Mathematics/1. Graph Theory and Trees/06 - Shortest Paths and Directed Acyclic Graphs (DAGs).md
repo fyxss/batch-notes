@@ -1,8 +1,7 @@
 # 06. Shortest Paths and Directed Acyclic Graphs (DAGs)
 
-**Course**: Discrete Mathematics  
-**Textbook Reference**: Kenneth H. Rosen, *Discrete Mathematics and Its Applications*, Chapter 10, Section 10.6  
-**Navigation**: [[05 - Euler and Hamiltonian Paths|← Prev: Euler & Hamiltonian Paths]] | [[Discrete Mathematics/index|Table of Contents]] | [[07 - Introduction to Trees and Tree Properties|Next: Trees & Properties →]]
+[[05 - Euler and Hamiltonian Paths|← Prev: Euler & Hamiltonian Paths]]
+
 
 >[!abstract] Module Objectives
 >- Model optimization problems using **Weighted Graphs**.
@@ -10,9 +9,6 @@
 >- Understand the greedy invariant and why Dijkstra strictly requires **non-negative edge weights**.
 >- Formulate **Directed Acyclic Graphs (DAGs)**.
 >- Implement **Topological Sorting** using Kahn's in-degree reduction algorithm.
-
----
-
 ## 1. Weighted Graphs
 
 In many real-world systems, edges are not merely present or absent; each edge carries a numerical value representing a cost, capacity, or physical quantity.
@@ -29,7 +25,7 @@ In many real-world systems, edges are not merely present or absent; each edge ca
 
 Given a weighted graph with **non-negative weights**, Dijkstra's algorithm finds the shortest path from a specified start vertex $a$ to a destination vertex $z$ (or to all other vertices).
 
-### 2.1 Formal Algorithm in Rosen Pseudocode
+### 2.1 Formal Algorithm Pseudocode
 
 ```pascal
 procedure Dijkstra(G: weighted connected simple graph, with all weights positive)
@@ -173,9 +169,6 @@ Consider the dependencies involved in getting dressed before going to class:
 **Final Valid Topological Order**:  
 `left sock → pants → shirt → hat → right sock → left shoe → right shoe → belt → jacket → scarf`.  
 Every single prerequisite is satisfied before the dependent item is worn!
-
----
-
 ## 6. Self-Check & Concept Verification
 
 > [!question] Concept Check 1: Dijkstra's Non-Negative Weight Precondition
@@ -185,7 +178,7 @@ Every single prerequisite is satisfied before the dependent item is worn!
 > - [ ] It causes division by zero during relaxation.
 > - [ ] The adjacency matrix becomes non-invertible.
 >
-> > [!check]- Solution & Kenneth Rosen Explanation
+> > [!check]- Solution & Explanation
 > > Dijkstra's greedy invariant relies on the property that paths only increase in cost as more edges are traversed. If negative edge weights exist, an already "finalized" vertex could have its true distance lowered by taking a longer detour through a negative edge. (Use the Bellman-Ford algorithm for negative weights).
 > > **Correct Answer: Finalized vertices in set S are never reconsidered**.
 
@@ -196,10 +189,10 @@ Every single prerequisite is satisfied before the dependent item is worn!
 > - [ ] $G$ has an Euler circuit.
 > - [ ] $G$ is a complete tournament.
 >
-> > [!check]- Solution & Kenneth Rosen Explanation
+> > [!check]- Solution & Explanation
 > > A directed cycle makes a topological ordering impossible because every vertex in the cycle would have to precede itself in the linear order.
 > > **Correct Answer: G is a Directed Acyclic Graph (DAG)**.
 
 ---
 
-**Navigation**: [[05 - Euler and Hamiltonian Paths|← Prev: Euler & Hamiltonian Paths]] | [[Discrete Mathematics/index|Table of Contents]] | [[07 - Introduction to Trees and Tree Properties|Next: Trees & Properties →]]
+[[07 - Introduction to Trees and Tree Properties|Next: Trees & Properties →]]

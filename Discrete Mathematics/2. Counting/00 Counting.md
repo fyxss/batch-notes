@@ -12,7 +12,8 @@ tags:
 
 # Counting
 
-**Navigation**: [[1. Graph Theory and Trees/10 - Tree Applications: Backtracking, BSTs, and Expression Trees|← Prev: Graph Theory & Trees]] | [[Discrete Mathematics/index|Table of Contents]] | [[01 Fundamental Counting Rules|Next: 01. Fundamental Counting Rules →]]
+[[1. Graph Theory and Trees/10 - Tree Applications: Backtracking, BSTs, and Expression Trees|← Prev: Graph Theory & Trees]]
+
 
 > [!quote] The central idea
 > **Do not list every outcome. Describe the decisions that create an outcome, then count those decisions.**
@@ -112,18 +113,8 @@ The decision chart selects a starting method. Extra restrictions such as fixed p
 > 3. Solve the practice questions without looking back.
 > 4. Open the collapsed solutions and correct the *reasoning*, not only the answer.
 
-Treat the numbered lessons as one course: each builds on the earlier ones. The formula sheet is for revision after the lessons. If an answer is wrong, first identify whether the mistake was the **model**, the **formula**, or the **arithmetic**. Revisit the corresponding worked example, then solve the question again with its solution closed.
-
-## Course sources
-
-- [[Discrete Mathematics Lecture Notes - 27.pdf|Lecture 27 — Product and Sum Rules]]
-- [[Discrete Mathematics Lecture Notes - 28.pdf|Lecture 28 — Subtraction, Division, Permutations, and Combinations]]
-- [[Discrete Mathematics Lecture Notes - 29.pdf|Lecture 29 — Generalized Counting and Pigeonhole Principle]]
-- [[Exam Topics - Discrete Mathematics]]
-- [[Study Roadmap - Discrete Mathematics]]
-
-The learning order follows this vault’s roadmap and the supplied lectures. Pascal’s identity, positive/lower-bounded integer solutions, the simple upper-bound example, and the five-person Ramsey counterexample are supporting extensions, rather than additional topics explicitly developed in the PDFs.
+Treat the numbered lessons as a single sequence: each builds on the earlier ones. The formula sheet is for revision after the lessons. If an answer is wrong, first identify whether the mistake was the **model**, the **formula**, or the **arithmetic**. Revisit the corresponding worked example, then solve the question again with its solution closed.
 
 ---
 
-**Navigation**: [[1. Graph Theory and Trees/10 - Tree Applications: Backtracking, BSTs, and Expression Trees|← Prev: Graph Theory & Trees]] | [[Discrete Mathematics/index|Table of Contents]] | [[01 Fundamental Counting Rules|Next: 01. Fundamental Counting Rules →]]
+[[01 Fundamental Counting Rules|Next: 01. Fundamental Counting Rules →]]

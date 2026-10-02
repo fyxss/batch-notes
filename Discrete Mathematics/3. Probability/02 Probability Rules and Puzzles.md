@@ -6,7 +6,8 @@ tags:
 
 # Probability Rules and Puzzles
 
-Navigation: [[01 Probability Foundations|← Prev: Probability Foundations]] · [[Discrete Mathematics/index|Table of Contents]] · [[03 Conditional Probability and Independence|Next: 03. Conditional Probability & Independence →]]
+[[01 Probability Foundations|← Prev: Probability Foundations]]
+
 
 > [!abstract] Goal
 > Break a complicated event into simpler events, then combine their probabilities correctly.
@@ -201,9 +202,6 @@ Divide the stakes in proportion to **each player’s probability of winning if t
 
 > [!success]- Solution
 > A needs 1 point; B needs 2 points. In at most $1+2-1=2$ fictitious rounds, the outcomes are $AA, AB, BA, BB$. A wins the match in three outcomes ($AA, AB, BA$) with probability $3/4$, while B wins only in $BB$ with probability $1/4$. A receives $\frac{3}{4} \times 160 = \$120$ and B receives $\$40$.
-
----
-
 ## 7. Monty Hall
 
 There are three doors: one car and two goats. You pick a door with no information about the car's location, so the initial chance of choosing the car is $1/3$. The host knows the car's location, always opens an unchosen goat door, and always offers a switch to the other unopened door.
@@ -229,9 +227,6 @@ The host's action is informed. It does not turn the original choice into a 50–
 
 > [!success]- Solution
 > The host cannot open your door or the car's door, so must reveal the other goat. The remaining unopened door contains the car.
-
----
-
 ## 8. Non-transitive dice
 
 The lecture uses dice with three equally likely values each:
@@ -284,8 +279,6 @@ There is no die that beats both others more often than it loses. A pairwise adva
 - [ ] I multiply conditional branch probabilities down a tree.
 - [ ] I can explain the assumptions behind each puzzle.
 
-Source: [[Discrete Mathematics Lecture Notes - 30, 31, 32.pdf#page=5|Lectures 30–32, pp. 5–9]].
-
 ---
 
-Navigation: [[01 Probability Foundations|← Prev: Probability Foundations]] · [[Discrete Mathematics/index|Table of Contents]] · [[03 Conditional Probability and Independence|Next: 03. Conditional Probability & Independence →]]
+[[03 Conditional Probability and Independence|Next: 03. Conditional Probability & Independence →]]

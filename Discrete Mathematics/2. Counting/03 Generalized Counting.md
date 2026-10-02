@@ -12,10 +12,11 @@ tags:
 
 # Generalized Counting
 
+[[02 Permutations and Combinations|← Prev: Permutations and Combinations]]
+
+
 > [!abstract] Goal
 > Handle arrangements and selections when repetition is allowed or some objects are indistinguishable.
-
-Navigation: [[02 Permutations and Combinations|← Prev: Permutations and Combinations]] · [[Discrete Mathematics/index|Table of Contents]] · [[04 Pigeonhole Principles|Next: 04. Pigeonhole Principles →]]
 
 ## The four-case map
 
@@ -31,9 +32,6 @@ The no-repetition column assumes $0\le r\le n$. The repetition column assumes $n
 > [!tip] Read the table by meaning
 > - Ordered + repeat → fill $r$ positions independently.
 > - Unordered + repeat → distribute $r$ identical selections among $n$ types.
-
----
-
 ## 1. Permutations with repetition allowed
 
 There are $r$ ordered positions. Each position may contain any of $n$ objects.
@@ -79,9 +77,6 @@ $$
 > [!success]- Solution
 > Subtract strings with no zero from all digit strings:
 > $$10^6-9^6=1{,}000{,}000-531{,}441=468{,}559.$$
-
----
-
 ## 2. Combinations with repetition — stars and bars
 
 Suppose we choose $r$ objects from $n$ types, repetition is allowed, and order does not matter.
@@ -230,9 +225,6 @@ The shift is reversible: adding 4 to $y_1$ recovers exactly one forbidden soluti
 
 > [!success]- Solution
 > There are $\binom82=28$ unrestricted solutions. A forbidden solution has $x_1\ge3$; subtract 3 from $x_1$ to obtain a non-negative total of 3, counted by $\binom52=10$. Hence $28-10=18$ solutions remain.
-
----
-
 ## 3. Permutations of a multiset
 
 Now all objects are being arranged, but some are identical. Swapping identical copies changes nothing.
@@ -293,9 +285,6 @@ Count the shortest grid walks from $(0,0)$ to $(4,3)$ that pass through $(2,1)$:
 1. Stage 1: from $(0,0)$ to $(2,1)$ needs 2 Rights and 1 Up: $\binom{2+1}{2} = \binom{3}{2} = 3$ paths.
 2. Stage 2: from $(2,1)$ to $(4,3)$ needs $4-2=2$ Rights and $3-1=2$ Ups: $\binom{2+2}{2} = \binom{4}{2} = 6$ paths.
 3. Multiply the independent stages: $3 \cdot 6 = 18$ valid paths.
-
----
-
 ## 4. Do not confuse these three kinds of repetition
 
 | Situation | What repeats? | Typical tool |
@@ -326,9 +315,6 @@ The words may look similar, but they describe three different outcome types.
 > 1. Ordered positions with repetition: $2^7$.
 > 2. Unordered selection with repetition: $\binom{4+7-1}{7}=\binom{10}{7}$.
 > 3. Fixed multiset: `BALLOON` has L twice and O twice, so $\dfrac{7!}{2!2!}$.
-
----
-
 ## Common mistakes
 
 > [!warning]
@@ -348,10 +334,6 @@ The words may look similar, but they describe three different outcome types.
 - [ ] I can arrange a multiset.
 - [ ] I can distinguish the three meanings of repetition.
 
-## Source pages
-
-- [[Discrete Mathematics Lecture Notes - 29.pdf|Lecture 29, pp. 3–6]]
-
 ---
 
-Navigation: [[02 Permutations and Combinations|← Prev: Permutations and Combinations]] · [[Discrete Mathematics/index|Table of Contents]] · [[04 Pigeonhole Principles|Next: 04. Pigeonhole Principles →]]
+[[04 Pigeonhole Principles|Next: 04. Pigeonhole Principles →]]

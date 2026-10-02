@@ -13,10 +13,10 @@ title: "Table of Contents"
 - [[1. Graph Theory and Trees/04 - Connectivity, Paths, and Graph Components|04. Connectivity, Paths, and Graph Components]]
 - [[1. Graph Theory and Trees/05 - Euler and Hamiltonian Paths|05. Euler and Hamiltonian Paths]]
 - [[1. Graph Theory and Trees/06 - Shortest Paths and Directed Acyclic Graphs (DAGs)|06. Shortest Paths and Directed Acyclic Graphs (DAGs)]]
-- [[1. Graph Theory and Trees/07 - Introduction to Trees and Tree Properties|07 - Introduction to Trees and Tree Properties]]
-- [[1. Graph Theory and Trees/08 - Graph Traversals: DFS and BFS|08 - Graph Traversals: DFS and BFS]]
-- [[1. Graph Theory and Trees/09 - Minimum Spanning Trees (Prim's & Kruskal's)|09 - Minimum Spanning Trees (Prim's & Kruskal's)]]
-- [[1. Graph Theory and Trees/10 - Tree Applications: Backtracking, BSTs, and Expression Trees|10 - Tree Applications: Backtracking, BSTs, and Expression Trees]]
+- [[1. Graph Theory and Trees/07 - Introduction to Trees and Tree Properties|07. Introduction to Trees and Tree Properties]]
+- [[1. Graph Theory and Trees/08 - Graph Traversals: DFS and BFS|08. Graph Traversals: DFS and BFS]]
+- [[1. Graph Theory and Trees/09 - Minimum Spanning Trees (Prim's & Kruskal's)|09. Minimum Spanning Trees (Prim's & Kruskal's)]]
+- [[1. Graph Theory and Trees/10 - Tree Applications: Backtracking, BSTs, and Expression Trees|10. Tree Applications: Backtracking, BSTs, and Expression Trees]]
 
 ---
 

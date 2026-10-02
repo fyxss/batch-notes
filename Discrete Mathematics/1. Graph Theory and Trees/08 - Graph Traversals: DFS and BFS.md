@@ -1,8 +1,7 @@
 # 08. Graph Traversals: DFS and BFS
 
-**Course**: Discrete Mathematics  
-**Textbook Reference**: Kenneth H. Rosen, *Discrete Mathematics and Its Applications*, Chapter 11, Section 11.4  
-**Navigation**: [[07 - Introduction to Trees and Tree Properties|← Prev: Trees & Properties]] | [[Discrete Mathematics/index|Table of Contents]] | [[09 - Minimum Spanning Trees (Prim's & Kruskal's)|Next: Minimum Spanning Trees →]]
+[[07 - Introduction to Trees and Tree Properties|← Prev: Trees & Properties]]
+
 
 >[!abstract] Module Objectives
 >- Understand the auxiliary data structures: **Stacks (LIFO)** and **Queues (FIFO)**.
@@ -11,9 +10,6 @@
 >- Use DFS for **Cycle Detection** and **Grid Maze Solving**.
 >- Use BFS for **Unweighted Shortest Path** calculation.
 >- Compare DFS and BFS across memory, tree topology, and algorithmic use-cases.
-
----
-
 ## 1. Linear Auxiliary Data Structures
 
 Graph traversals visit all vertices systematically by keeping track of discovered vertices using linear memory buffers:
@@ -27,7 +23,7 @@ Graph traversals visit all vertices systematically by keeping track of discovere
 
 Depth-First Search explores as deeply as possible along each branch before backtracking. It mimics exploring a maze by walking down a corridor until hitting a dead end, then backing up to the nearest junction.
 
-### 2.1 Formal Algorithm in Rosen Pseudocode
+### 2.1 Formal Algorithm Pseudocode
 
 ```pascal
 procedure DFS(G: connected graph with vertices v1, v2, ..., vn)
@@ -71,7 +67,7 @@ When DFS traverses an undirected graph $G$, the edges of $G$ are partitioned int
 
 Breadth-First Search explores the graph in concentric ripples: it visits the starting vertex, then **all** neighbors of the start vertex (Level 1), then all unvisited neighbors of those vertices (Level 2), and so on.
 
-### 3.1 Formal Algorithm in Rosen Pseudocode
+### 3.1 Formal Algorithm Pseudocode
 
 ```pascal
 procedure BFS(G: connected graph with vertices v1, v2, ..., vn)
@@ -120,9 +116,6 @@ In a BFS tree, vertices are grouped strictly by their **level** (distance from r
 | **Non-Tree Edges** | **Back Edges** (connect to ancestors) | **Cross Edges** (connect to same or adjacent levels) |
 | **Time Complexity** | $\Theta(|V| + |E|)$ | $\Theta(|V| + |E|)$ |
 | **Primary Superpower** | Cycle detection, Topological sort, Maze solving | **Unweighted Shortest Path**, Minimum-height tree |
-
----
-
 ## 5. Worked Problem Examples
 
 ### Problem 8.1: Tracing DFS vs. BFS on a Cycle
@@ -140,9 +133,6 @@ In a BFS tree, vertices are grouped strictly by their **level** (distance from r
    - Dequeue $2$: visits neighbor $3$ (Level 2, Tree edge $\{2, 3\}$).
    - Dequeue $4$: neighbor $3$ is already visited (Cross edge $\{4, 3\}$).
    - **BFS Spanning Tree**: A tree with root $1$, children $2$ and $4$, and grandchild $3$. Height $= 2$.
-
----
-
 ## 6. Self-Check & Concept Verification
 
 > [!question] Concept Check 1: DFS Cycle Detection Edge Type
@@ -152,7 +142,7 @@ In a BFS tree, vertices are grouped strictly by their **level** (distance from r
 > - [ ] Forward edge
 > - [ ] Cross edge
 >
-> > [!check]- Solution & Kenneth Rosen Explanation
+> > [!check]- Solution & Explanation
 > > A **back edge** connects a current vertex to one of its ancestors in the DFS spanning tree (an already visited vertex that is not its direct parent). Following tree edges from ancestor to descendant and then the back edge closes a simple cycle.
 > > **Correct Answer: Back edge**.
 
@@ -163,10 +153,10 @@ In a BFS tree, vertices are grouped strictly by their **level** (distance from r
 > - [ ] BFS maintains a priority queue of path products.
 > - [ ] BFS explores deeper paths first.
 >
-> > [!check]- Solution & Kenneth Rosen Explanation
+> > [!check]- Solution & Explanation
 > > Because BFS explores the frontier using a FIFO queue, all vertices at distance $k$ hops are processed and dequeued before any vertex at distance $k+1$ is examined.
 > > **Correct Answer: Vertices are discovered in non-decreasing hop distance order**.
 
 ---
 
-**Navigation**: [[07 - Introduction to Trees and Tree Properties|← Prev: Trees & Properties]] | [[Discrete Mathematics/index|Table of Contents]] | [[09 - Minimum Spanning Trees (Prim's & Kruskal's)|Next: Minimum Spanning Trees →]]
+[[09 - Minimum Spanning Trees (Prim's & Kruskal's)|Next: Minimum Spanning Trees →]]

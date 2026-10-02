@@ -11,10 +11,11 @@ tags:
 
 # Pigeonhole Principles
 
+[[03 Generalized Counting|← Prev: Generalized Counting]]
+
+
 > [!abstract] Goal
 > Prove that a repetition or concentration **must** exist, even when you cannot identify where it occurs.
-
-Navigation: [[03 Generalized Counting|← Prev: Generalized Counting]] · [[Discrete Mathematics/index|Table of Contents]] · [[05 Counting Formula and Decision Sheet|Next: 05. Counting Formula & Decision Sheet →]]
 
 ## 1. Basic pigeonhole principle
 
@@ -84,9 +85,6 @@ Objects 1 and 3 share an image, so the function is not injective.
 > Partition the $2n$ integers into $n$ disjoint pairs that each sum to $2n+1$:
 > $\{1, 2n\}, \{2, 2n-1\}, \dots, \{n, n+1\}$.
 > These $n$ pairs are the boxes. Selecting $n+1$ integers places $n+1$ numbers into $n$ boxes, so at least one pair must be chosen in its entirety. Those two numbers sum to $2n+1$.
-
----
-
 ## 2. Generalized pigeonhole principle
 
 With many objects, we can guarantee more than a pair.
@@ -146,9 +144,6 @@ At least 9 people were born in the same month.
 
 > [!success]- Solution
 > $$\left\lceil\frac{1000}{37}\right\rceil=\lceil27.027\ldots\rceil=28.$$
-
----
-
 ## 3. Minimum-guarantee problems
 
 A common question asks for the smallest number of objects needed to guarantee $m$ objects in one of $k$ boxes.
@@ -204,9 +199,6 @@ $$
 > There are 7 days. At most 4 people can occupy each day without reaching five:
 > $$7(5-1)+1=29.$$
 > With 28 people, exactly four births on each weekday is possible and no day reaches five. This shows 29 is the minimum.
-
----
-
 ## 4. “Any box” versus a specified box
 
 The pigeonhole principle tells us that **some** box becomes full. It does not tell us which box.
@@ -257,9 +249,6 @@ This assumes drawing **without replacement** from a finite collection, and that 
 > There are three colour boxes. At most 3 of each colour can be drawn without reaching four:
 > $$3(4-1)+1=10.$$
 > Each colour has at least four available, so this worst-case distribution is feasible.
-
----
-
 ## 5. Friends and enemies: a Ramsey argument
 
 > [!note] Claim
@@ -309,9 +298,6 @@ For people A, B, C, D, E, the friendship cycle is A–B–C–D–E–A. The ene
 
 > [!success]- Solution
 > If any pair among B, C, and D are enemies, that pair together with A forms three mutual enemies. If no pair among B, C, and D are enemies, all three pairs are friendships, so B, C, and D are three mutual friends.
-
----
-
 ## Common mistakes
 
 > [!warning]
@@ -330,10 +316,6 @@ For people A, B, C, D, E, the friendship cycle is A–B–C–D–E–A. The ene
 - [ ] I can distinguish any category from a specified category.
 - [ ] I can reproduce the six-person friends-and-enemies proof.
 
-## Source pages
-
-- [[Discrete Mathematics Lecture Notes - 29.pdf|Lecture 29, pp. 6–9]]
-
 ---
 
-Navigation: [[03 Generalized Counting|← Prev: Generalized Counting]] · [[Discrete Mathematics/index|Table of Contents]] · [[05 Counting Formula and Decision Sheet|Next: 05. Counting Formula & Decision Sheet →]]
+[[05 Counting Formula and Decision Sheet|Next: 05. Counting Formula & Decision Sheet →]]

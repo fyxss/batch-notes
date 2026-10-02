@@ -12,7 +12,8 @@ tags:
 
 # Probability
 
-**Navigation**: [[2. Counting/06 Counting Mixed Practice|← Prev: Counting Mixed Practice]] | [[Discrete Mathematics/index|Table of Contents]] | [[01 Probability Foundations|Next: 01. Probability Foundations →]]
+[[2. Counting/06 Counting Mixed Practice|← Prev: Counting Mixed Practice]]
+
 
 > [!quote] The central idea
 > **Describe what can happen, assign each outcome its chance, then add the chances of the outcomes you want.**
@@ -93,18 +94,6 @@ Work through lessons 01–06 in order, then use 07 to revise and 08 to check whe
 - [ ] I can explain a probabilistic existence proof and error reduction.
 - [ ] I have completed the mixed practice.
 
-## Sources and scope
-
-- [[Discrete Mathematics Lecture Notes - 30, 31, 32.pdf]] — teaching sections, pp. 3–14.
-- [[Discrete Mathematics Lecture Notes - 33.pdf]] — teaching sections, pp. 2–11.
-- [[Study Roadmap - Discrete Mathematics]]
-- [[Exam Topics - Discrete Mathematics]]
-
-The explanations and additional exercises are written for this vault. The notes make assumptions explicit where the slides use a simplified model.
-
-> [!note] About random variables
-> Lecture 33 mentions random variables in its title but does not develop them in a dedicated section. Lesson 04 introduces the success-count variable when it is needed; [[06 Probability Models and Methods]] expands that idea to other numerical descriptions of outcomes. Expected value and variance are outside the supplied material.
-
 ---
 
-**Navigation**: [[2. Counting/06 Counting Mixed Practice|← Prev: Counting Mixed Practice]] | [[Discrete Mathematics/index|Table of Contents]] | [[01 Probability Foundations|Next: 01. Probability Foundations →]]
+[[01 Probability Foundations|Next: 01. Probability Foundations →]]

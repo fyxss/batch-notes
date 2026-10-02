@@ -1,8 +1,7 @@
 # 02. Bipartite Graphs, Matching, and Coloring
 
-**Course**: Discrete Mathematics  
-**Textbook Reference**: Kenneth H. Rosen, *Discrete Mathematics and Its Applications*, Chapter 10, Sections 10.2 & 10.8  
-**Navigation**: [[01 - Graph Fundamentals & Terminology|← Prev: Graph Fundamentals]] | [[Discrete Mathematics/index|Table of Contents]] | [[03 - Planar Graphs and Graph Redrawing|Next: Planar Graphs →]]
+[[01 - Graph Fundamentals & Terminology|← Prev: Graph Fundamentals]]
+
 
 >[!abstract] Module Objectives
 >- Master the definition and characterization of **Bipartite Graphs**.
@@ -11,9 +10,6 @@
 >- Solve the **Bipartite Friendship Ratio Problem**.
 >- Determine the **Chromatic Number** $\chi(G)$ for standard graph families.
 >- Implement the **Greedy Coloring Algorithm**, understand its order-dependence, and apply graph coloring to **Exam Scheduling**.
-
----
-
 ## 1. Bipartite Graphs
 
 ### 1.1 Formal Definition
@@ -191,9 +187,6 @@ procedure greedy_coloring(G: simple graph with vertices v1, v2, ..., vn)
 >   - **Slot 1 (Red)**: Math, Art (an independent set, non-conflicting).
 >   - **Slot 2 (Blue)**: Physics.
 >   - **Slot 3 (Green)**: CS.
-
----
-
 ## 4. Worked Problem Examples
 
 ### Problem 2.1: Determining if a Graph is Bipartite
@@ -221,9 +214,6 @@ procedure greedy_coloring(G: simple graph with vertices v1, v2, ..., vn)
 2. The neighborhood $N(A) \subseteq V_2$, so $|N(A)| \le |V_2| = 2$.
 3. Here $|N(A)| \le 2 < |A| = 3$, which violates Hall's Condition $|N(A)| \ge |A|$.
 4. Therefore, no complete matching from $V_1$ to $V_2$ can exist (Pigeonhole Principle: 3 applicants cannot be matched to 2 jobs without sharing).
-
----
-
 ## 6. Self-Check & Concept Verification
 
 > [!question] Concept Check 1: Bipartite Cycle Criterion
@@ -233,7 +223,7 @@ procedure greedy_coloring(G: simple graph with vertices v1, v2, ..., vn)
 > - [ ] Exactly when $n$ is even
 > - [ ] Never bipartite
 >
-> > [!check]- Solution & Kenneth Rosen Explanation
+> > [!check]- Solution & Explanation
 > > By Theorem 1, a graph is bipartite if and only if it contains no odd cycles.
 > > If $n$ is even (e.g., $C_4, C_6$), alternating colors (Blue, Red, Blue, Red) 2-colors the vertices without conflict.
 > > If $n$ is odd (e.g., $C_3, C_5$), the closure edge forces two adjacent vertices to share the same color.
@@ -246,11 +236,11 @@ procedure greedy_coloring(G: simple graph with vertices v1, v2, ..., vn)
 > - [ ] $\chi(K_{m,n}) = 2$
 > - [ ] $\chi(K_{m,n}) = 1$
 >
-> > [!check]- Solution & Kenneth Rosen Explanation
+> > [!check]- Solution & Explanation
 > > Any bipartite graph with at least one edge has $\chi(G) = 2$.
 > > Color all vertices in the first partition $V_1$ with Color 1, and all vertices in the second partition $V_2$ with Color 2. Since no edges exist within $V_1$ or within $V_2$, this 2-coloring is valid.
 > > **Correct Answer: 2**.
 
 ---
 
-**Navigation**: [[01 - Graph Fundamentals & Terminology|← Prev: Graph Fundamentals]] | [[Discrete Mathematics/index|Table of Contents]] | [[03 - Planar Graphs and Graph Redrawing|Next: Planar Graphs →]]
+[[03 - Planar Graphs and Graph Redrawing|Next: Planar Graphs →]]

@@ -10,10 +10,11 @@ tags:
 
 # Fundamental Counting Rules
 
+[[00 Counting|← Prev: Counting Overview]]
+
+
 > [!abstract] Goal
 > Learn to turn a problem into **stages**, **cases**, **overlaps**, or **equivalent descriptions**.
-
-Navigation: [[00 Counting|← Prev: Counting Overview]] · [[Discrete Mathematics/index|Table of Contents]] · [[02 Permutations and Combinations|Next: 02. Permutations and Combinations →]]
 
 ## 1. Product rule — multiply stages
 
@@ -125,9 +126,6 @@ The **power set** $\mathcal P(S)$ is the set of all subsets of $S$, including th
 > [!success]- Solution
 > The first position has 26 choices. Each of the other five has $26+26+10=62$ choices:
 > $$26\cdot62^5=23{,}819{,}453{,}632.$$
-
----
-
 ## 2. Sum rule — add disjoint cases
 
 Use the sum rule when one task can be completed through one of several alternatives.
@@ -172,9 +170,6 @@ $$
 > [!success]- Solution
 > There are $2^3$ strings of length 3 and $2^4$ of length 4. The length cases are disjoint:
 > $$2^3+2^4=8+16=24.$$
-
----
-
 ## 3. Inclusion–exclusion — correct an overlap
 
 If two cases overlap, adding their sizes counts the overlap twice. Subtract it once.
@@ -273,9 +268,6 @@ $$
 > 32+16-8=40.
 > $$
 > Subtract the intersection once because those strings were included in both counts.
-
----
-
 ## 4. Division rule — remove equal overcounting
 
 Sometimes a counting method describes every real outcome the same number of times.
@@ -331,9 +323,6 @@ $$
 > [!success]- Solution
 > The ordered count is $20\cdot19$, but each pair is counted twice:
 > $$\frac{20\cdot19}{2}=190.$$
-
----
-
 ## 5. Combining rules
 
 Real problems often use multiplication **inside** each case and addition **between** cases.
@@ -396,9 +385,6 @@ $$
 
 > [!success]- Solution
 > Multiply within each case, then add the disjoint cases: $2\cdot4+3\cdot2=14$. Multiplying five mains by one fixed side count would be incorrect.
-
----
-
 ## Common mistakes
 
 > [!warning] Check these before finalizing an answer
@@ -418,11 +404,6 @@ $$
 - [ ] I can identify equal overcounting.
 - [ ] I can combine rules in one problem.
 
-## Source pages
-
-- [[Discrete Mathematics Lecture Notes - 27.pdf|Lecture 27]]
-- [[Discrete Mathematics Lecture Notes - 28.pdf|Lecture 28, pp. 2–4]]
-
 ---
 
-Navigation: [[00 Counting|← Prev: Counting Overview]] · [[Discrete Mathematics/index|Table of Contents]] · [[02 Permutations and Combinations|Next: 02. Permutations and Combinations →]]
+[[02 Permutations and Combinations|Next: 02. Permutations and Combinations →]]

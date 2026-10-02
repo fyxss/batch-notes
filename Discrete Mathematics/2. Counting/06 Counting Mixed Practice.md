@@ -11,10 +11,11 @@ tags:
 
 # Counting Mixed Practice
 
+[[05 Counting Formula and Decision Sheet|← Prev: Counting Formula Sheet]]
+
+
 > [!tip] How to use this set
 > Write the **rule and symbolic expression** before using a calculator. Open a solution only after committing to an answer.
-
-Navigation: [[05 Counting Formula and Decision Sheet|← Prev: Counting Formula Sheet]] · [[Discrete Mathematics/index|Table of Contents]] · [[3. Probability/00 Probability|Next Folder: 3. Probability →]]
 
 ## Level 1 — foundations
 
@@ -218,4 +219,4 @@ If you miss a question, use this return route before retrying: questions 1–3 a
 
 ---
 
-Navigation: [[05 Counting Formula and Decision Sheet|← Prev: Counting Formula Sheet]] · [[Discrete Mathematics/index|Table of Contents]] · [[3. Probability/00 Probability|Next Folder: 3. Probability →]]
+[[3. Probability/00 Probability|Next Folder: 3. Probability →]]

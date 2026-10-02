@@ -7,7 +7,8 @@ tags:
 
 # Probability Formula and Decision Sheet
 
-Navigation: [[06 Probability Models and Methods|← Prev: Probability Models & Methods]] · [[Discrete Mathematics/index|Table of Contents]] · [[08 Probability Mixed Practice|Next: 08. Probability Mixed Practice →]]
+[[06 Probability Models and Methods|← Prev: Probability Models & Methods]]
+
 
 Use this sheet for recall after the lessons. Explanations and worked examples are in [[01 Probability Foundations|sample spaces]], [[02 Probability Rules and Puzzles|rules and trees]], [[03 Conditional Probability and Independence|conditioning]], [[04 Bernoulli Trials and Binomial Distribution|binomial trials]], [[05 Bayes Theorem and Naive Bayes|Bayes]], and [[06 Probability Models and Methods|distributions and algorithms]].
 
@@ -129,4 +130,4 @@ For a fixed bad input, if independent rounds each falsely pass with probability 
 
 ---
 
-Navigation: [[06 Probability Models and Methods|← Prev: Probability Models & Methods]] · [[Discrete Mathematics/index|Table of Contents]] · [[08 Probability Mixed Practice|Next: 08. Probability Mixed Practice →]]
+[[08 Probability Mixed Practice|Next: 08. Probability Mixed Practice →]]

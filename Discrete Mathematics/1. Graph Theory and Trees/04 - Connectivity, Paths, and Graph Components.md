@@ -1,8 +1,7 @@
 # 04. Connectivity, Paths, and Graph Components
 
-**Course**: Discrete Mathematics  
-**Textbook Reference**: Kenneth H. Rosen, *Discrete Mathematics and Its Applications*, Chapter 10, Section 10.4  
-**Navigation**: [[03 - Planar Graphs and Graph Redrawing|← Prev: Planar Graphs]] | [[Discrete Mathematics/index|Table of Contents]] | [[05 - Euler and Hamiltonian Paths|Next: Euler & Hamiltonian Paths →]]
+[[03 - Planar Graphs and Graph Redrawing|← Prev: Planar Graphs]]
+
 
 >[!abstract] Module Objectives
 >- Master the formal definitions of **Walks, Paths, Cycles, and Circuits**.
@@ -10,9 +9,6 @@
 >- Apply quantitative network reliability measures: **Vertex Connectivity ($\kappa$)** and **Edge Connectivity ($\lambda$)**.
 >- Analyze directed graph reachability: **Strongly Connected** vs. **Weakly Connected** and **Strongly Connected Components (SCCs)**.
 >- Use **Adjacency Matrix Powers ($\mathbf{A}^r$)** to count paths between vertices.
-
----
-
 ## 1. Paths, Circuits, and Connectedness
 
 ### 1.1 Formal Path Definitions
@@ -129,9 +125,6 @@ A remarkable link between linear algebra and graph theory allows us to count pat
 >There are **exactly 2 walks of length 2** from $a$ to $d$:
 >1. $a \to c \to d$
 >2. $a \to e \to d$
-
----
-
 ## 6. Worked Problem Examples
 
 ### Problem 4.1: Checking Vertex Connectivity
@@ -152,9 +145,6 @@ A remarkable link between linear algebra and graph theory allows us to count pat
 2. If $v$ is a **leaf (pendant vertex)** of degree 1, removing $v$ does not disconnect any remaining vertices.
 3. If $v$ is an **internal vertex** ($\deg(v) \ge 2$), there exist two neighbors $u$ and $w$ whose only path runs through $v$. Removing $v$ disconnects $u$ from $w$.
 4. Therefore, **every internal vertex of a tree is a cut vertex**, and no leaf is a cut vertex.
-
----
-
 ## 6. Self-Check & Concept Verification
 
 > [!question] Concept Check 1: Connectivity Inequality Bounds
@@ -164,7 +154,7 @@ A remarkable link between linear algebra and graph theory allows us to count pat
 > - [ ] $\delta(G) \le \kappa(G) \le \lambda(G)$
 > - [ ] $\kappa(G) = \lambda(G) = \delta(G)$ always
 >
-> > [!check]- Solution & Kenneth Rosen Explanation
+> > [!check]- Solution & Explanation
 > > Whitney's Inequality proves:
 > > $$\kappa(G) \le \lambda(G) \le \delta(G)$$
 > > It is never harder to disconnect a graph by removing edges than by removing vertices, and disconnecting a vertex of minimum degree requires at most $\delta(G)$ edge cuts.
@@ -177,10 +167,10 @@ A remarkable link between linear algebra and graph theory allows us to count pat
 > - [ ] Sum the degrees $\deg(v_i) + \deg(v_j)$
 > - [ ] Multiply the Laplacian matrix by $k$
 >
-> > [!check]- Solution & Kenneth Rosen Explanation
+> > [!check]- Solution & Explanation
 > > By Theorem 2, the $(i, j)$-entry of $\mathbf{A}^k$ counts the exact number of walks of length $k$ from vertex $i$ to vertex $j$.
 > > **Correct Answer: Calculate the entry $(\mathbf{A}^k)_{i,j}$**.
 
 ---
 
-**Navigation**: [[03 - Planar Graphs and Graph Redrawing|← Prev: Planar Graphs]] | [[Discrete Mathematics/index|Table of Contents]] | [[05 - Euler and Hamiltonian Paths|Next: Euler & Hamiltonian Paths →]]
+[[05 - Euler and Hamiltonian Paths|Next: Euler & Hamiltonian Paths →]]

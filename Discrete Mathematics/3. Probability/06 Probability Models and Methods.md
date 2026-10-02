@@ -7,7 +7,8 @@ tags:
 
 # Probability Models and Methods
 
-Navigation: [[05 Bayes Theorem and Naive Bayes|← Prev: Bayes Theorem & Naive Bayes]] · [[Discrete Mathematics/index|Table of Contents]] · [[07 Probability Formula and Decision Sheet|Next: 07. Probability Formula & Decision Sheet →]]
+[[05 Bayes Theorem and Naive Bayes|← Prev: Bayes Theorem & Naive Bayes]]
+
 
 > [!abstract] Goal
 > Work with unequal outcome probabilities, then use probability to prove existence and control algorithmic error.
@@ -240,8 +241,6 @@ The phrase **at most** is essential: $1/4$ is a bound, so $(1/4)^k$ is also a bo
 - [ ] I can turn positive probability into an existence proof.
 - [ ] I can state the assumptions behind an algorithm's error bound.
 
-Source: [[Discrete Mathematics Lecture Notes - 33.pdf#page=9|Lecture 33, pp. 9–11]]. The random-variable bridge and union-bound exercise are supporting extensions.
-
 ---
 
-Navigation: [[05 Bayes Theorem and Naive Bayes|← Prev: Bayes Theorem & Naive Bayes]] · [[Discrete Mathematics/index|Table of Contents]] · [[07 Probability Formula and Decision Sheet|Next: 07. Probability Formula & Decision Sheet →]]
+[[07 Probability Formula and Decision Sheet|Next: 07. Probability Formula & Decision Sheet →]]

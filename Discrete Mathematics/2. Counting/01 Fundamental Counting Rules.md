@@ -2,15 +2,11 @@
 aliases:
   - Fundamental Counting Rules
   - Product Sum Subtraction Division Rules
-tags:
-  - discrete-mathematics
-  - counting
-  - counting-rules
 ---
 
 # Fundamental Counting Rules
 
-[[00 Counting|← Prev: Counting Overview]]
+[[1. Graph Theory and Trees/10 - Tree Applications: Backtracking, BSTs, and Expression Trees|← Prev: Tree Applications]]
 
 
 > [!abstract] Goal

@@ -1,7 +1,4 @@
 ---
-tags:
-  - probability
-  - probability-rules
 ---
 
 # Probability Rules and Puzzles

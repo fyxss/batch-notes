@@ -1,8 +1,4 @@
 ---
-tags:
-  - probability
-  - probability-distributions
-  - probabilistic-method
 ---
 
 # Probability Models and Methods

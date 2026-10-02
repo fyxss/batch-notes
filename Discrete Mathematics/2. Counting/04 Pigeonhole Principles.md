@@ -2,11 +2,6 @@
 aliases:
   - Pigeonhole Principle
   - Generalized Pigeonhole Principle
-tags:
-  - discrete-mathematics
-  - counting
-  - pigeonhole-principle
-  - ramsey-theory
 ---
 
 # Pigeonhole Principles

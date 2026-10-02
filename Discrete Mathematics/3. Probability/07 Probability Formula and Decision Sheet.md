@@ -1,8 +1,4 @@
 ---
-tags:
-  - probability
-  - formula-sheet
-  - exam-prep
 ---
 
 # Probability Formula and Decision Sheet

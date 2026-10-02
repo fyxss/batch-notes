@@ -1,8 +1,4 @@
 ---
-tags:
-  - probability
-  - conditional-probability
-  - independence
 ---
 
 # Conditional Probability and Independence

@@ -2,11 +2,6 @@
 aliases:
   - Permutations and Combinations
   - Ordered and Unordered Selections
-tags:
-  - discrete-mathematics
-  - counting
-  - permutations
-  - combinations
 ---
 
 # Permutations and Combinations

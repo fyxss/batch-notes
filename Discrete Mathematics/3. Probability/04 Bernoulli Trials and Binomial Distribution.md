@@ -1,7 +1,4 @@
 ---
-tags:
-  - probability
-  - binomial-distribution
 ---
 
 # Bernoulli Trials and Binomial Distribution

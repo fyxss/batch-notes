@@ -3,11 +3,6 @@ aliases:
   - Generalized Counting
   - Counting with Repetition
   - Stars and Bars
-tags:
-  - discrete-mathematics
-  - counting
-  - stars-and-bars
-  - multisets
 ---
 
 # Generalized Counting

@@ -1,8 +1,4 @@
 ---
-tags:
-  - probability
-  - practice
-  - exam-prep
 ---
 
 # Probability Mixed Practice

@@ -2,11 +2,6 @@
 aliases:
   - Counting Formula Sheet
   - Counting Decision Sheet
-tags:
-  - discrete-mathematics
-  - counting
-  - formula-sheet
-  - exam-prep
 ---
 
 # Counting Formula and Decision Sheet

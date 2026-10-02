@@ -196,4 +196,4 @@ Compilers and calculators evaluate Postfix (Reverse Polish) expressions using a 
 
 ---
 
-[[2. Counting/00 Counting|Next Folder: 2. Counting →]]
+[[2. Counting/01 Fundamental Counting Rules|Next: 01. Fundamental Counting Rules →]]

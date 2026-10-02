@@ -6,7 +6,6 @@ title: "Table of Contents"
 
 ## 1. Graph Theory and Trees
 
-- [[1. Graph Theory and Trees/00 - Graph Theory and Trees|00. Graph Theory and Trees]]
 - [[1. Graph Theory and Trees/01 - Graph Fundamentals & Terminology|01. Graph Fundamentals & Terminology]]
 - [[1. Graph Theory and Trees/02 - Bipartite Graphs, Matching, and Coloring|02. Bipartite Graphs, Matching, and Coloring]]
 - [[1. Graph Theory and Trees/03 - Planar Graphs and Graph Redrawing|03. Planar Graphs and Graph Redrawing]]
@@ -22,7 +21,6 @@ title: "Table of Contents"
 
 ## 2. Counting
 
-- [[2. Counting/00 Counting|00. Counting Overview]]
 - [[2. Counting/01 Fundamental Counting Rules|01. Fundamental Counting Rules]]
 - [[2. Counting/02 Permutations and Combinations|02. Permutations and Combinations]]
 - [[2. Counting/03 Generalized Counting|03. Generalized Counting]]
@@ -34,7 +32,6 @@ title: "Table of Contents"
 
 ## 3. Probability
 
-- [[3. Probability/00 Probability|00. Probability Overview]]
 - [[3. Probability/01 Probability Foundations|01. Probability Foundations]]
 - [[3. Probability/02 Probability Rules and Puzzles|02. Probability Rules and Puzzles]]
 - [[3. Probability/03 Conditional Probability and Independence|03. Conditional Probability and Independence]]

@@ -58,8 +58,8 @@ h1, h2, h3, h4, h5, h6,
 // =============================================================
 // LIGHT THEME: Shimmering Focus (by Chris Grieser)
 // =============================================================
-:root,
-:root[saved-theme="light"] {
+:root[saved-theme="light"],
+:root:not([saved-theme="dark"]) {
   --shimmer-teal: #1396a0;
   --shimmer-indigo: #5460ab;
   --shimmer-amber: #c67e3f;
@@ -153,7 +153,20 @@ h1, h2, h3, h4, h5, h6,
 
   body {
     background-color: var(--obsidianite-purple-bg);
-    color: #c5c5d2;
+    color: #e2e8f0;
+  }
+
+  p,
+  li,
+  td,
+  th,
+  blockquote,
+  .callout-content,
+  .popover,
+  table,
+  .katex,
+  .math {
+    color: #e2e8f0;
   }
 
   // Luminous cyan headings with atmospheric glow

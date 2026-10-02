@@ -1,12 +1,6 @@
----
-tags:
-  - probability
-  - foundations
----
-
 # Probability Foundations
 
-[[00 Probability|← Prev: Probability Overview]]
+[[2. Counting/06 Counting Mixed Practice|← Prev: Counting Mixed Practice]]
 
 
 > [!abstract] Goal

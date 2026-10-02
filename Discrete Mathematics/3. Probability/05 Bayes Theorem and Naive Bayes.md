@@ -1,9 +1,6 @@
 ---
 aliases:
   - Bayes Theorem
-tags:
-  - probability
-  - bayes
 ---
 
 # Bayes’ Theorem and Naive Bayes

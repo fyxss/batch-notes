@@ -1,8 +1,5 @@
 # 01. Graph Fundamentals & Terminology
 
-[[00 - Graph Theory and Trees|← Prev: Overview]]
-
-
 >[!abstract] Module Objectives
 >- Master the formal set-theoretic definitions of undirected and directed graphs.
 >- Understand the distinctions among simple graphs, multigraphs, pseudographs, and mixed graphs.

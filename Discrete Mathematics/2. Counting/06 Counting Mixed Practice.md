@@ -2,11 +2,6 @@
 aliases:
   - Counting Mixed Practice
   - Counting Practice Set
-tags:
-  - discrete-mathematics
-  - counting
-  - practice
-  - exam-prep
 ---
 
 # Counting Mixed Practice
@@ -219,4 +214,4 @@ If you miss a question, use this return route before retrying: questions 1–3 a
 
 ---
 
-[[3. Probability/00 Probability|Next Folder: 3. Probability →]]
+[[3. Probability/01 Probability Foundations|Next: 01. Probability Foundations →]]
